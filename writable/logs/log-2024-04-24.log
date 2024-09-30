@@ -1,0 +1,241 @@
+CRITICAL - 2024-04-24 04:21:03 --> Call to undefined function form_open()
+in APPPATH\Views\sys\content_.php on line 55.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_', [], true)
+ 4 APPPATH\Controllers\Sys.php(51): view('sys/content_', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-24 07:30:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY
+      e.item_id' at line 11 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n      SELECT\r...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n      SELECT\r...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n      SELECT\r...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\r\n      SELECT\r...')
+#4 C:\xampp\htdocs\emslk\app\Models\EwasteListModel.php(43): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(37): App\Models\EwasteListModel->getColDash('58')
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-24 07:30:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY
+      e.item_id' at line 11
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+      SELECT
+      e.*,
+      IF(b.UserId = \'58\', b.bid_status_c, NULL) AS bid_status_c,
+      b.bid_id
+      FROM
+      ewaste_listings e
+      LEFT JOIN
+      bids b ON e.item_id = b.item_id
+      WHERE
+      b.UserId = \'58\' OR (e.item_status_g != \'Accepted\' AND b.UserId != \'58\'
+      GROUP BY
+      e.item_id;
+      ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+      SELECT
+      e.*,
+      IF(b.UserId = \'58\', b.bid_status_c, NULL) AS bid_status_c,
+      b.bid_id
+      FROM
+      ewaste_listings e
+      LEFT JOIN
+      bids b ON e.item_id = b.item_id
+      WHERE
+      b.UserId = \'58\' OR (e.item_status_g != \'Accepted\' AND b.UserId != \'58\'
+      GROUP BY
+      e.item_id;
+      ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+      SELECT
+      e.*,
+      IF(b.UserId = \'58\', b.bid_status_c, NULL) AS bid_status_c,
+      b.bid_id
+      FROM
+      ewaste_listings e
+      LEFT JOIN
+      bids b ON e.item_id = b.item_id
+      WHERE
+      b.UserId = \'58\' OR (e.item_status_g != \'Accepted\' AND b.UserId != \'58\'
+      GROUP BY
+      e.item_id;
+      ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+      SELECT
+      e.*,
+      IF(b.UserId = \'58\', b.bid_status_c, NULL) AS bid_status_c,
+      b.bid_id
+      FROM
+      ewaste_listings e
+      LEFT JOIN
+      bids b ON e.item_id = b.item_id
+      WHERE
+      b.UserId = \'58\' OR (e.item_status_g != \'Accepted\' AND b.UserId != \'58\'
+      GROUP BY
+      e.item_id;
+      ')
+ 5 APPPATH\Models\EwasteListModel.php(43): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(37): App\Models\EwasteListModel->getColDash('58')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-24 07:30:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY
+      e.item_id' at line 11 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n      SELECT\r...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n      SELECT\r...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n      SELECT\r...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\r\n      SELECT\r...')
+#4 C:\xampp\htdocs\emslk\app\Models\EwasteListModel.php(43): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(37): App\Models\EwasteListModel->getColDash('58')
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-24 07:30:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY
+      e.item_id' at line 11
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+      SELECT
+      e.*,
+      IF(b.UserId = \'58\', b.bid_status_c, NULL) AS bid_status_c,
+      b.bid_id
+      FROM
+      ewaste_listings e
+      LEFT JOIN
+      bids b ON e.item_id = b.item_id
+      WHERE
+      b.UserId = \'58\' OR (e.item_status_g != \'Accepted\' AND b.UserId = \'58\'
+      GROUP BY
+      e.item_id;
+      ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+      SELECT
+      e.*,
+      IF(b.UserId = \'58\', b.bid_status_c, NULL) AS bid_status_c,
+      b.bid_id
+      FROM
+      ewaste_listings e
+      LEFT JOIN
+      bids b ON e.item_id = b.item_id
+      WHERE
+      b.UserId = \'58\' OR (e.item_status_g != \'Accepted\' AND b.UserId = \'58\'
+      GROUP BY
+      e.item_id;
+      ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+      SELECT
+      e.*,
+      IF(b.UserId = \'58\', b.bid_status_c, NULL) AS bid_status_c,
+      b.bid_id
+      FROM
+      ewaste_listings e
+      LEFT JOIN
+      bids b ON e.item_id = b.item_id
+      WHERE
+      b.UserId = \'58\' OR (e.item_status_g != \'Accepted\' AND b.UserId = \'58\'
+      GROUP BY
+      e.item_id;
+      ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+      SELECT
+      e.*,
+      IF(b.UserId = \'58\', b.bid_status_c, NULL) AS bid_status_c,
+      b.bid_id
+      FROM
+      ewaste_listings e
+      LEFT JOIN
+      bids b ON e.item_id = b.item_id
+      WHERE
+      b.UserId = \'58\' OR (e.item_status_g != \'Accepted\' AND b.UserId = \'58\'
+      GROUP BY
+      e.item_id;
+      ')
+ 5 APPPATH\Models\EwasteListModel.php(43): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(37): App\Models\EwasteListModel->getColDash('58')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-24 07:48:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'e.item_id' at line 11 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n        SELEC...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n        SELEC...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#4 C:\xampp\htdocs\emslk\app\Models\EwasteListModel.php(43): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(37): App\Models\EwasteListModel->getColDash('58')
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-24 07:48:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'e.item_id' at line 11
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+        SELECT
+            e.*,
+            IF(b.UserId = \'58\', b.bid_status_c, NULL) AS bid_status_c,
+            b.bid_id
+        FROM
+            ewaste_listings e
+        LEFT JOIN
+            bids b ON e.item_id = b.item_id 
+        WHERE
+        e.item_status_g != \'Accepted\' AND(b.UserId != \'58\')OR e.item_status_g != \'Cancelled\'
+            e.item_id
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT
+            e.*,
+            IF(b.UserId = \'58\', b.bid_status_c, NULL) AS bid_status_c,
+            b.bid_id
+        FROM
+            ewaste_listings e
+        LEFT JOIN
+            bids b ON e.item_id = b.item_id 
+        WHERE
+        e.item_status_g != \'Accepted\' AND(b.UserId != \'58\')OR e.item_status_g != \'Cancelled\'
+            e.item_id
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT
+            e.*,
+            IF(b.UserId = \'58\', b.bid_status_c, NULL) AS bid_status_c,
+            b.bid_id
+        FROM
+            ewaste_listings e
+        LEFT JOIN
+            bids b ON e.item_id = b.item_id 
+        WHERE
+        e.item_status_g != \'Accepted\' AND(b.UserId != \'58\')OR e.item_status_g != \'Cancelled\'
+            e.item_id
+    ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+        SELECT
+            e.*,
+            IF(b.UserId = \'58\', b.bid_status_c, NULL) AS bid_status_c,
+            b.bid_id
+        FROM
+            ewaste_listings e
+        LEFT JOIN
+            bids b ON e.item_id = b.item_id 
+        WHERE
+        e.item_status_g != \'Accepted\' AND(b.UserId != \'58\')OR e.item_status_g != \'Cancelled\'
+            e.item_id
+    ')
+ 5 APPPATH\Models\EwasteListModel.php(43): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(37): App\Models\EwasteListModel->getColDash('58')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

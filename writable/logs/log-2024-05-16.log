@@ -1,0 +1,215 @@
+ERROR - 2024-05-16 09:53:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 9 in C:\xampp\htdocs\ems\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ems\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT \r\n      ...', 0)
+#1 C:\xampp\htdocs\ems\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 C:\xampp\htdocs\ems\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 C:\xampp\htdocs\ems\app\Models\EwasteListModel.php(344): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...')
+#4 C:\xampp\htdocs\ems\app\Controllers\Sys.php(987): App\Models\EwasteListModel->getSummary(NULL, '2024', NULL)
+#5 C:\xampp\htdocs\ems\system\CodeIgniter.php(932): App\Controllers\Sys->ewgListings()
+#6 C:\xampp\htdocs\ems\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\ems\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ems\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-16 09:53:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 9
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 
+                    COUNT(*) AS totalListed,
+                    SUM(CASE WHEN item_status_g NOT IN (\'Deleted\') THEN 1 ELSE 0 END) AS active,
+                    SUM(CASE WHEN item_status_g = \'Accepted\' THEN 1 ELSE 0 END) AS soldOut,
+                    SUM(CASE WHEN item_status_g = \'Deleted\' THEN 1 ELSE 0 END) AS deleted
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2024 AND UserId= ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+                    COUNT(*) AS totalListed,
+                    SUM(CASE WHEN item_status_g NOT IN (\'Deleted\') THEN 1 ELSE 0 END) AS active,
+                    SUM(CASE WHEN item_status_g = \'Accepted\' THEN 1 ELSE 0 END) AS soldOut,
+                    SUM(CASE WHEN item_status_g = \'Deleted\' THEN 1 ELSE 0 END) AS deleted
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2024 AND UserId= ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+                    COUNT(*) AS totalListed,
+                    SUM(CASE WHEN item_status_g NOT IN (\'Deleted\') THEN 1 ELSE 0 END) AS active,
+                    SUM(CASE WHEN item_status_g = \'Accepted\' THEN 1 ELSE 0 END) AS soldOut,
+                    SUM(CASE WHEN item_status_g = \'Deleted\' THEN 1 ELSE 0 END) AS deleted
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2024 AND UserId= ')
+ 4 APPPATH\Models\EwasteListModel.php(344): CodeIgniter\Database\BaseConnection->query('SELECT 
+                    COUNT(*) AS totalListed,
+                    SUM(CASE WHEN item_status_g NOT IN (\'Deleted\') THEN 1 ELSE 0 END) AS active,
+                    SUM(CASE WHEN item_status_g = \'Accepted\' THEN 1 ELSE 0 END) AS soldOut,
+                    SUM(CASE WHEN item_status_g = \'Deleted\' THEN 1 ELSE 0 END) AS deleted
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2024 AND UserId= ')
+ 5 APPPATH\Controllers\Sys.php(987): App\Models\EwasteListModel->getSummary(null, '2024', null)
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewgListings()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-16 12:22:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 9 in C:\xampp\htdocs\ems\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ems\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT \r\n      ...', 0)
+#1 C:\xampp\htdocs\ems\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 C:\xampp\htdocs\ems\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 C:\xampp\htdocs\ems\app\Models\EwasteListModel.php(344): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...')
+#4 C:\xampp\htdocs\ems\app\Controllers\Sys.php(987): App\Models\EwasteListModel->getSummary(NULL, '2024', NULL)
+#5 C:\xampp\htdocs\ems\system\CodeIgniter.php(932): App\Controllers\Sys->ewgListings()
+#6 C:\xampp\htdocs\ems\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\ems\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ems\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-16 12:22:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 9
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 
+                    COUNT(*) AS totalListed,
+                    SUM(CASE WHEN item_status_g NOT IN (\'Deleted\') THEN 1 ELSE 0 END) AS active,
+                    SUM(CASE WHEN item_status_g = \'Accepted\' THEN 1 ELSE 0 END) AS soldOut,
+                    SUM(CASE WHEN item_status_g = \'Deleted\' THEN 1 ELSE 0 END) AS deleted
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2024 AND UserId= ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+                    COUNT(*) AS totalListed,
+                    SUM(CASE WHEN item_status_g NOT IN (\'Deleted\') THEN 1 ELSE 0 END) AS active,
+                    SUM(CASE WHEN item_status_g = \'Accepted\' THEN 1 ELSE 0 END) AS soldOut,
+                    SUM(CASE WHEN item_status_g = \'Deleted\' THEN 1 ELSE 0 END) AS deleted
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2024 AND UserId= ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+                    COUNT(*) AS totalListed,
+                    SUM(CASE WHEN item_status_g NOT IN (\'Deleted\') THEN 1 ELSE 0 END) AS active,
+                    SUM(CASE WHEN item_status_g = \'Accepted\' THEN 1 ELSE 0 END) AS soldOut,
+                    SUM(CASE WHEN item_status_g = \'Deleted\' THEN 1 ELSE 0 END) AS deleted
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2024 AND UserId= ')
+ 4 APPPATH\Models\EwasteListModel.php(344): CodeIgniter\Database\BaseConnection->query('SELECT 
+                    COUNT(*) AS totalListed,
+                    SUM(CASE WHEN item_status_g NOT IN (\'Deleted\') THEN 1 ELSE 0 END) AS active,
+                    SUM(CASE WHEN item_status_g = \'Accepted\' THEN 1 ELSE 0 END) AS soldOut,
+                    SUM(CASE WHEN item_status_g = \'Deleted\' THEN 1 ELSE 0 END) AS deleted
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2024 AND UserId= ')
+ 5 APPPATH\Controllers\Sys.php(987): App\Models\EwasteListModel->getSummary(null, '2024', null)
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewgListings()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-16 12:22:25 --> Invalid file: "sys/report_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/report_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/report_', [], true)
+ 3 APPPATH\Controllers\Sys.php(973): view('sys/report_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->view_reports()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-16 17:05:07 --> Too few arguments to function App\Models\NotificationModel::addNotification(), 2 passed in C:\xampp\htdocs\ems\app\Controllers\Sys.php on line 2499 and exactly 3 expected
+in APPPATH\Models\NotificationModel.php on line 13.
+ 1 APPPATH\Controllers\Sys.php(2499): App\Models\NotificationModel->addNotification('67', 'GRA approved the account for user ID: . Admin needs to activate this account.')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->graApproval('75')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-16 17:05:42 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 391.
+ 1 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Sys.php(2517): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->graApproval('75')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-16 17:11:25 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1693.
+ 1 SYSTEMPATH\BaseModel.php(1693): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Sys.php(2517): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->graApproval('75')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-16 17:11:41 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1693.
+ 1 SYSTEMPATH\BaseModel.php(1693): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Sys.php(2517): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->graApproval('75')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-16 17:17:33 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1693.
+ 1 SYSTEMPATH\BaseModel.php(1693): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Sys.php(2517): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->graApproval('75')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-16 17:19:44 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1693.
+ 1 SYSTEMPATH\BaseModel.php(1693): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Sys.php(2519): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->graApproval('75')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-16 17:19:48 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1693.
+ 1 SYSTEMPATH\BaseModel.php(1693): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Sys.php(2519): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->graApproval('75')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-16 17:21:10 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1693.
+ 1 SYSTEMPATH\BaseModel.php(1693): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Sys.php(2519): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->graApproval(null)
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-16 17:21:15 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1693.
+ 1 SYSTEMPATH\BaseModel.php(1693): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Sys.php(2519): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->graApproval(null)
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-16 17:21:40 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1693.
+ 1 SYSTEMPATH\BaseModel.php(1693): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Sys.php(2519): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->graApproval('75')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

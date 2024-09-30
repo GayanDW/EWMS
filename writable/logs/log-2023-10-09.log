@@ -1,0 +1,65 @@
+CRITICAL - 2023-10-09 16:23:36 --> Class "App\Controllers\UserModel" not found
+in APPPATH\Controllers\User.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->login()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 16:30:27 --> Undefined array key "UserId"
+in APPPATH\Controllers\User.php on line 40.
+ 1 APPPATH\Controllers\User.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "UserId"', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\User.php', 40)
+ 2 APPPATH\Controllers\User.php(32): App\Controllers\User->setUserSession([...])
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->login()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 16:31:26 --> Undefined array key "UserId"
+in APPPATH\Controllers\User.php on line 43.
+ 1 APPPATH\Controllers\User.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "UserId"', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\User.php', 43)
+ 2 APPPATH\Controllers\User.php(34): App\Controllers\User->setUserSession([...])
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->login()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 16:31:47 --> Undefined array key "UserId"
+in APPPATH\Controllers\User.php on line 43.
+ 1 APPPATH\Controllers\User.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "UserId"', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\User.php', 43)
+ 2 APPPATH\Controllers\User.php(34): App\Controllers\User->setUserSession([...])
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->login()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 16:36:55 --> Undefined array key "UserId"
+in APPPATH\Controllers\User.php on line 43.
+ 1 APPPATH\Controllers\User.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "UserId"', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\User.php', 43)
+ 2 APPPATH\Controllers\User.php(34): App\Controllers\User->setUserSession([...])
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->login()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 16:49:04 --> Invalid file: "sys/menu_e-waste collector.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/menu_e-waste collector.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/menu_e-waste collector', [], true)
+ 3 APPPATH\Controllers\Sys.php(20): view('sys/menu_e-waste collector')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 16:50:24 --> Invalid file: "sys/menu_e-waste collector.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/menu_e-waste collector.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/menu_e-waste collector', [], true)
+ 3 APPPATH\Controllers\Sys.php(20): view('sys/menu_e-waste collector')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 16:50:44 --> Invalid file: "sys/menu_e-waste collector.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/menu_e-waste collector.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/menu_e-waste collector', [], true)
+ 3 APPPATH\Controllers\Sys.php(20): view('sys/menu_e-waste collector')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,343 @@
+ERROR - 2024-03-18 02:21:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND MONTH(date_added) IS NULL' at line 3 in C:\xampp\htdocs\ewms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ewms\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\ewms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\ewms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\ewms\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\ewms\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\ewms\app\Models\EwasteListModel.php(36): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\ewms\app\Controllers\Sys.php(850): App\Models\EwasteListModel->getSummary(NULL, NULL)
+#7 C:\xampp\htdocs\ewms\system\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+#8 C:\xampp\htdocs\ewms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#9 C:\xampp\htdocs\ewms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ewms\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-18 02:21:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND MONTH(date_added) IS NULL' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `ewaste_listings`
+WHERE YEAR(date_added) =  AND MONTH(date_added) IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `ewaste_listings`
+WHERE YEAR(date_added) =  AND MONTH(date_added) IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `ewaste_listings`
+WHERE YEAR(date_added) =  AND MONTH(date_added) IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `ewaste_listings`
+WHERE YEAR(date_added) =  AND MONTH(date_added) IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Models\EwasteListModel.php(36): CodeIgniter\Model->countAllResults()
+ 7 APPPATH\Controllers\Sys.php(850): App\Models\EwasteListModel->getSummary(null, null)
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-18 04:02:44 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 125.
+ 1 APPPATH\Views\sys\bidding_form.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 125)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(343): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-18 04:02:44 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 125.
+ 1 APPPATH\Views\sys\bidding_form.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 125)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(343): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-18 04:02:44 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 125.
+ 1 APPPATH\Views\sys\bidding_form.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 125)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(343): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-18 10:03:27 --> mysqli_sql_exception: Unknown column 'b.collector_id' in 'where clause' in C:\xampp\htdocs\ewms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ewms\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(DI...', 0)
+#1 C:\xampp\htdocs\ewms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(DI...')
+#2 C:\xampp\htdocs\ewms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(DI...')
+#3 C:\xampp\htdocs\ewms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(DI...', Array)
+#4 C:\xampp\htdocs\ewms\app\Models\EwasteListModel.php(76): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\ewms\app\Controllers\Sys.php(947): App\Models\EwasteListModel->getCollectionActivityAnalysis('59', '2024', '03')
+#6 C:\xampp\htdocs\ewms\system\CodeIgniter.php(932): App\Controllers\Sys->collectionActivityAnalysis()
+#7 C:\xampp\htdocs\ewms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\ewms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ewms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-18 10:03:27 --> Unknown column 'b.collector_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(DISTINCT e.UserId) as generatorsServed
+                                  FROM bids b
+                                  JOIN ewaste_listings e ON b.item_id = e.item_id
+                                  WHERE b.collector_id = \'59\' 
+                                  AND YEAR(b.bid_date) = \'2024\' 
+                                  AND MONTH(b.bid_date) = 03
+                                  AND b.bid_status_later = \'Collected\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(DISTINCT e.UserId) as generatorsServed
+                                  FROM bids b
+                                  JOIN ewaste_listings e ON b.item_id = e.item_id
+                                  WHERE b.collector_id = \'59\' 
+                                  AND YEAR(b.bid_date) = \'2024\' 
+                                  AND MONTH(b.bid_date) = 03
+                                  AND b.bid_status_later = \'Collected\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(DISTINCT e.UserId) as generatorsServed
+                                  FROM bids b
+                                  JOIN ewaste_listings e ON b.item_id = e.item_id
+                                  WHERE b.collector_id = \'59\' 
+                                  AND YEAR(b.bid_date) = \'2024\' 
+                                  AND MONTH(b.bid_date) = 03
+                                  AND b.bid_status_later = \'Collected\'')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(DISTINCT e.UserId) as generatorsServed
+                                  FROM bids b
+                                  JOIN ewaste_listings e ON b.item_id = e.item_id
+                                  WHERE b.collector_id = ? 
+                                  AND YEAR(b.bid_date) = ? 
+                                  AND MONTH(b.bid_date) = 03
+                                  AND b.bid_status_later = \'Collected\'', [...])
+ 5 APPPATH\Models\EwasteListModel.php(76): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(947): App\Models\EwasteListModel->getCollectionActivityAnalysis('59', '2024', '03')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->collectionActivityAnalysis()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-18 10:05:31 --> Invalid file: "sys/ewc_collection_activity_analysis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/ewc_collection_activity_analysis.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_collection_activity_analysis', [], true)
+ 3 APPPATH\Controllers\Sys.php(961): view('sys/ewc_collection_activity_analysis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->collectionActivityAnalysis()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-18 10:08:19 --> Array to string conversion
+in APPPATH\Views\sys\ewc_collection_activity_analysis.php on line 65.
+ 1 APPPATH\Views\sys\ewc_collection_activity_analysis.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_collection_activity_analysis.php', 65)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_collection_activity_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_collection_activity_analysis', [], true)
+ 5 APPPATH\Controllers\Sys.php(961): view('sys/ewc_collection_activity_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->collectionActivityAnalysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-18 10:57:18 --> mysqli_sql_exception: Unknown column 'bids.collector_id' in 'where clause' in C:\xampp\htdocs\ewms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ewms\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT DISTINCT...', 0)
+#1 C:\xampp\htdocs\ewms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT...')
+#2 C:\xampp\htdocs\ewms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT...')
+#3 C:\xampp\htdocs\ewms\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...', Array, false)
+#4 C:\xampp\htdocs\ewms\app\Models\EwasteListModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ewms\app\Controllers\Sys.php(942): App\Models\EwasteListModel->getCollectionActivityAnalysis('59', '2024', '03')
+#6 C:\xampp\htdocs\ewms\system\CodeIgniter.php(932): App\Controllers\Sys->collectionActivityAnalysis()
+#7 C:\xampp\htdocs\ewms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\ewms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ewms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-18 10:57:19 --> Unknown column 'bids.collector_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT DISTINCT `ewaste_listings`.`UserId`
+FROM `ewaste_listings`
+JOIN `bids` ON `ewaste_listings`.`item_id` = `bids`.`item_id`
+WHERE `bids`.`collector_id` = \'59\'
+AND `bids`.`bid_status_later` = \'Collected\'
+AND YEAR(bids.bid_date) = \'2024\'
+AND MONTH(bids.bid_date) = \'03\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT `ewaste_listings`.`UserId`
+FROM `ewaste_listings`
+JOIN `bids` ON `ewaste_listings`.`item_id` = `bids`.`item_id`
+WHERE `bids`.`collector_id` = \'59\'
+AND `bids`.`bid_status_later` = \'Collected\'
+AND YEAR(bids.bid_date) = \'2024\'
+AND MONTH(bids.bid_date) = \'03\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT `ewaste_listings`.`UserId`
+FROM `ewaste_listings`
+JOIN `bids` ON `ewaste_listings`.`item_id` = `bids`.`item_id`
+WHERE `bids`.`collector_id` = \'59\'
+AND `bids`.`bid_status_later` = \'Collected\'
+AND YEAR(bids.bid_date) = \'2024\'
+AND MONTH(bids.bid_date) = \'03\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT `ewaste_listings`.`UserId`
+FROM `ewaste_listings`
+JOIN `bids` ON `ewaste_listings`.`item_id` = `bids`.`item_id`
+WHERE `bids`.`collector_id` = :bids.collector_id:
+AND `bids`.`bid_status_later` = :bids.bid_status_later:
+AND YEAR(bids.bid_date) = :YEAR(bids.bid_date):
+AND MONTH(bids.bid_date) = :MONTH(bids.bid_date):', [...], false)
+ 5 APPPATH\Models\EwasteListModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Sys.php(942): App\Models\EwasteListModel->getCollectionActivityAnalysis('59', '2024', '03')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->collectionActivityAnalysis()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-18 10:59:56 --> Invalid file: "templates/header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates/header.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('templates/header', [], true)
+ 3 APPPATH\Controllers\Sys.php(950): view('templates/header')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->collectionActivityAnalysis()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-18 11:02:49 --> Invalid file: "sys/collection_activity_analysis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/collection_activity_analysis.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/collection_activity_analysis', [], true)
+ 3 APPPATH\Controllers\Sys.php(953): view('sys/collection_activity_analysis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->collectionActivityAnalysis()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-18 11:04:34 --> Invalid file: "sys/collection_activity_analysis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/collection_activity_analysis.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/collection_activity_analysis', [], true)
+ 3 APPPATH\Controllers\Sys.php(953): view('sys/collection_activity_analysis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->collectionActivityAnalysis()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-18 11:07:22 --> Undefined variable $data
+in APPPATH\Views\sys\ewc_collection_activity_analysis.php on line 64.
+ 1 APPPATH\Views\sys\ewc_collection_activity_analysis.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_collection_activity_analysis.php', 64)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_collection_activity_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_collection_activity_analysis', [], true)
+ 5 APPPATH\Controllers\Sys.php(953): view('sys/ewc_collection_activity_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->collectionActivityAnalysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-18 16:07:57 --> Undefined variable $collectionAnalysis
+in APPPATH\Controllers\Sys.php on line 886.
+ 1 APPPATH\Controllers\Sys.php(886): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $collectionAnalysis', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 886)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis_summary()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-18 16:08:41 --> Undefined variable $collectionAnalysis
+in APPPATH\Controllers\Sys.php on line 886.
+ 1 APPPATH\Controllers\Sys.php(886): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $collectionAnalysis', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 886)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis_summary()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-18 16:13:33 --> Undefined variable $collectionAnalysis
+in APPPATH\Controllers\Sys.php on line 886.
+ 1 APPPATH\Controllers\Sys.php(886): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $collectionAnalysis', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 886)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis_summary()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-18 16:13:36 --> Undefined variable $collectionAnalysis
+in APPPATH\Controllers\Sys.php on line 886.
+ 1 APPPATH\Controllers\Sys.php(886): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $collectionAnalysis', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 886)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis_summary()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-18 16:13:41 --> Undefined variable $collectionAnalysis
+in APPPATH\Controllers\Sys.php on line 886.
+ 1 APPPATH\Controllers\Sys.php(886): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $collectionAnalysis', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 886)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis_summary()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-18 16:17:17 --> Undefined variable $collectionAnalysis
+in APPPATH\Controllers\Sys.php on line 886.
+ 1 APPPATH\Controllers\Sys.php(886): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $collectionAnalysis', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 886)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis_summary()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-18 16:19:53 --> Undefined variable $collectionAnalysis
+in APPPATH\Controllers\Sys.php on line 886.
+ 1 APPPATH\Controllers\Sys.php(886): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $collectionAnalysis', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 886)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis_summary()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-18 16:19:54 --> Undefined variable $collectionAnalysis
+in APPPATH\Controllers\Sys.php on line 886.
+ 1 APPPATH\Controllers\Sys.php(886): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $collectionAnalysis', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 886)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis_summary()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-18 16:20:01 --> Undefined variable $collectionAnalysis
+in APPPATH\Controllers\Sys.php on line 886.
+ 1 APPPATH\Controllers\Sys.php(886): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $collectionAnalysis', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 886)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis_summary()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-18 17:41:50 --> Invalid file: "sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/menu_', [], true)
+ 3 APPPATH\Controllers\Sys.php(841): view('sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->view_reports()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-18 17:41:58 --> Cannot redeclare App\Models\BiddingModel::getBidSummary()
+in APPPATH\Models\BiddingModel.php on line 109.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-18 17:42:13 --> Cannot redeclare App\Models\BiddingModel::getBidSummary()
+in APPPATH\Models\BiddingModel.php on line 109.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-18 17:42:45 --> Cannot redeclare App\Models\BiddingModel::getBidSummary()
+in APPPATH\Models\BiddingModel.php on line 109.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-18 17:44:11 --> Cannot redeclare App\Models\BiddingModel::getBidSummary()
+in APPPATH\Models\BiddingModel.php on line 109.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-18 17:47:57 --> Call to undefined method App\Models\BiddingModel::getRejectionReasons
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Sys.php(971): CodeIgniter\Model->__call('getRejectionReasons', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcBidAnalysis()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-18 17:59:10 --> Undefined variable $user_type
+in APPPATH\Controllers\Sys.php on line 978.
+ 1 APPPATH\Controllers\Sys.php(978): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_type', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 978)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcBidAnalysis()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-18 17:59:11 --> Undefined variable $user_type
+in APPPATH\Controllers\Sys.php on line 978.
+ 1 APPPATH\Controllers\Sys.php(978): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_type', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 978)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcBidAnalysis()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-18 17:59:12 --> Undefined variable $user_type
+in APPPATH\Controllers\Sys.php on line 978.
+ 1 APPPATH\Controllers\Sys.php(978): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_type', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 978)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcBidAnalysis()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-18 17:59:26 --> Undefined variable $user_type
+in APPPATH\Controllers\Sys.php on line 978.
+ 1 APPPATH\Controllers\Sys.php(978): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_type', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 978)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcBidAnalysis()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

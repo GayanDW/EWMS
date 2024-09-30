@@ -1,0 +1,598 @@
+CRITICAL - 2023-11-28 04:28:16 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 94.
+ 1 APPPATH\Views\sys\bidding_form.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 94)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(162): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'logo.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 04:28:16 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 94.
+ 1 APPPATH\Views\sys\bidding_form.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 94)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(162): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 04:28:16 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 94.
+ 1 APPPATH\Views\sys\bidding_form.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 94)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(162): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 04:28:16 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 94.
+ 1 APPPATH\Views\sys\bidding_form.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 94)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(162): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 07:17:44 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 94.
+ 1 APPPATH\Views\sys\bidding_form.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 94)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(162): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 07:17:44 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 94.
+ 1 APPPATH\Views\sys\bidding_form.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 94)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(162): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 07:17:44 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 94.
+ 1 APPPATH\Views\sys\bidding_form.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 94)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(162): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'logo.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 07:17:44 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 94.
+ 1 APPPATH\Views\sys\bidding_form.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 94)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(162): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:18:47 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 99.
+ 1 APPPATH\Views\sys\bidding_form.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 99)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(160): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:18:47 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 99.
+ 1 APPPATH\Views\sys\bidding_form.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 99)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(160): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'logo.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:18:47 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 99.
+ 1 APPPATH\Views\sys\bidding_form.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 99)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(160): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:18:47 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 99.
+ 1 APPPATH\Views\sys\bidding_form.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 99)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(160): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:21:06 --> CodeIgniter\HTTP\Request::fetchGlobal(): Argument #3 ($filter) must be of type ?int, string given, called in C:\xampp\htdocs\ewms\system\HTTP\IncomingRequest.php on line 782
+in SYSTEMPATH\HTTP\RequestTrait.php on line 253.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(782): CodeIgniter\HTTP\Request->fetchGlobal('post', 'alt_day1', '', null)
+ 2 APPPATH\Controllers\Sys.php(216): CodeIgniter\HTTP\IncomingRequest->getPost('alt_day1', '')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->saveBid('1')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:21:42 --> CodeIgniter\HTTP\Request::fetchGlobal(): Argument #3 ($filter) must be of type ?int, string given, called in C:\xampp\htdocs\ewms\system\HTTP\IncomingRequest.php on line 782
+in SYSTEMPATH\HTTP\RequestTrait.php on line 253.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(782): CodeIgniter\HTTP\Request->fetchGlobal('post', 'alt_day1', '', null)
+ 2 APPPATH\Controllers\Sys.php(216): CodeIgniter\HTTP\IncomingRequest->getPost('alt_day1', '')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->saveBid('1')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:23:38 --> CodeIgniter\HTTP\Request::fetchGlobal(): Argument #3 ($filter) must be of type ?int, string given, called in C:\xampp\htdocs\ewms\system\HTTP\IncomingRequest.php on line 782
+in SYSTEMPATH\HTTP\RequestTrait.php on line 253.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(782): CodeIgniter\HTTP\Request->fetchGlobal('post', 'alt_day1', '', null)
+ 2 APPPATH\Controllers\Sys.php(216): CodeIgniter\HTTP\IncomingRequest->getPost('alt_day1', '')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->saveBid('7')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:28:09 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 99.
+ 1 APPPATH\Views\sys\bidding_form.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 99)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(160): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'logo.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:28:09 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 99.
+ 1 APPPATH\Views\sys\bidding_form.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 99)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(160): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:28:09 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 99.
+ 1 APPPATH\Views\sys\bidding_form.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 99)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(160): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:28:09 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 99.
+ 1 APPPATH\Views\sys\bidding_form.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 99)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(160): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:29:37 --> Undefined variable $isFree
+in APPPATH\Views\sys\bidding_form.php on line 48.
+ 1 APPPATH\Views\sys\bidding_form.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isFree', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 48)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(245): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->saveBid('4')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:30:35 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 99.
+ 1 APPPATH\Views\sys\bidding_form.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 99)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(160): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:30:35 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 99.
+ 1 APPPATH\Views\sys\bidding_form.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 99)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(160): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'logo.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:30:35 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 99.
+ 1 APPPATH\Views\sys\bidding_form.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 99)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(160): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:30:35 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 99.
+ 1 APPPATH\Views\sys\bidding_form.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 99)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(160): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:31:36 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\detailed_view.php on line 21.
+ 1 APPPATH\Views\sys\detailed_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/detailed_view', [], true)
+ 5 APPPATH\Controllers\Sys.php(144): view('sys/detailed_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedView('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:31:36 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\detailed_view.php on line 21.
+ 1 APPPATH\Views\sys\detailed_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/detailed_view', [], true)
+ 5 APPPATH\Controllers\Sys.php(144): view('sys/detailed_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedView('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:31:36 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\detailed_view.php on line 21.
+ 1 APPPATH\Views\sys\detailed_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/detailed_view', [], true)
+ 5 APPPATH\Controllers\Sys.php(144): view('sys/detailed_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedView('assets', 'img', 'logo.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:31:36 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\detailed_view.php on line 21.
+ 1 APPPATH\Views\sys\detailed_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/detailed_view', [], true)
+ 5 APPPATH\Controllers\Sys.php(144): view('sys/detailed_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedView('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:33:05 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Sys.php on line 262.
+ 1 APPPATH\Controllers\Sys.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 262)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBids('assets', 'img', 'messages-1.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:33:05 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Sys.php on line 262.
+ 1 APPPATH\Controllers\Sys.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 262)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBids('assets', 'img', 'logo.png')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:33:05 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Sys.php on line 262.
+ 1 APPPATH\Controllers\Sys.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 262)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBids('assets', 'img', 'messages-3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:33:05 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Sys.php on line 262.
+ 1 APPPATH\Controllers\Sys.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 262)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBids('assets', 'img', 'messages-2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:35:21 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\detailed_view.php on line 21.
+ 1 APPPATH\Views\sys\detailed_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/detailed_view', [], true)
+ 5 APPPATH\Controllers\Sys.php(144): view('sys/detailed_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedView('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:35:21 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\detailed_view.php on line 21.
+ 1 APPPATH\Views\sys\detailed_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/detailed_view', [], true)
+ 5 APPPATH\Controllers\Sys.php(144): view('sys/detailed_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedView('assets', 'img', 'logo.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:35:21 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\detailed_view.php on line 21.
+ 1 APPPATH\Views\sys\detailed_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/detailed_view', [], true)
+ 5 APPPATH\Controllers\Sys.php(144): view('sys/detailed_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedView('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:35:21 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\detailed_view.php on line 21.
+ 1 APPPATH\Views\sys\detailed_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/detailed_view', [], true)
+ 5 APPPATH\Controllers\Sys.php(144): view('sys/detailed_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedView('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:35:23 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\view_bids.php on line 66.
+ 1 APPPATH\Views\sys\view_bids.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\view_bids.php', 66)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\view_bids.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/view_bids', [], true)
+ 5 APPPATH\Controllers\Sys.php(284): view('sys/view_bids', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBids('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:35:23 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Sys.php on line 262.
+ 1 APPPATH\Controllers\Sys.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 262)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBids('assets', 'img', 'messages-1.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:35:23 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Sys.php on line 262.
+ 1 APPPATH\Controllers\Sys.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 262)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBids('assets', 'img', 'messages-2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:35:23 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Sys.php on line 262.
+ 1 APPPATH\Controllers\Sys.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 262)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBids('assets', 'img', 'logo.png')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:35:23 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Sys.php on line 262.
+ 1 APPPATH\Controllers\Sys.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 262)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBids('assets', 'img', 'messages-3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:35:27 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\detailed_view.php on line 21.
+ 1 APPPATH\Views\sys\detailed_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/detailed_view', [], true)
+ 5 APPPATH\Controllers\Sys.php(144): view('sys/detailed_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedView('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:35:27 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\detailed_view.php on line 21.
+ 1 APPPATH\Views\sys\detailed_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/detailed_view', [], true)
+ 5 APPPATH\Controllers\Sys.php(144): view('sys/detailed_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedView('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:35:27 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\detailed_view.php on line 21.
+ 1 APPPATH\Views\sys\detailed_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/detailed_view', [], true)
+ 5 APPPATH\Controllers\Sys.php(144): view('sys/detailed_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedView('assets', 'img', 'logo.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:35:27 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\detailed_view.php on line 21.
+ 1 APPPATH\Views\sys\detailed_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/detailed_view', [], true)
+ 5 APPPATH\Controllers\Sys.php(144): view('sys/detailed_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedView('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:35:36 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Sys.php on line 262.
+ 1 APPPATH\Controllers\Sys.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 262)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBids('assets', 'img', 'logo.png')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:35:36 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Sys.php on line 262.
+ 1 APPPATH\Controllers\Sys.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 262)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBids('assets', 'img', 'messages-1.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:35:36 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Sys.php on line 262.
+ 1 APPPATH\Controllers\Sys.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 262)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBids('assets', 'img', 'messages-2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:35:36 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Sys.php on line 262.
+ 1 APPPATH\Controllers\Sys.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 262)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBids('assets', 'img', 'messages-3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:49:06 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\detailed_view.php on line 21.
+ 1 APPPATH\Views\sys\detailed_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/detailed_view', [], true)
+ 5 APPPATH\Controllers\Sys.php(144): view('sys/detailed_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedView('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:49:06 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\detailed_view.php on line 21.
+ 1 APPPATH\Views\sys\detailed_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/detailed_view', [], true)
+ 5 APPPATH\Controllers\Sys.php(144): view('sys/detailed_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedView('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:49:06 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\detailed_view.php on line 21.
+ 1 APPPATH\Views\sys\detailed_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/detailed_view', [], true)
+ 5 APPPATH\Controllers\Sys.php(144): view('sys/detailed_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedView('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:49:06 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\detailed_view.php on line 21.
+ 1 APPPATH\Views\sys\detailed_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/detailed_view', [], true)
+ 5 APPPATH\Controllers\Sys.php(144): view('sys/detailed_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedView('assets', 'img', 'logo.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:49:09 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Sys.php on line 262.
+ 1 APPPATH\Controllers\Sys.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 262)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBids('assets', 'img', 'messages-2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:49:09 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Sys.php on line 262.
+ 1 APPPATH\Controllers\Sys.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 262)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBids('assets', 'img', 'messages-1.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:49:09 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Sys.php on line 262.
+ 1 APPPATH\Controllers\Sys.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 262)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBids('assets', 'img', 'logo.png')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:49:09 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Sys.php on line 262.
+ 1 APPPATH\Controllers\Sys.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 262)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBids('assets', 'img', 'messages-3.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:49:11 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\detailed_view.php on line 21.
+ 1 APPPATH\Views\sys\detailed_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/detailed_view', [], true)
+ 5 APPPATH\Controllers\Sys.php(144): view('sys/detailed_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedView('assets', 'img', 'logo.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:49:11 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\detailed_view.php on line 21.
+ 1 APPPATH\Views\sys\detailed_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/detailed_view', [], true)
+ 5 APPPATH\Controllers\Sys.php(144): view('sys/detailed_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedView('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:49:11 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\detailed_view.php on line 21.
+ 1 APPPATH\Views\sys\detailed_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/detailed_view', [], true)
+ 5 APPPATH\Controllers\Sys.php(144): view('sys/detailed_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedView('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 08:49:11 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\detailed_view.php on line 21.
+ 1 APPPATH\Views\sys\detailed_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/detailed_view', [], true)
+ 5 APPPATH\Controllers\Sys.php(144): view('sys/detailed_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedView('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

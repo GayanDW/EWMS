@@ -1,0 +1,145 @@
+CRITICAL - 2024-04-20 05:39:58 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 391.
+ 1 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Sys.php(637): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->cancelDeal('6')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 05:40:10 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 391.
+ 1 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Sys.php(637): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->cancelDeal('6')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 09:59:12 --> Too few arguments to function App\Controllers\Sys::cancelDealEwg(), 0 passed in C:\xampp\htdocs\emslk\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Sys.php on line 693.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->cancelDealEwg()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 09:59:44 --> Too few arguments to function App\Controllers\Sys::cancelDealEwg(), 0 passed in C:\xampp\htdocs\emslk\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Sys.php on line 693.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->cancelDealEwg()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 10:00:26 --> Too few arguments to function App\Controllers\Sys::cancelDealEwg(), 0 passed in C:\xampp\htdocs\emslk\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Sys.php on line 693.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->cancelDealEwg()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 10:07:58 --> Undefined variable $bid_id
+in APPPATH\Controllers\Sys.php on line 698.
+ 1 APPPATH\Controllers\Sys.php(698): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bid_id', 'C:\\xampp\\htdocs\\emslk\\app\\Controllers\\Sys.php', 698)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->cancelDealEwg()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-20 10:11:19 --> Undefined variable $bid_id
+in APPPATH\Controllers\Sys.php on line 698.
+ 1 APPPATH\Controllers\Sys.php(698): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bid_id', 'C:\\xampp\\htdocs\\emslk\\app\\Controllers\\Sys.php', 698)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->cancelDealEwg()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-20 11:27:58 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM 
+            ewaste_listings e
+        LEFT JOIN 
+             bids b...' at line 6 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n        SELEC...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n        SELEC...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#4 C:\xampp\htdocs\emslk\app\Models\EwasteListModel.php(125): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(80): App\Models\EwasteListModel->getColCancellations('59')
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->colCancellations()
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-20 11:27:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM 
+            ewaste_listings e
+        LEFT JOIN 
+             bids b...' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+        SELECT 
+            e.*, 
+            b.bid_status_c, 
+           
+
+        FROM 
+            ewaste_listings e
+        LEFT JOIN 
+             bids b ON e.item_id = b.item_id
+     
+        WHERE 
+            b.UserId = \'59\' 
+            AND b.bid_status_c = \'Cancelled\'
+        GROUP BY 
+            e.item_id;
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            e.*, 
+            b.bid_status_c, 
+           
+
+        FROM 
+            ewaste_listings e
+        LEFT JOIN 
+             bids b ON e.item_id = b.item_id
+     
+        WHERE 
+            b.UserId = \'59\' 
+            AND b.bid_status_c = \'Cancelled\'
+        GROUP BY 
+            e.item_id;
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            e.*, 
+            b.bid_status_c, 
+           
+
+        FROM 
+            ewaste_listings e
+        LEFT JOIN 
+             bids b ON e.item_id = b.item_id
+     
+        WHERE 
+            b.UserId = \'59\' 
+            AND b.bid_status_c = \'Cancelled\'
+        GROUP BY 
+            e.item_id;
+    ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            e.*, 
+            b.bid_status_c, 
+           
+
+        FROM 
+            ewaste_listings e
+        LEFT JOIN 
+             bids b ON e.item_id = b.item_id
+     
+        WHERE 
+            b.UserId = \'59\' 
+            AND b.bid_status_c = \'Cancelled\'
+        GROUP BY 
+            e.item_id;
+    ')
+ 5 APPPATH\Models\EwasteListModel.php(125): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(80): App\Models\EwasteListModel->getColCancellations('59')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->colCancellations()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

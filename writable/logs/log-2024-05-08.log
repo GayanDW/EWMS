@@ -1,0 +1,921 @@
+ERROR - 2024-05-08 03:35:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND MONTH(date_added) = 2024 GROUP BY item_type' at line 7 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n        SELEC...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n        SELEC...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#3 C:\xampp\htdocs\emslk\app\Models\EwasteListModel.php(277): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(984): App\Models\EwasteListModel->monthlyListings(NULL, '2024', '')
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-08 03:35:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND MONTH(date_added) = 2024 GROUP BY item_type' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+        SELECT 
+        item_type, 
+        COUNT(item_id) AS nooflist
+        FROM 
+        ewaste_listings
+        WHERE 
+        YEAR(date_added) =  AND MONTH(date_added) = 2024 GROUP BY item_type
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+        item_type, 
+        COUNT(item_id) AS nooflist
+        FROM 
+        ewaste_listings
+        WHERE 
+        YEAR(date_added) =  AND MONTH(date_added) = 2024 GROUP BY item_type
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+        item_type, 
+        COUNT(item_id) AS nooflist
+        FROM 
+        ewaste_listings
+        WHERE 
+        YEAR(date_added) =  AND MONTH(date_added) = 2024 GROUP BY item_type
+    ')
+ 4 APPPATH\Models\EwasteListModel.php(277): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+        item_type, 
+        COUNT(item_id) AS nooflist
+        FROM 
+        ewaste_listings
+        WHERE 
+        YEAR(date_added) =  AND MONTH(date_added) = 2024 GROUP BY item_type
+    ')
+ 5 APPPATH\Controllers\Sys.php(984): App\Models\EwasteListModel->monthlyListings(null, '2024', '')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-08 03:35:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND MONTH(date_added) = 2024 GROUP BY item_type' at line 7 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n        SELEC...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n        SELEC...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#3 C:\xampp\htdocs\emslk\app\Models\EwasteListModel.php(277): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(984): App\Models\EwasteListModel->monthlyListings(NULL, '2024', NULL)
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-08 03:35:52 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND MONTH(date_added) = 2024 GROUP BY item_type' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+        SELECT 
+        item_type, 
+        COUNT(item_id) AS nooflist
+        FROM 
+        ewaste_listings
+        WHERE 
+        YEAR(date_added) =  AND MONTH(date_added) = 2024 GROUP BY item_type
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+        item_type, 
+        COUNT(item_id) AS nooflist
+        FROM 
+        ewaste_listings
+        WHERE 
+        YEAR(date_added) =  AND MONTH(date_added) = 2024 GROUP BY item_type
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+        item_type, 
+        COUNT(item_id) AS nooflist
+        FROM 
+        ewaste_listings
+        WHERE 
+        YEAR(date_added) =  AND MONTH(date_added) = 2024 GROUP BY item_type
+    ')
+ 4 APPPATH\Models\EwasteListModel.php(277): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+        item_type, 
+        COUNT(item_id) AS nooflist
+        FROM 
+        ewaste_listings
+        WHERE 
+        YEAR(date_added) =  AND MONTH(date_added) = 2024 GROUP BY item_type
+    ')
+ 5 APPPATH\Controllers\Sys.php(984): App\Models\EwasteListModel->monthlyListings(null, '2024', null)
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-08 03:35:53 --> Invalid file: "sys/report_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/report_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/report_', [], true)
+ 3 APPPATH\Controllers\Sys.php(971): view('sys/report_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->view_reports()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-08 03:57:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY item_type' at line 8 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT \r\n      ...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...')
+#4 C:\xampp\htdocs\emslk\app\Models\EwasteListModel.php(321): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(984): App\Models\EwasteListModel->monthlyListings('2024', '')
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-08 03:57:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY item_type' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 
+            item_type, 
+            COUNT(item_id) AS nooflist
+        FROM 
+            ewaste_listings
+        WHERE 
+            YEAR(date_added) = 2024 AND MONTH(date_added) = 
+        GROUP BY item_type', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+            item_type, 
+            COUNT(item_id) AS nooflist
+        FROM 
+            ewaste_listings
+        WHERE 
+            YEAR(date_added) = 2024 AND MONTH(date_added) = 
+        GROUP BY item_type')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+            item_type, 
+            COUNT(item_id) AS nooflist
+        FROM 
+            ewaste_listings
+        WHERE 
+            YEAR(date_added) = 2024 AND MONTH(date_added) = 
+        GROUP BY item_type')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT 
+            item_type, 
+            COUNT(item_id) AS nooflist
+        FROM 
+            ewaste_listings
+        WHERE 
+            YEAR(date_added) = 2024 AND MONTH(date_added) = 
+        GROUP BY item_type')
+ 5 APPPATH\Models\EwasteListModel.php(321): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(984): App\Models\EwasteListModel->monthlyListings('2024', '')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-08 03:58:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY item_type' at line 8 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT \r\n      ...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...')
+#4 C:\xampp\htdocs\emslk\app\Models\EwasteListModel.php(321): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(984): App\Models\EwasteListModel->monthlyListings('2024', '')
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-08 03:58:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY item_type' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 
+            item_type, 
+            COUNT(item_id) AS nooflist
+        FROM 
+            ewaste_listings
+        WHERE 
+            YEAR(date_added) = 2024 AND MONTH(date_added) = 
+        GROUP BY item_type', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+            item_type, 
+            COUNT(item_id) AS nooflist
+        FROM 
+            ewaste_listings
+        WHERE 
+            YEAR(date_added) = 2024 AND MONTH(date_added) = 
+        GROUP BY item_type')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+            item_type, 
+            COUNT(item_id) AS nooflist
+        FROM 
+            ewaste_listings
+        WHERE 
+            YEAR(date_added) = 2024 AND MONTH(date_added) = 
+        GROUP BY item_type')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT 
+            item_type, 
+            COUNT(item_id) AS nooflist
+        FROM 
+            ewaste_listings
+        WHERE 
+            YEAR(date_added) = 2024 AND MONTH(date_added) = 
+        GROUP BY item_type')
+ 5 APPPATH\Models\EwasteListModel.php(321): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(984): App\Models\EwasteListModel->monthlyListings('2024', '')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-08 04:07:58 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY item_type' at line 8 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT \r\n      ...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...')
+#4 C:\xampp\htdocs\emslk\app\Models\EwasteListModel.php(321): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(984): App\Models\EwasteListModel->monthlyListings('2024', '')
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-08 04:07:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY item_type' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 
+            item_type, 
+            COUNT(item_id) AS nooflist
+        FROM 
+            ewaste_listings
+        WHERE 
+            YEAR(date_added) = 2024 AND MONTH(date_added) = 
+        GROUP BY item_type', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+            item_type, 
+            COUNT(item_id) AS nooflist
+        FROM 
+            ewaste_listings
+        WHERE 
+            YEAR(date_added) = 2024 AND MONTH(date_added) = 
+        GROUP BY item_type')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+            item_type, 
+            COUNT(item_id) AS nooflist
+        FROM 
+            ewaste_listings
+        WHERE 
+            YEAR(date_added) = 2024 AND MONTH(date_added) = 
+        GROUP BY item_type')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT 
+            item_type, 
+            COUNT(item_id) AS nooflist
+        FROM 
+            ewaste_listings
+        WHERE 
+            YEAR(date_added) = 2024 AND MONTH(date_added) = 
+        GROUP BY item_type')
+ 5 APPPATH\Models\EwasteListModel.php(321): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(984): App\Models\EwasteListModel->monthlyListings('2024', '')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-08 04:13:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY item_type' at line 8 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT \r\n      ...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...')
+#4 C:\xampp\htdocs\emslk\app\Models\EwasteListModel.php(311): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(984): App\Models\EwasteListModel->monthlyListings('2024', '')
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-08 04:13:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY item_type' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 
+                    item_type, 
+                    COUNT(item_id) AS nooflist
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2024 AND MONTH(date_added) = 
+                GROUP BY item_type', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+                    item_type, 
+                    COUNT(item_id) AS nooflist
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2024 AND MONTH(date_added) = 
+                GROUP BY item_type')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+                    item_type, 
+                    COUNT(item_id) AS nooflist
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2024 AND MONTH(date_added) = 
+                GROUP BY item_type')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT 
+                    item_type, 
+                    COUNT(item_id) AS nooflist
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2024 AND MONTH(date_added) = 
+                GROUP BY item_type')
+ 5 APPPATH\Models\EwasteListModel.php(311): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(984): App\Models\EwasteListModel->monthlyListings('2024', '')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-08 04:13:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY item_type' at line 8 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT \r\n      ...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...')
+#4 C:\xampp\htdocs\emslk\app\Models\EwasteListModel.php(311): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(984): App\Models\EwasteListModel->monthlyListings('2024', '')
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-08 04:13:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY item_type' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 
+                    item_type, 
+                    COUNT(item_id) AS nooflist
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2024 AND MONTH(date_added) = 
+                GROUP BY item_type', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+                    item_type, 
+                    COUNT(item_id) AS nooflist
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2024 AND MONTH(date_added) = 
+                GROUP BY item_type')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+                    item_type, 
+                    COUNT(item_id) AS nooflist
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2024 AND MONTH(date_added) = 
+                GROUP BY item_type')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT 
+                    item_type, 
+                    COUNT(item_id) AS nooflist
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2024 AND MONTH(date_added) = 
+                GROUP BY item_type')
+ 5 APPPATH\Models\EwasteListModel.php(311): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(984): App\Models\EwasteListModel->monthlyListings('2024', '')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-08 04:34:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 7 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT \r\n...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT \r\n...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT \r\n...')
+#3 C:\xampp\htdocs\emslk\app\Models\EwasteListModel.php(332): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT \r\n...')
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(985): App\Models\EwasteListModel->getSummary('2024', '-- Select Month...')
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-08 04:34:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT 
+        COUNT(*) AS totalListed,
+        SUM(CASE WHEN item_status_g NOT IN (\'Deleted\') THEN 1 ELSE 0 END) AS active,
+        SUM(CASE WHEN item_status_g = \'Accepted\' THEN 1 ELSE 0 END) AS soldOut,
+        SUM(CASE WHEN item_status_g = \'Deleted\' THEN 1 ELSE 0 END) AS deleted
+    FROM ewaste_listings
+    WHERE YEAR(date_added) = 2024 AND MONTH(date_added) = -- Select Month --', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT 
+        COUNT(*) AS totalListed,
+        SUM(CASE WHEN item_status_g NOT IN (\'Deleted\') THEN 1 ELSE 0 END) AS active,
+        SUM(CASE WHEN item_status_g = \'Accepted\' THEN 1 ELSE 0 END) AS soldOut,
+        SUM(CASE WHEN item_status_g = \'Deleted\' THEN 1 ELSE 0 END) AS deleted
+    FROM ewaste_listings
+    WHERE YEAR(date_added) = 2024 AND MONTH(date_added) = -- Select Month --')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT 
+        COUNT(*) AS totalListed,
+        SUM(CASE WHEN item_status_g NOT IN (\'Deleted\') THEN 1 ELSE 0 END) AS active,
+        SUM(CASE WHEN item_status_g = \'Accepted\' THEN 1 ELSE 0 END) AS soldOut,
+        SUM(CASE WHEN item_status_g = \'Deleted\' THEN 1 ELSE 0 END) AS deleted
+    FROM ewaste_listings
+    WHERE YEAR(date_added) = 2024 AND MONTH(date_added) = -- Select Month --')
+ 4 APPPATH\Models\EwasteListModel.php(332): CodeIgniter\Database\BaseConnection->query('
+    SELECT 
+        COUNT(*) AS totalListed,
+        SUM(CASE WHEN item_status_g NOT IN (\'Deleted\') THEN 1 ELSE 0 END) AS active,
+        SUM(CASE WHEN item_status_g = \'Accepted\' THEN 1 ELSE 0 END) AS soldOut,
+        SUM(CASE WHEN item_status_g = \'Deleted\' THEN 1 ELSE 0 END) AS deleted
+    FROM ewaste_listings
+    WHERE YEAR(date_added) = 2024 AND MONTH(date_added) = -- Select Month --')
+ 5 APPPATH\Controllers\Sys.php(985): App\Models\EwasteListModel->getSummary('2024', '-- Select Month --')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-08 04:34:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 7 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT \r\n...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT \r\n...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT \r\n...')
+#3 C:\xampp\htdocs\emslk\app\Models\EwasteListModel.php(332): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT \r\n...')
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(985): App\Models\EwasteListModel->getSummary('2023', '-- Select Month...')
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-08 04:34:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT 
+        COUNT(*) AS totalListed,
+        SUM(CASE WHEN item_status_g NOT IN (\'Deleted\') THEN 1 ELSE 0 END) AS active,
+        SUM(CASE WHEN item_status_g = \'Accepted\' THEN 1 ELSE 0 END) AS soldOut,
+        SUM(CASE WHEN item_status_g = \'Deleted\' THEN 1 ELSE 0 END) AS deleted
+    FROM ewaste_listings
+    WHERE YEAR(date_added) = 2023 AND MONTH(date_added) = -- Select Month --', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT 
+        COUNT(*) AS totalListed,
+        SUM(CASE WHEN item_status_g NOT IN (\'Deleted\') THEN 1 ELSE 0 END) AS active,
+        SUM(CASE WHEN item_status_g = \'Accepted\' THEN 1 ELSE 0 END) AS soldOut,
+        SUM(CASE WHEN item_status_g = \'Deleted\' THEN 1 ELSE 0 END) AS deleted
+    FROM ewaste_listings
+    WHERE YEAR(date_added) = 2023 AND MONTH(date_added) = -- Select Month --')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT 
+        COUNT(*) AS totalListed,
+        SUM(CASE WHEN item_status_g NOT IN (\'Deleted\') THEN 1 ELSE 0 END) AS active,
+        SUM(CASE WHEN item_status_g = \'Accepted\' THEN 1 ELSE 0 END) AS soldOut,
+        SUM(CASE WHEN item_status_g = \'Deleted\' THEN 1 ELSE 0 END) AS deleted
+    FROM ewaste_listings
+    WHERE YEAR(date_added) = 2023 AND MONTH(date_added) = -- Select Month --')
+ 4 APPPATH\Models\EwasteListModel.php(332): CodeIgniter\Database\BaseConnection->query('
+    SELECT 
+        COUNT(*) AS totalListed,
+        SUM(CASE WHEN item_status_g NOT IN (\'Deleted\') THEN 1 ELSE 0 END) AS active,
+        SUM(CASE WHEN item_status_g = \'Accepted\' THEN 1 ELSE 0 END) AS soldOut,
+        SUM(CASE WHEN item_status_g = \'Deleted\' THEN 1 ELSE 0 END) AS deleted
+    FROM ewaste_listings
+    WHERE YEAR(date_added) = 2023 AND MONTH(date_added) = -- Select Month --')
+ 5 APPPATH\Controllers\Sys.php(985): App\Models\EwasteListModel->getSummary('2023', '-- Select Month --')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-08 04:38:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 7 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT \r\n...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT \r\n...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT \r\n...')
+#3 C:\xampp\htdocs\emslk\app\Models\EwasteListModel.php(332): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT \r\n...')
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(985): App\Models\EwasteListModel->getSummary('2023', '-- Select Month...')
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-08 04:38:52 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT 
+        COUNT(*) AS totalListed,
+        SUM(CASE WHEN item_status_g NOT IN (\'Deleted\') THEN 1 ELSE 0 END) AS active,
+        SUM(CASE WHEN item_status_g = \'Accepted\' THEN 1 ELSE 0 END) AS soldOut,
+        SUM(CASE WHEN item_status_g = \'Deleted\' THEN 1 ELSE 0 END) AS deleted
+    FROM ewaste_listings
+    WHERE YEAR(date_added) = 2023 AND MONTH(date_added) = -- Select Month --', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT 
+        COUNT(*) AS totalListed,
+        SUM(CASE WHEN item_status_g NOT IN (\'Deleted\') THEN 1 ELSE 0 END) AS active,
+        SUM(CASE WHEN item_status_g = \'Accepted\' THEN 1 ELSE 0 END) AS soldOut,
+        SUM(CASE WHEN item_status_g = \'Deleted\' THEN 1 ELSE 0 END) AS deleted
+    FROM ewaste_listings
+    WHERE YEAR(date_added) = 2023 AND MONTH(date_added) = -- Select Month --')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT 
+        COUNT(*) AS totalListed,
+        SUM(CASE WHEN item_status_g NOT IN (\'Deleted\') THEN 1 ELSE 0 END) AS active,
+        SUM(CASE WHEN item_status_g = \'Accepted\' THEN 1 ELSE 0 END) AS soldOut,
+        SUM(CASE WHEN item_status_g = \'Deleted\' THEN 1 ELSE 0 END) AS deleted
+    FROM ewaste_listings
+    WHERE YEAR(date_added) = 2023 AND MONTH(date_added) = -- Select Month --')
+ 4 APPPATH\Models\EwasteListModel.php(332): CodeIgniter\Database\BaseConnection->query('
+    SELECT 
+        COUNT(*) AS totalListed,
+        SUM(CASE WHEN item_status_g NOT IN (\'Deleted\') THEN 1 ELSE 0 END) AS active,
+        SUM(CASE WHEN item_status_g = \'Accepted\' THEN 1 ELSE 0 END) AS soldOut,
+        SUM(CASE WHEN item_status_g = \'Deleted\' THEN 1 ELSE 0 END) AS deleted
+    FROM ewaste_listings
+    WHERE YEAR(date_added) = 2023 AND MONTH(date_added) = -- Select Month --')
+ 5 APPPATH\Controllers\Sys.php(985): App\Models\EwasteListModel->getSummary('2023', '-- Select Month --')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-08 04:39:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY item_type' at line 8 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT \r\n      ...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...')
+#4 C:\xampp\htdocs\emslk\app\Models\EwasteListModel.php(313): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(984): App\Models\EwasteListModel->monthlyListings('2024', NULL)
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-08 04:39:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY item_type' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 
+                    item_type, 
+                    COUNT(item_id) AS nooflist
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2024 AND MONTH(date_added) = 
+                GROUP BY item_type', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+                    item_type, 
+                    COUNT(item_id) AS nooflist
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2024 AND MONTH(date_added) = 
+                GROUP BY item_type')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+                    item_type, 
+                    COUNT(item_id) AS nooflist
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2024 AND MONTH(date_added) = 
+                GROUP BY item_type')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT 
+                    item_type, 
+                    COUNT(item_id) AS nooflist
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2024 AND MONTH(date_added) = 
+                GROUP BY item_type')
+ 5 APPPATH\Models\EwasteListModel.php(313): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(984): App\Models\EwasteListModel->monthlyListings('2024', null)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-08 04:40:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 7 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT \r\n...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT \r\n...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT \r\n...')
+#3 C:\xampp\htdocs\emslk\app\Models\EwasteListModel.php(332): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT \r\n...')
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(985): App\Models\EwasteListModel->getSummary('2024', '-- Select Month...')
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-08 04:40:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT 
+        COUNT(*) AS totalListed,
+        SUM(CASE WHEN item_status_g NOT IN (\'Deleted\') THEN 1 ELSE 0 END) AS active,
+        SUM(CASE WHEN item_status_g = \'Accepted\' THEN 1 ELSE 0 END) AS soldOut,
+        SUM(CASE WHEN item_status_g = \'Deleted\' THEN 1 ELSE 0 END) AS deleted
+    FROM ewaste_listings
+    WHERE YEAR(date_added) = 2024 AND MONTH(date_added) = -- Select Month --', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT 
+        COUNT(*) AS totalListed,
+        SUM(CASE WHEN item_status_g NOT IN (\'Deleted\') THEN 1 ELSE 0 END) AS active,
+        SUM(CASE WHEN item_status_g = \'Accepted\' THEN 1 ELSE 0 END) AS soldOut,
+        SUM(CASE WHEN item_status_g = \'Deleted\' THEN 1 ELSE 0 END) AS deleted
+    FROM ewaste_listings
+    WHERE YEAR(date_added) = 2024 AND MONTH(date_added) = -- Select Month --')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT 
+        COUNT(*) AS totalListed,
+        SUM(CASE WHEN item_status_g NOT IN (\'Deleted\') THEN 1 ELSE 0 END) AS active,
+        SUM(CASE WHEN item_status_g = \'Accepted\' THEN 1 ELSE 0 END) AS soldOut,
+        SUM(CASE WHEN item_status_g = \'Deleted\' THEN 1 ELSE 0 END) AS deleted
+    FROM ewaste_listings
+    WHERE YEAR(date_added) = 2024 AND MONTH(date_added) = -- Select Month --')
+ 4 APPPATH\Models\EwasteListModel.php(332): CodeIgniter\Database\BaseConnection->query('
+    SELECT 
+        COUNT(*) AS totalListed,
+        SUM(CASE WHEN item_status_g NOT IN (\'Deleted\') THEN 1 ELSE 0 END) AS active,
+        SUM(CASE WHEN item_status_g = \'Accepted\' THEN 1 ELSE 0 END) AS soldOut,
+        SUM(CASE WHEN item_status_g = \'Deleted\' THEN 1 ELSE 0 END) AS deleted
+    FROM ewaste_listings
+    WHERE YEAR(date_added) = 2024 AND MONTH(date_added) = -- Select Month --')
+ 5 APPPATH\Controllers\Sys.php(985): App\Models\EwasteListModel->getSummary('2024', '-- Select Month --')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-08 04:41:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 7 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT \r\n...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT \r\n...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT \r\n...')
+#3 C:\xampp\htdocs\emslk\app\Models\EwasteListModel.php(332): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT \r\n...')
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(985): App\Models\EwasteListModel->getSummary('2024', '-- Select Month...')
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-08 04:41:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT 
+        COUNT(*) AS totalListed,
+        SUM(CASE WHEN item_status_g NOT IN (\'Deleted\') THEN 1 ELSE 0 END) AS active,
+        SUM(CASE WHEN item_status_g = \'Accepted\' THEN 1 ELSE 0 END) AS soldOut,
+        SUM(CASE WHEN item_status_g = \'Deleted\' THEN 1 ELSE 0 END) AS deleted
+    FROM ewaste_listings
+    WHERE YEAR(date_added) = 2024 AND MONTH(date_added) = -- Select Month --', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT 
+        COUNT(*) AS totalListed,
+        SUM(CASE WHEN item_status_g NOT IN (\'Deleted\') THEN 1 ELSE 0 END) AS active,
+        SUM(CASE WHEN item_status_g = \'Accepted\' THEN 1 ELSE 0 END) AS soldOut,
+        SUM(CASE WHEN item_status_g = \'Deleted\' THEN 1 ELSE 0 END) AS deleted
+    FROM ewaste_listings
+    WHERE YEAR(date_added) = 2024 AND MONTH(date_added) = -- Select Month --')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT 
+        COUNT(*) AS totalListed,
+        SUM(CASE WHEN item_status_g NOT IN (\'Deleted\') THEN 1 ELSE 0 END) AS active,
+        SUM(CASE WHEN item_status_g = \'Accepted\' THEN 1 ELSE 0 END) AS soldOut,
+        SUM(CASE WHEN item_status_g = \'Deleted\' THEN 1 ELSE 0 END) AS deleted
+    FROM ewaste_listings
+    WHERE YEAR(date_added) = 2024 AND MONTH(date_added) = -- Select Month --')
+ 4 APPPATH\Models\EwasteListModel.php(332): CodeIgniter\Database\BaseConnection->query('
+    SELECT 
+        COUNT(*) AS totalListed,
+        SUM(CASE WHEN item_status_g NOT IN (\'Deleted\') THEN 1 ELSE 0 END) AS active,
+        SUM(CASE WHEN item_status_g = \'Accepted\' THEN 1 ELSE 0 END) AS soldOut,
+        SUM(CASE WHEN item_status_g = \'Deleted\' THEN 1 ELSE 0 END) AS deleted
+    FROM ewaste_listings
+    WHERE YEAR(date_added) = 2024 AND MONTH(date_added) = -- Select Month --')
+ 5 APPPATH\Controllers\Sys.php(985): App\Models\EwasteListModel->getSummary('2024', '-- Select Month --')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-08 05:23:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UserId= 63
+                GROUP BY item_type' at line 7 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT \r\n      ...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...')
+#4 C:\xampp\htdocs\emslk\app\Models\EwasteListModel.php(313): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(984): App\Models\EwasteListModel->monthlyListings('63', '2023', '')
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-08 05:23:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UserId= 63
+                GROUP BY item_type' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 
+                    item_type, 
+                    COUNT(item_id) AS nooflist
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2023 UserId= 63
+                GROUP BY item_type', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+                    item_type, 
+                    COUNT(item_id) AS nooflist
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2023 UserId= 63
+                GROUP BY item_type')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+                    item_type, 
+                    COUNT(item_id) AS nooflist
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2023 UserId= 63
+                GROUP BY item_type')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT 
+                    item_type, 
+                    COUNT(item_id) AS nooflist
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2023 UserId= 63
+                GROUP BY item_type')
+ 5 APPPATH\Models\EwasteListModel.php(313): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(984): App\Models\EwasteListModel->monthlyListings('63', '2023', '')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-08 05:24:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UserId= 63
+                GROUP BY item_type' at line 7 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT \r\n      ...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...')
+#4 C:\xampp\htdocs\emslk\app\Models\EwasteListModel.php(313): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(984): App\Models\EwasteListModel->monthlyListings('63', '2024', NULL)
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-08 05:24:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UserId= 63
+                GROUP BY item_type' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 
+                    item_type, 
+                    COUNT(item_id) AS nooflist
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2024 UserId= 63
+                GROUP BY item_type', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+                    item_type, 
+                    COUNT(item_id) AS nooflist
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2024 UserId= 63
+                GROUP BY item_type')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+                    item_type, 
+                    COUNT(item_id) AS nooflist
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2024 UserId= 63
+                GROUP BY item_type')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT 
+                    item_type, 
+                    COUNT(item_id) AS nooflist
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2024 UserId= 63
+                GROUP BY item_type')
+ 5 APPPATH\Models\EwasteListModel.php(313): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(984): App\Models\EwasteListModel->monthlyListings('63', '2024', null)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-08 05:24:58 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UserId= 63
+                GROUP BY item_type' at line 7 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT \r\n      ...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...')
+#4 C:\xampp\htdocs\emslk\app\Models\EwasteListModel.php(313): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(984): App\Models\EwasteListModel->monthlyListings('63', '2024', NULL)
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-08 05:24:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UserId= 63
+                GROUP BY item_type' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 
+                    item_type, 
+                    COUNT(item_id) AS nooflist
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2024 UserId= 63
+                GROUP BY item_type', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+                    item_type, 
+                    COUNT(item_id) AS nooflist
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2024 UserId= 63
+                GROUP BY item_type')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+                    item_type, 
+                    COUNT(item_id) AS nooflist
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2024 UserId= 63
+                GROUP BY item_type')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT 
+                    item_type, 
+                    COUNT(item_id) AS nooflist
+                FROM 
+                    ewaste_listings
+                WHERE 
+                    YEAR(date_added) = 2024 UserId= 63
+                GROUP BY item_type')
+ 5 APPPATH\Models\EwasteListModel.php(313): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(984): App\Models\EwasteListModel->monthlyListings('63', '2024', null)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-08 07:02:34 --> Undefined property: App\Controllers\Sys::$EwasteListModel
+in APPPATH\Controllers\Sys.php on line 1002.
+ 1 APPPATH\Controllers\Sys.php(1002): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Sys::$EwasteListModel', 'C:\\xampp\\htdocs\\emslk\\app\\Controllers\\Sys.php', 1002)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->export_monthly_report()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-08 07:04:40 --> Object of class App\Models\EwasteListModel could not be converted to string
+in APPPATH\Controllers\Sys.php on line 1004.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->export_monthly_report()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-08 07:17:34 --> Trait "App\Controllers\Dompdf\Dompdf" not found
+in APPPATH\Controllers\Sys.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-05-08 07:18:26 --> Class "Dompdf\Options" not found
+in APPPATH\Controllers\Sys.php on line 1050.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->export_monthly_report_pdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-08 07:31:38 --> Class "Dompdf\Options" not found
+in APPPATH\Controllers\Sys.php on line 1050.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->export_monthly_report_pdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-08 07:31:47 --> Class "Dompdf\Options" not found
+in APPPATH\Controllers\Sys.php on line 1050.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->export_monthly_report_pdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-08 07:42:33 --> Class "Dompdf\Options" not found
+in APPPATH\Controllers\Sys.php on line 1050.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->export_monthly_report_pdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-08 07:47:07 --> Class "Dompdf\Options" not found
+in APPPATH\Controllers\Sys.php on line 1050.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->export_monthly_report_pdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-08 07:47:09 --> Class "Dompdf\Options" not found
+in APPPATH\Controllers\Sys.php on line 1050.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->export_monthly_report_pdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-08 07:48:45 --> Class "Dompdf\Dompdf\Options" not found
+in APPPATH\Controllers\Sys.php on line 1051.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->export_monthly_report_pdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-08 07:50:40 --> Class "Dompdf\Dompdf\Options" not found
+in APPPATH\Controllers\Sys.php on line 1051.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->export_monthly_report_pdf()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

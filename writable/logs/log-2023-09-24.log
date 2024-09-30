@@ -1,0 +1,88 @@
+CRITICAL - 2023-09-24 06:22:35 --> Unclosed '{' on line 9
+in APPPATH\Controllers\Web.php on line 53.
+ 1 SYSTEMPATH\Router\Router.php(510): CodeIgniter\Router\AutoRouter->getRoute('/web', 'get')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('/web')
+ 3 SYSTEMPATH\CodeIgniter.php(813): CodeIgniter\Router\Router->handle('/web')
+ 4 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 06:22:49 --> Unclosed '{' on line 9
+in APPPATH\Controllers\Web.php on line 53.
+ 1 SYSTEMPATH\Router\Router.php(510): CodeIgniter\Router\AutoRouter->getRoute('/web', 'get')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('/web')
+ 3 SYSTEMPATH\CodeIgniter.php(813): CodeIgniter\Router\Router->handle('/web')
+ 4 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 11:51:01 --> syntax error, unexpected token "class", expecting "," or ";"
+in APPPATH\Controllers\Web.php on line 10.
+ 1 SYSTEMPATH\Router\Router.php(510): CodeIgniter\Router\AutoRouter->getRoute('/web', 'get')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('/web')
+ 3 SYSTEMPATH\CodeIgniter.php(813): CodeIgniter\Router\Router->handle('/web')
+ 4 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 11:52:32 --> Undefined variable $district_list
+in APPPATH\Views\web\registerewastegenerator.php on line 179.
+ 1 APPPATH\Views\web\registerewastegenerator.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $district_list', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php', 179)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/registerewastegenerator', [], true)
+ 5 APPPATH\Controllers\Web.php(16): view('web/registerewastegenerator')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->register_ewastegenerator()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 11:59:51 --> Undefined variable $district_list
+in APPPATH\Views\web\registerewastegenerator.php on line 179.
+ 1 APPPATH\Views\web\registerewastegenerator.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $district_list', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php', 179)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/registerewastegenerator', [], true)
+ 5 APPPATH\Controllers\Web.php(16): view('web/registerewastegenerator')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->register_ewastegenerator()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 12:01:27 --> Undefined variable $district_list
+in APPPATH\Views\web\registerewastegenerator.php on line 179.
+ 1 APPPATH\Views\web\registerewastegenerator.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $district_list', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php', 179)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/registerewastegenerator', [], true)
+ 5 APPPATH\Controllers\Web.php(17): view('web/registerewastegenerator')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->register_ewastegenerator()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 12:01:49 --> Undefined variable $district_list
+in APPPATH\Views\web\registerewastegenerator.php on line 179.
+ 1 APPPATH\Views\web\registerewastegenerator.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $district_list', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php', 179)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/registerewastegenerator', [], true)
+ 5 APPPATH\Controllers\Web.php(17): view('web/registerewastegenerator')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->register_ewastegenerator()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 12:22:04 --> Invalid file: "web/register_ewastegenerator.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('web/register_ewastegenerator.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/register_ewastegenerator', [], true)
+ 3 APPPATH\Controllers\Web.php(20): view('web/register_ewastegenerator', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->register_ewastegenerator()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 13:49:04 --> Undefined variable $district_list
+in APPPATH\Views\web\registerewastegenerator.php on line 179.
+ 1 APPPATH\Views\web\registerewastegenerator.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $district_list', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php', 179)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/registerewastegenerator', [], true)
+ 5 APPPATH\Controllers\Web.php(67): view('web/registerewastegenerator', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->save_ewaste_generator()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

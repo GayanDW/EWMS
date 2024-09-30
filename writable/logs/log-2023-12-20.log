@@ -1,0 +1,198 @@
+CRITICAL - 2023-12-20 03:27:27 --> Invalid file: "sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/menu_', [], true)
+ 3 APPPATH\Controllers\Sys.php(31): view('sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 08:47:42 --> Invalid file: "sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/menu_', [], true)
+ 3 APPPATH\Controllers\Sys.php(31): view('sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 09:06:26 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 99.
+ 1 APPPATH\Views\sys\bidding_form.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 99)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(162): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'logo.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 09:06:27 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 99.
+ 1 APPPATH\Views\sys\bidding_form.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 99)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(162): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 09:06:27 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 99.
+ 1 APPPATH\Views\sys\bidding_form.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 99)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(162): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 09:06:27 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 99.
+ 1 APPPATH\Views\sys\bidding_form.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 99)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(162): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 09:09:16 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 99.
+ 1 APPPATH\Views\sys\bidding_form.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 99)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(162): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 09:09:16 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 99.
+ 1 APPPATH\Views\sys\bidding_form.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 99)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(162): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'logo.png')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 09:09:16 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 99.
+ 1 APPPATH\Views\sys\bidding_form.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 99)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(162): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 09:09:16 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\bidding_form.php on line 99.
+ 1 APPPATH\Views\sys\bidding_form.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php', 99)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(162): view('sys/bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayBiddingForm('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 09:56:08 --> Attempt to read property "price_option" on array
+in APPPATH\Controllers\Sys.php on line 510.
+ 1 APPPATH\Controllers\Sys.php(510): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "price_option" on array', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 510)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayEwrBiddingForm('3')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 09:56:31 --> Attempt to read property "price_option" on array
+in APPPATH\Controllers\Sys.php on line 510.
+ 1 APPPATH\Controllers\Sys.php(510): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "price_option" on array', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 510)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayEwrBiddingForm('3')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 09:56:38 --> Attempt to read property "price_option" on array
+in APPPATH\Controllers\Sys.php on line 510.
+ 1 APPPATH\Controllers\Sys.php(510): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "price_option" on array', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 510)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayEwrBiddingForm('3')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 10:01:10 --> Undefined array key "price_option"
+in APPPATH\Controllers\Sys.php on line 493.
+ 1 APPPATH\Controllers\Sys.php(493): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "price_option"', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 493)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayEwrBiddingForm('3')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 10:01:11 --> Undefined array key "price_option"
+in APPPATH\Controllers\Sys.php on line 493.
+ 1 APPPATH\Controllers\Sys.php(493): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "price_option"', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 493)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayEwrBiddingForm('3')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 10:07:04 --> Undefined array key "price_option"
+in APPPATH\Controllers\Sys.php on line 493.
+ 1 APPPATH\Controllers\Sys.php(493): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "price_option"', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 493)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayEwrBiddingForm('3')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 10:07:05 --> Undefined array key "price_option"
+in APPPATH\Controllers\Sys.php on line 493.
+ 1 APPPATH\Controllers\Sys.php(493): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "price_option"', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 493)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayEwrBiddingForm('3')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 10:07:06 --> Undefined array key "price_option"
+in APPPATH\Controllers\Sys.php on line 493.
+ 1 APPPATH\Controllers\Sys.php(493): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "price_option"', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 493)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayEwrBiddingForm('3')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 10:07:06 --> Undefined array key "price_option"
+in APPPATH\Controllers\Sys.php on line 493.
+ 1 APPPATH\Controllers\Sys.php(493): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "price_option"', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 493)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayEwrBiddingForm('3')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 10:07:07 --> Undefined array key "price_option"
+in APPPATH\Controllers\Sys.php on line 493.
+ 1 APPPATH\Controllers\Sys.php(493): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "price_option"', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 493)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayEwrBiddingForm('3')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 10:07:36 --> Undefined array key "item_title"
+in APPPATH\Views\sys\ewr_bidding_form.php on line 65.
+ 1 APPPATH\Views\sys\ewr_bidding_form.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_title"', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewr_bidding_form.php', 65)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewr_bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewr_bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(495): view('sys/ewr_bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayEwrBiddingForm('3')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 10:19:20 --> Undefined variable $itemDetails
+in APPPATH\Views\sys\ewr_bidding_form.php on line 100.
+ 1 APPPATH\Views\sys\ewr_bidding_form.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $itemDetails', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewr_bidding_form.php', 100)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewr_bidding_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewr_bidding_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(495): view('sys/ewr_bidding_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayEwrBiddingForm('2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

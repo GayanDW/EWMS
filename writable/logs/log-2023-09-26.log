@@ -1,0 +1,11 @@
+CRITICAL - 2023-09-26 02:08:56 --> Undefined variable $district_list
+in APPPATH\Views\web\registerewastegenerator.php on line 192.
+ 1 APPPATH\Views\web\registerewastegenerator.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $district_list', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php', 192)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/registerewastegenerator', [], true)
+ 5 APPPATH\Controllers\Web.php(70): view('web/registerewastegenerator', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->save_ewaste_generator()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

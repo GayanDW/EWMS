@@ -1,0 +1,420 @@
+CRITICAL - 2024-05-04 04:42:06 --> CodeIgniter\Database\BaseConnection::query(): Argument #3 ($setEscapeFlags) must be of type bool, array given, called in C:\xampp\htdocs\emslk\app\Models\EwcListingsModel.php on line 91
+in SYSTEMPATH\Database\BaseConnection.php on line 569.
+ 1 APPPATH\Models\EwcListingsModel.php(91): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+    ewc_listings.*,
+    COALESCE(
+        MAX(CASE WHEN ewr_req.req_status_later = \'collected\' THEN \'Collected\' END),
+        MAX(CASE WHEN ewr_req.req_status_c = \'accepted\' THEN \'Accepted\' END),
+        \'Published\'
+    ) AS status
+FROM
+    ewc_listings
+LEFT JOIN
+    ewr_req ON ewc_listings.listing_set = ewr_req.listing_set
+WHERE
+    ewc_listings.UserId = ? ewc_listings.listing_set = ?
+
+    ', [...], [...])
+ 2 APPPATH\Controllers\Sys.php(1651): App\Models\EwcListingsModel->getListingDetailsAndItems('59', '1714285836')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewListingSetItemsEwc('1714285836')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-04 04:42:19 --> CodeIgniter\Database\BaseConnection::query(): Argument #3 ($setEscapeFlags) must be of type bool, array given, called in C:\xampp\htdocs\emslk\app\Models\EwcListingsModel.php on line 91
+in SYSTEMPATH\Database\BaseConnection.php on line 569.
+ 1 APPPATH\Models\EwcListingsModel.php(91): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+    ewc_listings.*,
+    COALESCE(
+        MAX(CASE WHEN ewr_req.req_status_later = \'collected\' THEN \'Collected\' END),
+        MAX(CASE WHEN ewr_req.req_status_c = \'accepted\' THEN \'Accepted\' END),
+        \'Published\'
+    ) AS status
+FROM
+    ewc_listings
+LEFT JOIN
+    ewr_req ON ewc_listings.listing_set = ewr_req.listing_set
+WHERE
+    ewc_listings.UserId = ? ewc_listings.listing_set = ?
+
+    ', [...], [...])
+ 2 APPPATH\Controllers\Sys.php(1651): App\Models\EwcListingsModel->getListingDetailsAndItems('59', '1714285836')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewListingSetItemsEwc('1714285836')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-04 04:42:22 --> CodeIgniter\Database\BaseConnection::query(): Argument #3 ($setEscapeFlags) must be of type bool, array given, called in C:\xampp\htdocs\emslk\app\Models\EwcListingsModel.php on line 91
+in SYSTEMPATH\Database\BaseConnection.php on line 569.
+ 1 APPPATH\Models\EwcListingsModel.php(91): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+    ewc_listings.*,
+    COALESCE(
+        MAX(CASE WHEN ewr_req.req_status_later = \'collected\' THEN \'Collected\' END),
+        MAX(CASE WHEN ewr_req.req_status_c = \'accepted\' THEN \'Accepted\' END),
+        \'Published\'
+    ) AS status
+FROM
+    ewc_listings
+LEFT JOIN
+    ewr_req ON ewc_listings.listing_set = ewr_req.listing_set
+WHERE
+    ewc_listings.UserId = ? ewc_listings.listing_set = ?
+
+    ', [...], [...])
+ 2 APPPATH\Controllers\Sys.php(1651): App\Models\EwcListingsModel->getListingDetailsAndItems('59', '1714285836')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewListingSetItemsEwc('1714285836')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-04 04:49:19 --> Undefined variable $status
+in APPPATH\Views\sys\view_SetEwc.php on line 43.
+ 1 APPPATH\Views\sys\view_SetEwc.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $status', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\view_SetEwc.php', 43)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\view_SetEwc.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/view_SetEwc', [], true)
+ 5 APPPATH\Controllers\Sys.php(1662): view('sys/view_SetEwc', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewListingSetItemsEwc('1714285836')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-04 04:50:13 --> Undefined variable $status
+in APPPATH\Views\sys\view_SetEwc.php on line 43.
+ 1 APPPATH\Views\sys\view_SetEwc.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $status', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\view_SetEwc.php', 43)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\view_SetEwc.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/view_SetEwc', [], true)
+ 5 APPPATH\Controllers\Sys.php(1662): view('sys/view_SetEwc', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewListingSetItemsEwc('1714285836')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-04 04:50:26 --> Undefined variable $status
+in APPPATH\Views\sys\view_SetEwc.php on line 43.
+ 1 APPPATH\Views\sys\view_SetEwc.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $status', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\view_SetEwc.php', 43)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\view_SetEwc.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/view_SetEwc', [], true)
+ 5 APPPATH\Controllers\Sys.php(1662): view('sys/view_SetEwc', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewListingSetItemsEwc('1714285836')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-04 05:30:50 --> syntax error, unexpected token "endif"
+in APPPATH\Views\sys\ewc_listings.php on line 52.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_listings', [], true)
+ 3 APPPATH\Controllers\Sys.php(1620): view('sys/ewc_listings', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-04 05:31:01 --> Undefined variable $status
+in APPPATH\Views\sys\ewc_listings.php on line 38.
+ 1 APPPATH\Views\sys\ewc_listings.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $status', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_listings.php', 38)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_listings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_listings', [], true)
+ 5 APPPATH\Controllers\Sys.php(1620): view('sys/ewc_listings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-04 05:36:11 --> Undefined variable $ListingSet
+in APPPATH\Views\sys\ewc_listings.php on line 43.
+ 1 APPPATH\Views\sys\ewc_listings.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ListingSet', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_listings.php', 43)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_listings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_listings', [], true)
+ 5 APPPATH\Controllers\Sys.php(1620): view('sys/ewc_listings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-04 08:57:35 --> Undefined variable $groupedListings
+in APPPATH\Views\sys\content_e-Waste Recycler.php on line 7.
+ 1 APPPATH\Views\sys\content_e-Waste Recycler.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $groupedListings', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Recycler.php', 7)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Recycler.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste recycler', [], true)
+ 5 APPPATH\Controllers\Sys.php(57): view('sys/content_e-waste recycler', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-04 09:25:48 --> Undefined variable $detail
+in APPPATH\Views\sys\content_e-Waste Recycler.php on line 32.
+ 1 APPPATH\Views\sys\content_e-Waste Recycler.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $detail', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Recycler.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Recycler.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste recycler', [], true)
+ 5 APPPATH\Controllers\Sys.php(57): view('sys/content_e-waste recycler', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-04 09:27:03 --> syntax error, unexpected end of file
+in APPPATH\Views\sys\content_e-Waste Recycler.php on line 73.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste recycler', [], true)
+ 3 APPPATH\Controllers\Sys.php(57): view('sys/content_e-waste recycler', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-04 09:28:24 --> syntax error, unexpected end of file
+in APPPATH\Views\sys\content_e-Waste Recycler.php on line 93.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste recycler', [], true)
+ 3 APPPATH\Controllers\Sys.php(57): view('sys/content_e-waste recycler', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-04 09:43:38 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\sys\content_e-Waste Recycler.php on line 12.
+ 1 APPPATH\Views\sys\content_e-Waste Recycler.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Recycler.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Recycler.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste recycler', [], true)
+ 5 APPPATH\Controllers\Sys.php(57): view('sys/content_e-waste recycler', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-04 09:44:32 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\sys\content_e-Waste Recycler.php on line 12.
+ 1 APPPATH\Views\sys\content_e-Waste Recycler.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Recycler.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Recycler.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste recycler', [], true)
+ 5 APPPATH\Controllers\Sys.php(57): view('sys/content_e-waste recycler', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-04 09:53:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AS final_status
+        FROM
+            ewc_listings
+        LEFT JOIN
+ ...' at line 8 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n        SELEC...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n        SELEC...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#3 C:\xampp\htdocs\emslk\app\Models\EwcListingsModel.php(119): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...', Array)
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(43): App\Models\EwcListingsModel->getListingsEwr('61')
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-04 09:53:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AS final_status
+        FROM
+            ewc_listings
+        LEFT JOIN
+ ...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+        SELECT 
+            ewc_listings.*,
+            COALESCE(
+        (CASE 
+            WHEN ewr_req.req_status_later IN (\'collected\') THEN ewr_req.req_status_later
+            WHEN ewr_req.req_status_r IN (\'accepted\', \'requested\') THEN ewr_req.req_status_r
+            ELSE \'Available\'
+         END) AS final_status
+        FROM
+            ewc_listings
+        LEFT JOIN
+            ewr_req ON ewc_listings.listing_set = ewr_req.listing_set AND ewr_req.UserId = \'61\'
+        GROUP BY
+            ewc_listings.ewc_listing_id, ewc_listings.listing_set
+        ORDER BY
+            ewc_listings.date_added DESC, ewc_listings.time_added DESC
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            ewc_listings.*,
+            COALESCE(
+        (CASE 
+            WHEN ewr_req.req_status_later IN (\'collected\') THEN ewr_req.req_status_later
+            WHEN ewr_req.req_status_r IN (\'accepted\', \'requested\') THEN ewr_req.req_status_r
+            ELSE \'Available\'
+         END) AS final_status
+        FROM
+            ewc_listings
+        LEFT JOIN
+            ewr_req ON ewc_listings.listing_set = ewr_req.listing_set AND ewr_req.UserId = \'61\'
+        GROUP BY
+            ewc_listings.ewc_listing_id, ewc_listings.listing_set
+        ORDER BY
+            ewc_listings.date_added DESC, ewc_listings.time_added DESC
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            ewc_listings.*,
+            COALESCE(
+        (CASE 
+            WHEN ewr_req.req_status_later IN (\'collected\') THEN ewr_req.req_status_later
+            WHEN ewr_req.req_status_r IN (\'accepted\', \'requested\') THEN ewr_req.req_status_r
+            ELSE \'Available\'
+         END) AS final_status
+        FROM
+            ewc_listings
+        LEFT JOIN
+            ewr_req ON ewc_listings.listing_set = ewr_req.listing_set AND ewr_req.UserId = \'61\'
+        GROUP BY
+            ewc_listings.ewc_listing_id, ewc_listings.listing_set
+        ORDER BY
+            ewc_listings.date_added DESC, ewc_listings.time_added DESC
+    ')
+ 4 APPPATH\Models\EwcListingsModel.php(119): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            ewc_listings.*,
+            COALESCE(
+        (CASE 
+            WHEN ewr_req.req_status_later IN (\'collected\') THEN ewr_req.req_status_later
+            WHEN ewr_req.req_status_r IN (\'accepted\', \'requested\') THEN ewr_req.req_status_r
+            ELSE \'Available\'
+         END) AS final_status
+        FROM
+            ewc_listings
+        LEFT JOIN
+            ewr_req ON ewc_listings.listing_set = ewr_req.listing_set AND ewr_req.UserId = ?
+        GROUP BY
+            ewc_listings.ewc_listing_id, ewc_listings.listing_set
+        ORDER BY
+            ewc_listings.date_added DESC, ewc_listings.time_added DESC
+    ', [...])
+ 5 APPPATH\Controllers\Sys.php(43): App\Models\EwcListingsModel->getListingsEwr('61')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-04 13:51:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AS final_status
+        FROM
+            ewc_listings
+        LEFT JOIN
+ ...' at line 8 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n        SELEC...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n        SELEC...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#3 C:\xampp\htdocs\emslk\app\Models\EwcListingsModel.php(119): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...', Array)
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(43): App\Models\EwcListingsModel->getListingsEwr('70')
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-04 13:51:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AS final_status
+        FROM
+            ewc_listings
+        LEFT JOIN
+ ...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+        SELECT 
+            ewc_listings.*,
+            COALESCE(
+        (CASE 
+            WHEN ewr_req.req_status_later IN (\'collected\') THEN ewr_req.req_status_later
+            WHEN ewr_req.req_status_r IN (\'accepted\', \'requested\') THEN ewr_req.req_status_r
+            ELSE \'Available\'
+         END) AS final_status
+        FROM
+            ewc_listings
+        LEFT JOIN
+            ewr_req ON ewc_listings.listing_set = ewr_req.listing_set AND ewr_req.UserId = \'70\'
+        GROUP BY
+            ewc_listings.ewc_listing_id, ewc_listings.listing_set
+        ORDER BY
+            ewc_listings.date_added DESC, ewc_listings.time_added DESC
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            ewc_listings.*,
+            COALESCE(
+        (CASE 
+            WHEN ewr_req.req_status_later IN (\'collected\') THEN ewr_req.req_status_later
+            WHEN ewr_req.req_status_r IN (\'accepted\', \'requested\') THEN ewr_req.req_status_r
+            ELSE \'Available\'
+         END) AS final_status
+        FROM
+            ewc_listings
+        LEFT JOIN
+            ewr_req ON ewc_listings.listing_set = ewr_req.listing_set AND ewr_req.UserId = \'70\'
+        GROUP BY
+            ewc_listings.ewc_listing_id, ewc_listings.listing_set
+        ORDER BY
+            ewc_listings.date_added DESC, ewc_listings.time_added DESC
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            ewc_listings.*,
+            COALESCE(
+        (CASE 
+            WHEN ewr_req.req_status_later IN (\'collected\') THEN ewr_req.req_status_later
+            WHEN ewr_req.req_status_r IN (\'accepted\', \'requested\') THEN ewr_req.req_status_r
+            ELSE \'Available\'
+         END) AS final_status
+        FROM
+            ewc_listings
+        LEFT JOIN
+            ewr_req ON ewc_listings.listing_set = ewr_req.listing_set AND ewr_req.UserId = \'70\'
+        GROUP BY
+            ewc_listings.ewc_listing_id, ewc_listings.listing_set
+        ORDER BY
+            ewc_listings.date_added DESC, ewc_listings.time_added DESC
+    ')
+ 4 APPPATH\Models\EwcListingsModel.php(119): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            ewc_listings.*,
+            COALESCE(
+        (CASE 
+            WHEN ewr_req.req_status_later IN (\'collected\') THEN ewr_req.req_status_later
+            WHEN ewr_req.req_status_r IN (\'accepted\', \'requested\') THEN ewr_req.req_status_r
+            ELSE \'Available\'
+         END) AS final_status
+        FROM
+            ewc_listings
+        LEFT JOIN
+            ewr_req ON ewc_listings.listing_set = ewr_req.listing_set AND ewr_req.UserId = ?
+        GROUP BY
+            ewc_listings.ewc_listing_id, ewc_listings.listing_set
+        ORDER BY
+            ewc_listings.date_added DESC, ewc_listings.time_added DESC
+    ', [...])
+ 5 APPPATH\Controllers\Sys.php(43): App\Models\EwcListingsModel->getListingsEwr('70')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-04 16:07:18 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 391.
+ 1 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Sys.php(1901): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ReqRespond()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-04 16:09:38 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 391.
+ 1 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Sys.php(1901): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ReqRespond()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-04 16:14:35 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 391.
+ 1 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Sys.php(1902): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ReqRespond()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

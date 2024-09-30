@@ -1,0 +1,163 @@
+CRITICAL - 2024-04-10 02:54:43 --> Undefined array key "bid_price_per_item"
+in APPPATH\Controllers\Sys.php on line 1055.
+ 1 APPPATH\Controllers\Sys.php(1055): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "bid_price_per_item"', 'C:\\xampp\\htdocs\\ems\\app\\Controllers\\Sys.php', 1055)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->collectItem('16')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-10 02:55:11 --> Undefined array key "bid_price_per_item"
+in APPPATH\Controllers\Sys.php on line 1055.
+ 1 APPPATH\Controllers\Sys.php(1055): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "bid_price_per_item"', 'C:\\xampp\\htdocs\\ems\\app\\Controllers\\Sys.php', 1055)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->collectItem('16')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-10 04:41:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, bids.bid_status_c, NULL) AS bid_status_c
+            FROM 
+             ...' at line 3 in C:\xampp\htdocs\ems\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ems\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT \r\n      ...', 0)
+#1 C:\xampp\htdocs\ems\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 C:\xampp\htdocs\ems\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 C:\xampp\htdocs\ems\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...', Array)
+#4 C:\xampp\htdocs\ems\app\Models\EwasteListModel.php(68): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\ems\app\Controllers\Sys.php(37): App\Models\EwasteListModel->getListingsForCollectors('59')
+#6 C:\xampp\htdocs\ems\system\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+#7 C:\xampp\htdocs\ems\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\ems\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ems\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-10 04:41:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, bids.bid_status_c, NULL) AS bid_status_c
+            FROM 
+             ...' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 
+                ewaste_listings.*,
+                IF(bids.UserId = ?, bids.bid_status_c, NULL) AS bid_status_c
+            FROM 
+                ewaste_listings
+            LEFT JOIN 
+                bids ON ewaste_listings.item_id = bids.item_id AND bids.UserId = ?
+            WHERE 
+                ewaste_listings.item_status_c != \'Deleted\'
+                AND (
+                    ewaste_listings.collection_status != \'Collected\' 
+                )
+                AND NOT EXISTS (
+                    SELECT 1 
+                    FROM bids b2
+                    WHERE b2.item_id = ewaste_listings.item_id 
+                    AND b2.bid_status_c = \'Accepted\'
+                    AND b2.UserId != ?
+                )
+            GROUP BY 
+                ewaste_listings.item_id', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+                ewaste_listings.*,
+                IF(bids.UserId = ?, bids.bid_status_c, NULL) AS bid_status_c
+            FROM 
+                ewaste_listings
+            LEFT JOIN 
+                bids ON ewaste_listings.item_id = bids.item_id AND bids.UserId = ?
+            WHERE 
+                ewaste_listings.item_status_c != \'Deleted\'
+                AND (
+                    ewaste_listings.collection_status != \'Collected\' 
+                )
+                AND NOT EXISTS (
+                    SELECT 1 
+                    FROM bids b2
+                    WHERE b2.item_id = ewaste_listings.item_id 
+                    AND b2.bid_status_c = \'Accepted\'
+                    AND b2.UserId != ?
+                )
+            GROUP BY 
+                ewaste_listings.item_id')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+                ewaste_listings.*,
+                IF(bids.UserId = ?, bids.bid_status_c, NULL) AS bid_status_c
+            FROM 
+                ewaste_listings
+            LEFT JOIN 
+                bids ON ewaste_listings.item_id = bids.item_id AND bids.UserId = ?
+            WHERE 
+                ewaste_listings.item_status_c != \'Deleted\'
+                AND (
+                    ewaste_listings.collection_status != \'Collected\' 
+                )
+                AND NOT EXISTS (
+                    SELECT 1 
+                    FROM bids b2
+                    WHERE b2.item_id = ewaste_listings.item_id 
+                    AND b2.bid_status_c = \'Accepted\'
+                    AND b2.UserId != ?
+                )
+            GROUP BY 
+                ewaste_listings.item_id')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT 
+                ewaste_listings.*,
+                IF(bids.UserId = ?, bids.bid_status_c, NULL) AS bid_status_c
+            FROM 
+                ewaste_listings
+            LEFT JOIN 
+                bids ON ewaste_listings.item_id = bids.item_id AND bids.UserId = ?
+            WHERE 
+                ewaste_listings.item_status_c != \'Deleted\'
+                AND (
+                    ewaste_listings.collection_status != \'Collected\' 
+                )
+                AND NOT EXISTS (
+                    SELECT 1 
+                    FROM bids b2
+                    WHERE b2.item_id = ewaste_listings.item_id 
+                    AND b2.bid_status_c = \'Accepted\'
+                    AND b2.UserId != ?
+                )
+            GROUP BY 
+                ewaste_listings.item_id', [...])
+ 5 APPPATH\Models\EwasteListModel.php(68): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(37): App\Models\EwasteListModel->getListingsForCollectors('59')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-10 05:15:34 --> Undefined variable $UserId
+in APPPATH\Models\EwasteListModel.php on line 78.
+ 1 APPPATH\Models\EwasteListModel.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $UserId', 'C:\\xampp\\htdocs\\ems\\app\\Models\\EwasteListModel.php', 78)
+ 2 APPPATH\Controllers\Sys.php(64): App\Models\EwasteListModel->getListingsForPendingBids('59')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->pendingBids()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-10 05:17:18 --> Undefined variable $UserId
+in APPPATH\Models\EwasteListModel.php on line 78.
+ 1 APPPATH\Models\EwasteListModel.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $UserId', 'C:\\xampp\\htdocs\\ems\\app\\Models\\EwasteListModel.php', 78)
+ 2 APPPATH\Controllers\Sys.php(64): App\Models\EwasteListModel->getListingsForPendingBids('59')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->pendingBids()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-10 05:19:22 --> Undefined variable $UserId
+in APPPATH\Models\EwasteListModel.php on line 78.
+ 1 APPPATH\Models\EwasteListModel.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $UserId', 'C:\\xampp\\htdocs\\ems\\app\\Models\\EwasteListModel.php', 78)
+ 2 APPPATH\Controllers\Sys.php(64): App\Models\EwasteListModel->getListingsForPendingBids('59')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->pendingBids()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-10 05:20:24 --> Undefined variable $UserId
+in APPPATH\Models\EwasteListModel.php on line 78.
+ 1 APPPATH\Models\EwasteListModel.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $UserId', 'C:\\xampp\\htdocs\\ems\\app\\Models\\EwasteListModel.php', 78)
+ 2 APPPATH\Controllers\Sys.php(64): App\Models\EwasteListModel->getListingsForPendingBids('59')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->pendingBids()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-10 05:22:03 --> Undefined variable $userId
+in APPPATH\Models\EwasteListModel.php on line 78.
+ 1 APPPATH\Models\EwasteListModel.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userId', 'C:\\xampp\\htdocs\\ems\\app\\Models\\EwasteListModel.php', 78)
+ 2 APPPATH\Controllers\Sys.php(64): App\Models\EwasteListModel->getListingsForPendingBids('59')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->pendingBids()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

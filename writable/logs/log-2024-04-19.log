@@ -1,0 +1,96 @@
+ERROR - 2024-04-19 03:48:43 --> mysqli_sql_exception: Unknown column 'rem_quantity' in 'where clause' in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\emslk\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\emslk\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\emslk\app\Models\EwasteListModel.php(118): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(799): App\Models\EwasteListModel->getSummary('2024', '4')
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#9 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-04-19 03:48:43 --> Unknown column 'rem_quantity' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `ewaste_listings`
+WHERE YEAR(date_added) = 2024 AND MONTH(date_added) = 4 AND `item_status_g` NOT IN (\'Deleted\') AND `rem_quantity` >0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `ewaste_listings`
+WHERE YEAR(date_added) = 2024 AND MONTH(date_added) = 4 AND `item_status_g` NOT IN (\'Deleted\') AND `rem_quantity` >0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `ewaste_listings`
+WHERE YEAR(date_added) = 2024 AND MONTH(date_added) = 4 AND `item_status_g` NOT IN (\'Deleted\') AND `rem_quantity` >0')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `ewaste_listings`
+WHERE YEAR(date_added) = 2024 AND MONTH(date_added) = 4 AND `item_status_g` NOT IN (\'Deleted\') AND `rem_quantity` >0', [], false)
+ 5 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Models\EwasteListModel.php(118): CodeIgniter\Model->countAllResults()
+ 7 APPPATH\Controllers\Sys.php(799): App\Models\EwasteListModel->getSummary('2024', '4')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 06:09:12 --> Undefined array key "bid_id"
+in APPPATH\Views\sys\view_bids1.php on line 80.
+ 1 APPPATH\Views\sys\view_bids1.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "bid_id"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\view_bids1.php', 80)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\view_bids1.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/view_bids1', [], true)
+ 5 APPPATH\Controllers\Sys.php(560): view('sys/view_bids1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBids('21')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 06:14:09 --> Undefined array key "UserId"
+in APPPATH\Views\sys\view_bids1.php on line 81.
+ 1 APPPATH\Views\sys\view_bids1.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "UserId"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\view_bids1.php', 81)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\view_bids1.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/view_bids1', [], true)
+ 5 APPPATH\Controllers\Sys.php(560): view('sys/view_bids1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBids('21')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 06:36:45 --> Undefined variable $UserId
+in APPPATH\Controllers\Sys.php on line 555.
+ 1 APPPATH\Controllers\Sys.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $UserId', 'C:\\xampp\\htdocs\\emslk\\app\\Controllers\\Sys.php', 555)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBids('24')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 06:37:42 --> Undefined variable $UserId
+in APPPATH\Controllers\Sys.php on line 555.
+ 1 APPPATH\Controllers\Sys.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $UserId', 'C:\\xampp\\htdocs\\emslk\\app\\Controllers\\Sys.php', 555)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBids('24')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 06:37:43 --> Undefined variable $UserId
+in APPPATH\Controllers\Sys.php on line 555.
+ 1 APPPATH\Controllers\Sys.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $UserId', 'C:\\xampp\\htdocs\\emslk\\app\\Controllers\\Sys.php', 555)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBids('24')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 06:37:48 --> Undefined variable $UserId
+in APPPATH\Controllers\Sys.php on line 555.
+ 1 APPPATH\Controllers\Sys.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $UserId', 'C:\\xampp\\htdocs\\emslk\\app\\Controllers\\Sys.php', 555)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBids('23')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 07:14:09 --> Undefined array key "businessName"
+in APPPATH\Views\sys\view_bids1.php on line 39.
+ 1 APPPATH\Views\sys\view_bids1.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "businessName"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\view_bids1.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\view_bids1.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/view_bids1', [], true)
+ 5 APPPATH\Controllers\Sys.php(567): view('sys/view_bids1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBids('23')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

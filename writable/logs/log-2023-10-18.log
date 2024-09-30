@@ -1,0 +1,18 @@
+CRITICAL - 2023-10-18 04:48:33 --> Invalid file: "sys/menu_addEwaste.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/menu_addEwaste.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/menu_addEwaste', [], true)
+ 3 APPPATH\Controllers\Sys.php(33): view('sys/menu_addEwaste')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->addEwasteView()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-18 04:52:23 --> Invalid file: "sys/menu_addEwaste.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/menu_addEwaste.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/menu_addEwaste', [], true)
+ 3 APPPATH\Controllers\Sys.php(34): view('sys/menu_addEwaste')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->addEwasteView()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

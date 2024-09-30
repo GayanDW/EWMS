@@ -1,0 +1,134 @@
+CRITICAL - 2024-03-28 06:33:29 --> Undefined variable $data
+in APPPATH\Controllers\Web.php on line 19.
+ 1 APPPATH\Controllers\Web.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Web.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-28 06:33:39 --> Undefined variable $data
+in APPPATH\Controllers\Web.php on line 19.
+ 1 APPPATH\Controllers\Web.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Web.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-28 06:34:12 --> Undefined variable $f_list
+in APPPATH\Views\web\Index.php on line 331.
+ 1 APPPATH\Views\web\Index.php(331): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $f_list', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\Index.php', 331)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\Index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/index', [], true)
+ 5 APPPATH\Controllers\Web.php(19): view('web/index')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-28 06:55:46 --> Undefined variable $district_list
+in APPPATH\Views\web\registerewastegenerator.php on line 224.
+ 1 APPPATH\Views\web\registerewastegenerator.php(224): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $district_list', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php', 224)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/registerewastegenerator', [], true)
+ 5 APPPATH\Controllers\Web.php(47): view('web/registerewastegenerator')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->register_ewastegenerator()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-28 06:59:17 --> Undefined variable $district_list
+in APPPATH\Views\web\registerewastegenerator.php on line 224.
+ 1 APPPATH\Views\web\registerewastegenerator.php(224): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $district_list', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php', 224)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/registerewastegenerator', [], true)
+ 5 APPPATH\Controllers\Web.php(47): view('web/registerewastegenerator')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->register_ewastegenerator()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-28 07:51:27 --> Undefined array key "Id"
+in APPPATH\Views\web\registerewastegenerator.php on line 225.
+ 1 APPPATH\Views\web\registerewastegenerator.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Id"', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php', 225)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/registerewastegenerator', [], true)
+ 5 APPPATH\Controllers\Web.php(48): view('web/registerewastegenerator', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->register_ewastegenerator()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-28 07:52:26 --> Undefined array key "Id"
+in APPPATH\Views\web\registerewastegenerator.php on line 225.
+ 1 APPPATH\Views\web\registerewastegenerator.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Id"', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php', 225)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/registerewastegenerator', [], true)
+ 5 APPPATH\Controllers\Web.php(48): view('web/registerewastegenerator', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->register_ewastegenerator()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-28 07:53:06 --> Undefined array key "Id"
+in APPPATH\Views\web\registerewastegenerator.php on line 225.
+ 1 APPPATH\Views\web\registerewastegenerator.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Id"', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php', 225)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/registerewastegenerator', [], true)
+ 5 APPPATH\Controllers\Web.php(48): view('web/registerewastegenerator', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->register_ewastegenerator()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-28 07:53:07 --> Undefined array key "Id"
+in APPPATH\Views\web\registerewastegenerator.php on line 225.
+ 1 APPPATH\Views\web\registerewastegenerator.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Id"', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php', 225)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/registerewastegenerator', [], true)
+ 5 APPPATH\Controllers\Web.php(48): view('web/registerewastegenerator', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->register_ewastegenerator()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-28 07:53:09 --> Undefined array key "Id"
+in APPPATH\Views\web\registerewastegenerator.php on line 225.
+ 1 APPPATH\Views\web\registerewastegenerator.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Id"', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php', 225)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/registerewastegenerator', [], true)
+ 5 APPPATH\Controllers\Web.php(48): view('web/registerewastegenerator', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->register_ewastegenerator()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-28 07:53:10 --> Undefined array key "Id"
+in APPPATH\Views\web\registerewastegenerator.php on line 225.
+ 1 APPPATH\Views\web\registerewastegenerator.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Id"', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php', 225)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/registerewastegenerator', [], true)
+ 5 APPPATH\Controllers\Web.php(48): view('web/registerewastegenerator', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->register_ewastegenerator()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-28 07:53:11 --> Undefined array key "Id"
+in APPPATH\Views\web\registerewastegenerator.php on line 225.
+ 1 APPPATH\Views\web\registerewastegenerator.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Id"', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php', 225)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastegenerator.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/registerewastegenerator', [], true)
+ 5 APPPATH\Controllers\Web.php(48): view('web/registerewastegenerator', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->register_ewastegenerator()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-28 08:07:02 --> "District" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 286.
+ 1 SYSTEMPATH\Validation\Validation.php(286): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('District')
+ 2 SYSTEMPATH\Validation\Validation.php(182): CodeIgniter\Validation\Validation->processRules('district', 'district', '', [...], [...])
+ 3 SYSTEMPATH\Controller.php(141): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Web.php(102): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->save_ewaste_generator()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

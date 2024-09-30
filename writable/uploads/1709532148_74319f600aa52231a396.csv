@@ -1,0 +1,80 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Mar 03, 2024 at 01:14 PM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `ewms`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ewr_req`
+--
+
+CREATE TABLE `ewr_req` (
+  `ewr_req_id` int(11) NOT NULL,
+  `listing_set` varchar(255) DEFAULT NULL,
+  `UserId` int(11) DEFAULT NULL,
+  `recycler_id` int(11) DEFAULT NULL,
+  `your_note` text DEFAULT NULL,
+  `pref_day` date DEFAULT NULL,
+  `slot_start` time DEFAULT NULL,
+  `slot_end` time DEFAULT NULL,
+  `alt_day1` date DEFAULT NULL,
+  `alt_start1` time DEFAULT NULL,
+  `alt_end1` time DEFAULT NULL,
+  `pref_selection` varchar(100) DEFAULT NULL,
+  `alt_selection` varchar(100) DEFAULT NULL,
+  `req_status_c` varchar(50) DEFAULT NULL,
+  `req_status_r` varchar(50) DEFAULT NULL,
+  `rejection_reason` text DEFAULT NULL,
+  `payment_method` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `ewr_req`
+--
+
+INSERT INTO `ewr_req` (`ewr_req_id`, `listing_set`, `UserId`, `recycler_id`, `your_note`, `pref_day`, `slot_start`, `slot_end`, `alt_day1`, `alt_start1`, `alt_end1`, `pref_selection`, `alt_selection`, `req_status_c`, `req_status_r`, `rejection_reason`, `payment_method`) VALUES
+(2, '1708257147', 61, NULL, 'please respond soonaaa', '2024-01-01', '10:00:00', '11:00:00', '2024-01-02', '10:00:00', '11:00:00', NULL, '1', 'accepted', 'accepted', NULL, 'bank_transfer');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `ewr_req`
+--
+ALTER TABLE `ewr_req`
+  ADD PRIMARY KEY (`ewr_req_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `ewr_req`
+--
+ALTER TABLE `ewr_req`
+  MODIFY `ewr_req_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

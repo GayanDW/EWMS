@@ -1,0 +1,455 @@
+CRITICAL - 2024-05-03 05:02:13 --> Undefined variable $listingSetId
+in APPPATH\Views\sys\request_form.php on line 46.
+ 1 APPPATH\Views\sys\request_form.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $listingSetId', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\request_form.php', 46)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\request_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/request_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(1671): view('sys/request_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayRequestForm('1714285836')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 05:02:33 --> Undefined variable $listingSetId
+in APPPATH\Views\sys\request_form.php on line 46.
+ 1 APPPATH\Views\sys\request_form.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $listingSetId', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\request_form.php', 46)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\request_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/request_form', [], true)
+ 5 APPPATH\Controllers\Sys.php(1671): view('sys/request_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayRequestForm('1714285836')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 05:22:20 --> Invalid file: "sys/displayRequestForm.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/displayRequestForm.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/displayRequestForm', [], true)
+ 3 APPPATH\Controllers\Sys.php(1714): view('sys/displayRequestForm', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->submitRequest()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 05:27:28 --> CodeIgniter\HTTP\RedirectResponse::with(): Argument #1 ($key) must be of type string, array given, called in C:\xampp\htdocs\emslk\app\Controllers\Sys.php on line 1714
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 130.
+ 1 APPPATH\Controllers\Sys.php(1714): CodeIgniter\HTTP\RedirectResponse->with([...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->submitRequest()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 05:28:02 --> CodeIgniter\HTTP\RedirectResponse::with(): Argument #1 ($key) must be of type string, array given, called in C:\xampp\htdocs\emslk\app\Controllers\Sys.php on line 1714
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 130.
+ 1 APPPATH\Controllers\Sys.php(1714): CodeIgniter\HTTP\RedirectResponse->with([...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->submitRequest()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 05:54:18 --> Too few arguments to function App\Controllers\Sys::displayRequestForm(), 0 passed in C:\xampp\htdocs\emslk\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Sys.php on line 1646.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayRequestForm()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 06:00:10 --> Too few arguments to function App\Controllers\Sys::displayRequestForm(), 0 passed in C:\xampp\htdocs\emslk\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Sys.php on line 1646.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayRequestForm()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 06:00:58 --> Too few arguments to function App\Controllers\Sys::displayRequestForm(), 0 passed in C:\xampp\htdocs\emslk\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Sys.php on line 1646.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayRequestForm()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 06:00:59 --> Too few arguments to function App\Controllers\Sys::displayRequestForm(), 0 passed in C:\xampp\htdocs\emslk\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Sys.php on line 1646.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayRequestForm()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 06:01:00 --> Too few arguments to function App\Controllers\Sys::displayRequestForm(), 0 passed in C:\xampp\htdocs\emslk\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Sys.php on line 1646.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayRequestForm()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 06:01:00 --> Too few arguments to function App\Controllers\Sys::displayRequestForm(), 0 passed in C:\xampp\htdocs\emslk\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Sys.php on line 1646.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayRequestForm()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 06:01:01 --> Too few arguments to function App\Controllers\Sys::displayRequestForm(), 0 passed in C:\xampp\htdocs\emslk\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Sys.php on line 1646.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayRequestForm()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 06:01:01 --> Too few arguments to function App\Controllers\Sys::displayRequestForm(), 0 passed in C:\xampp\htdocs\emslk\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Sys.php on line 1646.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayRequestForm()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 06:01:01 --> Too few arguments to function App\Controllers\Sys::displayRequestForm(), 0 passed in C:\xampp\htdocs\emslk\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Sys.php on line 1646.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayRequestForm()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 06:01:02 --> Too few arguments to function App\Controllers\Sys::displayRequestForm(), 0 passed in C:\xampp\htdocs\emslk\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Sys.php on line 1646.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayRequestForm()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 06:01:02 --> Too few arguments to function App\Controllers\Sys::displayRequestForm(), 0 passed in C:\xampp\htdocs\emslk\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Sys.php on line 1646.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayRequestForm()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 06:01:02 --> Too few arguments to function App\Controllers\Sys::displayRequestForm(), 0 passed in C:\xampp\htdocs\emslk\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Sys.php on line 1646.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayRequestForm()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 06:01:03 --> Too few arguments to function App\Controllers\Sys::displayRequestForm(), 0 passed in C:\xampp\htdocs\emslk\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Sys.php on line 1646.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayRequestForm()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 06:01:03 --> Too few arguments to function App\Controllers\Sys::displayRequestForm(), 0 passed in C:\xampp\htdocs\emslk\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Sys.php on line 1646.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayRequestForm()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 06:01:03 --> Too few arguments to function App\Controllers\Sys::displayRequestForm(), 0 passed in C:\xampp\htdocs\emslk\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Sys.php on line 1646.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayRequestForm()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 06:01:07 --> 1714285836 is not a valid HTTP return status code
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 155.
+ 1 SYSTEMPATH\HTTP\ResponseTrait.php(155): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode(1714285836)
+ 2 SYSTEMPATH\HTTP\ResponseTrait.php(544): CodeIgniter\HTTP\Response->setStatusCode(1714285836)
+ 3 SYSTEMPATH\HTTP\RedirectResponse.php(40): CodeIgniter\HTTP\Response->redirect('http://localhost/emslk/sys/displayRequestForm', 'auto', 1714285836)
+ 4 APPPATH\Controllers\Sys.php(1718): CodeIgniter\HTTP\RedirectResponse->to('http://localhost/emslk/sys/displayRequestForm', 1714285836)
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->submitRequest()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 06:19:07 --> Undefined variable $listingSetId
+in APPPATH\Views\sys\received_requests.php on line 15.
+ 1 APPPATH\Views\sys\received_requests.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $listingSetId', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\received_requests.php', 15)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\received_requests.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/received_requests', [], true)
+ 5 APPPATH\Controllers\Sys.php(1787): view('sys/received_requests', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewReqEwc('1714285836')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 09:25:29 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\view_SetEwc.php on line 19.
+ 1 APPPATH\Views\sys\view_SetEwc.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\view_SetEwc.php', 19)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\view_SetEwc.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/view_SetEwc', [], true)
+ 5 APPPATH\Controllers\Sys.php(1601): view('sys/view_SetEwc', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewListingSetItemsEwc('1714285836')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 09:56:13 --> Undefined array key 0
+in APPPATH\Views\sys\ewc_listings.php on line 29.
+ 1 APPPATH\Views\sys\ewc_listings.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_listings.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_listings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_listings', [], true)
+ 5 APPPATH\Controllers\Sys.php(1580): view('sys/ewc_listings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 10:24:29 --> Undefined variable $loop
+in APPPATH\Views\sys\ewc_listings.php on line 30.
+ 1 APPPATH\Views\sys\ewc_listings.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $loop', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_listings.php', 30)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_listings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_listings', [], true)
+ 5 APPPATH\Controllers\Sys.php(1614): view('sys/ewc_listings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-03 10:31:41 --> mysqli_sql_exception: Unknown column 'ewc_listings.ewc_listing_set' in 'group statement' in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n        SELEC...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n        SELEC...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#3 C:\xampp\htdocs\emslk\app\Models\EwcListingsModel.php(68): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...', Array)
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1590): App\Models\EwcListingsModel->getListingsWithRequestStatus('59')
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-03 10:31:41 --> Unknown column 'ewc_listings.ewc_listing_set' in 'group statement'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+        SELECT 
+            ewc_listings.*,
+            ewr_req.req_status_c,
+            ewr_req.req_status_r
+        FROM
+            ewc_listings
+        LEFT JOIN
+            ewr_req ON ewc_listings.listing_set = ewr_req.listing_set
+        WHERE
+            ewc_listings.UserId = \'59\'
+        GROUP BY
+            ewc_listings.ewc_listing_set
+        ORDER BY
+            ewc_listings.date_added DESC, ewc_listings.time_added DESC
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            ewc_listings.*,
+            ewr_req.req_status_c,
+            ewr_req.req_status_r
+        FROM
+            ewc_listings
+        LEFT JOIN
+            ewr_req ON ewc_listings.listing_set = ewr_req.listing_set
+        WHERE
+            ewc_listings.UserId = \'59\'
+        GROUP BY
+            ewc_listings.ewc_listing_set
+        ORDER BY
+            ewc_listings.date_added DESC, ewc_listings.time_added DESC
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            ewc_listings.*,
+            ewr_req.req_status_c,
+            ewr_req.req_status_r
+        FROM
+            ewc_listings
+        LEFT JOIN
+            ewr_req ON ewc_listings.listing_set = ewr_req.listing_set
+        WHERE
+            ewc_listings.UserId = \'59\'
+        GROUP BY
+            ewc_listings.ewc_listing_set
+        ORDER BY
+            ewc_listings.date_added DESC, ewc_listings.time_added DESC
+        ')
+ 4 APPPATH\Models\EwcListingsModel.php(68): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            ewc_listings.*,
+            ewr_req.req_status_c,
+            ewr_req.req_status_r
+        FROM
+            ewc_listings
+        LEFT JOIN
+            ewr_req ON ewc_listings.listing_set = ewr_req.listing_set
+        WHERE
+            ewc_listings.UserId = ?
+        GROUP BY
+            ewc_listings.ewc_listing_set
+        ORDER BY
+            ewc_listings.date_added DESC, ewc_listings.time_added DESC
+        ', [...])
+ 5 APPPATH\Controllers\Sys.php(1590): App\Models\EwcListingsModel->getListingsWithRequestStatus('59')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 14:12:33 --> Undefined array key "req_status_c"
+in APPPATH\Views\sys\ewc_listings.php on line 38.
+ 1 APPPATH\Views\sys\ewc_listings.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "req_status_c"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_listings.php', 38)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_listings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_listings', [], true)
+ 5 APPPATH\Controllers\Sys.php(1614): view('sys/ewc_listings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 14:12:49 --> Undefined array key "req_status_c"
+in APPPATH\Views\sys\ewc_listings.php on line 38.
+ 1 APPPATH\Views\sys\ewc_listings.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "req_status_c"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_listings.php', 38)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_listings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_listings', [], true)
+ 5 APPPATH\Controllers\Sys.php(1614): view('sys/ewc_listings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 14:14:35 --> Undefined array key "status"
+in APPPATH\Views\sys\ewc_listings.php on line 36.
+ 1 APPPATH\Views\sys\ewc_listings.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_listings.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_listings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_listings', [], true)
+ 5 APPPATH\Controllers\Sys.php(1614): view('sys/ewc_listings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 14:14:45 --> Undefined array key "status"
+in APPPATH\Views\sys\ewc_listings.php on line 36.
+ 1 APPPATH\Views\sys\ewc_listings.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_listings.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_listings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_listings', [], true)
+ 5 APPPATH\Controllers\Sys.php(1614): view('sys/ewc_listings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 14:24:57 --> Undefined property: App\Controllers\Sys::$EwcListingsModel
+in APPPATH\Controllers\Sys.php on line 1592.
+ 1 APPPATH\Controllers\Sys.php(1592): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Sys::$EwcListingsModel', 'C:\\xampp\\htdocs\\emslk\\app\\Controllers\\Sys.php', 1592)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 14:26:17 --> Undefined property: App\Controllers\Sys::$EwcListingsModel
+in APPPATH\Controllers\Sys.php on line 1592.
+ 1 APPPATH\Controllers\Sys.php(1592): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Sys::$EwcListingsModel', 'C:\\xampp\\htdocs\\emslk\\app\\Controllers\\Sys.php', 1592)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 14:26:18 --> Undefined property: App\Controllers\Sys::$EwcListingsModel
+in APPPATH\Controllers\Sys.php on line 1592.
+ 1 APPPATH\Controllers\Sys.php(1592): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Sys::$EwcListingsModel', 'C:\\xampp\\htdocs\\emslk\\app\\Controllers\\Sys.php', 1592)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 14:29:10 --> Object of class App\Models\EwcListingsModel could not be converted to string
+in APPPATH\Controllers\Sys.php on line 1592.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 14:36:48 --> Undefined array key "total_quantity"
+in APPPATH\Views\sys\ewc_listings.php on line 27.
+ 1 APPPATH\Views\sys\ewc_listings.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "total_quantity"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_listings.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_listings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_listings', [], true)
+ 5 APPPATH\Controllers\Sys.php(1620): view('sys/ewc_listings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-03 15:02:36 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'OVER (PARTITION BY ewc_listings.listing_set) AS status,
+    SUM(ewc_listings...' at line 7 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT \r\n...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT \r\n...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT \r\n...')
+#3 C:\xampp\htdocs\emslk\app\Models\EwcListingsModel.php(72): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT \r\n...', Array)
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1591): App\Models\EwcListingsModel->getListingsWithRequestStatus('59')
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-03 15:02:36 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'OVER (PARTITION BY ewc_listings.listing_set) AS status,
+    SUM(ewc_listings...' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT 
+    ewc_listings.*,  -- Select all columns from ewc_listings
+    COALESCE(
+        MAX(CASE WHEN ewr_req.req_status_later = \'collected\' THEN \'Collected\' END),
+        MAX(CASE WHEN ewr_req.req_status_c = \'accepted\' THEN \'Accepted\' END),
+        \'Published\'
+    ) OVER (PARTITION BY ewc_listings.listing_set) AS status,
+    SUM(ewc_listings.quantity) OVER (PARTITION BY ewc_listings.listing_set) AS total_quantity,
+    SUM(ewc_listings.weight) OVER (PARTITION BY ewc_listings.listing_set) AS total_weight
+FROM
+    ewc_listings
+LEFT JOIN
+    ewr_req ON ewc_listings.listing_set = ewr_req.listing_set
+WHERE
+    ewc_listings.UserId = \'59\'
+ORDER BY
+    ewc_listings.date_added DESC, ewc_listings.time_added DESC
+
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT 
+    ewc_listings.*,  -- Select all columns from ewc_listings
+    COALESCE(
+        MAX(CASE WHEN ewr_req.req_status_later = \'collected\' THEN \'Collected\' END),
+        MAX(CASE WHEN ewr_req.req_status_c = \'accepted\' THEN \'Accepted\' END),
+        \'Published\'
+    ) OVER (PARTITION BY ewc_listings.listing_set) AS status,
+    SUM(ewc_listings.quantity) OVER (PARTITION BY ewc_listings.listing_set) AS total_quantity,
+    SUM(ewc_listings.weight) OVER (PARTITION BY ewc_listings.listing_set) AS total_weight
+FROM
+    ewc_listings
+LEFT JOIN
+    ewr_req ON ewc_listings.listing_set = ewr_req.listing_set
+WHERE
+    ewc_listings.UserId = \'59\'
+ORDER BY
+    ewc_listings.date_added DESC, ewc_listings.time_added DESC
+
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT 
+    ewc_listings.*,  -- Select all columns from ewc_listings
+    COALESCE(
+        MAX(CASE WHEN ewr_req.req_status_later = \'collected\' THEN \'Collected\' END),
+        MAX(CASE WHEN ewr_req.req_status_c = \'accepted\' THEN \'Accepted\' END),
+        \'Published\'
+    ) OVER (PARTITION BY ewc_listings.listing_set) AS status,
+    SUM(ewc_listings.quantity) OVER (PARTITION BY ewc_listings.listing_set) AS total_quantity,
+    SUM(ewc_listings.weight) OVER (PARTITION BY ewc_listings.listing_set) AS total_weight
+FROM
+    ewc_listings
+LEFT JOIN
+    ewr_req ON ewc_listings.listing_set = ewr_req.listing_set
+WHERE
+    ewc_listings.UserId = \'59\'
+ORDER BY
+    ewc_listings.date_added DESC, ewc_listings.time_added DESC
+
+    ')
+ 4 APPPATH\Models\EwcListingsModel.php(72): CodeIgniter\Database\BaseConnection->query('
+    SELECT 
+    ewc_listings.*,  -- Select all columns from ewc_listings
+    COALESCE(
+        MAX(CASE WHEN ewr_req.req_status_later = \'collected\' THEN \'Collected\' END),
+        MAX(CASE WHEN ewr_req.req_status_c = \'accepted\' THEN \'Accepted\' END),
+        \'Published\'
+    ) OVER (PARTITION BY ewc_listings.listing_set) AS status,
+    SUM(ewc_listings.quantity) OVER (PARTITION BY ewc_listings.listing_set) AS total_quantity,
+    SUM(ewc_listings.weight) OVER (PARTITION BY ewc_listings.listing_set) AS total_weight
+FROM
+    ewc_listings
+LEFT JOIN
+    ewr_req ON ewc_listings.listing_set = ewr_req.listing_set
+WHERE
+    ewc_listings.UserId = ?
+ORDER BY
+    ewc_listings.date_added DESC, ewc_listings.time_added DESC
+
+    ', [...])
+ 5 APPPATH\Controllers\Sys.php(1591): App\Models\EwcListingsModel->getListingsWithRequestStatus('59')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,56 @@
+CRITICAL - 2024-04-06 04:11:17 --> Invalid file: "sys/example_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/example_view.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/example_view', [], true)
+ 3 APPPATH\Controllers\Prac.php(98): view('sys/example_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Prac->practice4()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prac))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-06 04:11:32 --> Invalid file: "sys/example_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/example_view.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/example_view', [], true)
+ 3 APPPATH\Controllers\Prac.php(98): view('sys/example_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Prac->practice4()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prac))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-06 04:11:44 --> Invalid file: "sys/example_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/example_view.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/example_view', [], true)
+ 3 APPPATH\Controllers\Prac.php(98): view('sys/example_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Prac->practice4()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prac))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-06 04:11:48 --> Invalid file: "sys/example_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/example_view.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/example_view', [], true)
+ 3 APPPATH\Controllers\Prac.php(98): view('sys/example_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Prac->practice4()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prac))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-06 04:18:14 --> Undefined variable $message4
+in APPPATH\Views\sys\prac\example_view.php on line 12.
+ 1 APPPATH\Views\sys\prac\example_view.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message4', 'C:\\xampp\\htdocs\\practice_ewms\\app\\Views\\sys\\prac\\example_view.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\practice_ewms\\app\\Views\\sys\\prac\\example_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/prac/example_view', [], true)
+ 5 APPPATH\Controllers\Prac.php(98): view('sys/prac/example_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Prac->practice4()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prac))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-06 04:47:23 --> Invalid file: "sys/input_form.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/input_form.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/input_form', [], true)
+ 3 APPPATH\Controllers\Prac.php(72): view('sys/input_form')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Prac->viwInputForm()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prac))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

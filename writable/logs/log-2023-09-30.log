@@ -1,0 +1,108 @@
+CRITICAL - 2023-09-30 04:20:07 --> Class "App\Models\UserModel" not found
+in APPPATH\Controllers\Web.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->make_register()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 04:24:05 --> Class "App\Models\UserModel" not found
+in APPPATH\Controllers\Web.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->make_register()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 04:24:18 --> Class "App\Models\UserModel" not found
+in APPPATH\Controllers\Web.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->make_register()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 10:08:12 --> Class "App\Controllers\CustomerModel" not found
+in APPPATH\Controllers\Web.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->make_register()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 10:10:50 --> Class "App\Controllers\CustomerModel" not found
+in APPPATH\Controllers\Web.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->make_register()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 10:10:56 --> Class "App\Controllers\CustomerModel" not found
+in APPPATH\Controllers\Web.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->make_register()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 10:11:07 --> Class "App\Controllers\CustomerModel" not found
+in APPPATH\Controllers\Web.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->make_register()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 10:17:49 --> Class "App\Controllers\CustomerModel" not found
+in APPPATH\Controllers\Web.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->make_register()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 10:17:52 --> Class "App\Controllers\CustomerModel" not found
+in APPPATH\Controllers\Web.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->make_register()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 10:32:04 --> Class "App\Models\CustomerModel" not found
+in APPPATH\Controllers\Web.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->make_register()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 10:32:08 --> Class "App\Models\CustomerModel" not found
+in APPPATH\Controllers\Web.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->make_register()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 10:32:24 --> Class "App\Models\CustomerModel" not found
+in APPPATH\Controllers\Web.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->make_register()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 11:12:28 --> Class "App\Models\CustomerModel" not found
+in APPPATH\Controllers\Web.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->make_register()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 11:12:42 --> Class "App\Models\CustomerModel" not found
+in APPPATH\Controllers\Web.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->make_register()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 11:13:44 --> Class "App\Models\CustomerModel" not found
+in APPPATH\Controllers\Web.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->make_register()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 11:24:59 --> Class "App\Models\CustomerModel" not found
+in APPPATH\Controllers\Web.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->make_register()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 11:25:03 --> Class "App\Models\CustomerModel" not found
+in APPPATH\Controllers\Web.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->make_register()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 11:25:54 --> Class "App\Models\CustomerModel" not found
+in APPPATH\Controllers\Web.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->make_register()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

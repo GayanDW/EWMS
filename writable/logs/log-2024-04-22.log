@@ -1,0 +1,378 @@
+ERROR - 2024-04-22 11:52:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM 
+                ewaste_listings e
+            LEFT JOIN 
+           ...' at line 6 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n            S...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\r\n            S...')
+#4 C:\xampp\htdocs\emslk\app\Models\EwasteListModel.php(43): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(37): App\Models\EwasteListModel->getListingsForCollectors('59')
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-22 11:52:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM 
+                ewaste_listings e
+            LEFT JOIN 
+           ...' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+            SELECT 
+                e.*, 
+                b.bid_status_c, 
+                b.bid_id, 
+               
+            FROM 
+                ewaste_listings e
+            LEFT JOIN 
+                bids b ON e.item_id = b.item_id
+            WHERE 
+                b.UserId = \'59\' 
+                
+            GROUP BY 
+                e.item_id;
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                e.*, 
+                b.bid_status_c, 
+                b.bid_id, 
+               
+            FROM 
+                ewaste_listings e
+            LEFT JOIN 
+                bids b ON e.item_id = b.item_id
+            WHERE 
+                b.UserId = \'59\' 
+                
+            GROUP BY 
+                e.item_id;
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                e.*, 
+                b.bid_status_c, 
+                b.bid_id, 
+               
+            FROM 
+                ewaste_listings e
+            LEFT JOIN 
+                bids b ON e.item_id = b.item_id
+            WHERE 
+                b.UserId = \'59\' 
+                
+            GROUP BY 
+                e.item_id;
+        ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                e.*, 
+                b.bid_status_c, 
+                b.bid_id, 
+               
+            FROM 
+                ewaste_listings e
+            LEFT JOIN 
+                bids b ON e.item_id = b.item_id
+            WHERE 
+                b.UserId = \'59\' 
+                
+            GROUP BY 
+                e.item_id;
+        ')
+ 5 APPPATH\Models\EwasteListModel.php(43): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(37): App\Models\EwasteListModel->getListingsForCollectors('59')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-22 12:35:13 --> syntax error, unexpected token "endforeach", expecting "elseif" or "else" or "endif"
+in APPPATH\Views\sys\content_e-Waste Collector.php on line 84.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste collector', [], true)
+ 3 APPPATH\Controllers\Sys.php(51): view('sys/content_e-waste collector', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-22 12:38:30 --> Undefined array key "rejection_reason"
+in APPPATH\Views\sys\content_e-Waste Collector.php on line 68.
+ 1 APPPATH\Views\sys\content_e-Waste Collector.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rejection_reason"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Collector.php', 68)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Collector.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste collector', [], true)
+ 5 APPPATH\Controllers\Sys.php(51): view('sys/content_e-waste collector', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-22 12:42:49 --> Undefined array key "rejection_reason"
+in APPPATH\Views\sys\content_e-Waste Collector.php on line 69.
+ 1 APPPATH\Views\sys\content_e-Waste Collector.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rejection_reason"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Collector.php', 69)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Collector.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste collector', [], true)
+ 5 APPPATH\Controllers\Sys.php(51): view('sys/content_e-waste collector', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-22 12:43:20 --> Undefined array key "rejection_reason"
+in APPPATH\Views\sys\content_e-Waste Collector.php on line 70.
+ 1 APPPATH\Views\sys\content_e-Waste Collector.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rejection_reason"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Collector.php', 70)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Collector.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste collector', [], true)
+ 5 APPPATH\Controllers\Sys.php(51): view('sys/content_e-waste collector', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-22 13:39:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND (bids.bid_status_c = 'Bids Pending' OR bids.bid_status_c IS NULL)
+      ...' at line 10 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n            S...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\r\n            S...')
+#4 C:\xampp\htdocs\emslk\app\Models\EwasteListModel.php(43): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(37): App\Models\EwasteListModel->getColDash('58')
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-22 13:39:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND (bids.bid_status_c = 'Bids Pending' OR bids.bid_status_c IS NULL)
+      ...' at line 10
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+            SELECT 
+                e.*, 
+                b.bid_status_c, 
+                b.bid_id
+            FROM 
+                ewaste_listings e
+            LEFT JOIN 
+                bids b ON e.item_id = b.item_id
+            WHERE 
+                b.UserId = \'58\' OR AND (bids.bid_status_c = \'Bids Pending\' OR bids.bid_status_c IS NULL)
+                
+            GROUP BY 
+                e.item_id;
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                e.*, 
+                b.bid_status_c, 
+                b.bid_id
+            FROM 
+                ewaste_listings e
+            LEFT JOIN 
+                bids b ON e.item_id = b.item_id
+            WHERE 
+                b.UserId = \'58\' OR AND (bids.bid_status_c = \'Bids Pending\' OR bids.bid_status_c IS NULL)
+                
+            GROUP BY 
+                e.item_id;
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                e.*, 
+                b.bid_status_c, 
+                b.bid_id
+            FROM 
+                ewaste_listings e
+            LEFT JOIN 
+                bids b ON e.item_id = b.item_id
+            WHERE 
+                b.UserId = \'58\' OR AND (bids.bid_status_c = \'Bids Pending\' OR bids.bid_status_c IS NULL)
+                
+            GROUP BY 
+                e.item_id;
+        ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                e.*, 
+                b.bid_status_c, 
+                b.bid_id
+            FROM 
+                ewaste_listings e
+            LEFT JOIN 
+                bids b ON e.item_id = b.item_id
+            WHERE 
+                b.UserId = \'58\' OR AND (bids.bid_status_c = \'Bids Pending\' OR bids.bid_status_c IS NULL)
+                
+            GROUP BY 
+                e.item_id;
+        ')
+ 5 APPPATH\Models\EwasteListModel.php(43): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(37): App\Models\EwasteListModel->getColDash('58')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-22 13:39:58 --> mysqli_sql_exception: Unknown column 'bids.bid_status_c' in 'where clause' in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n            S...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\r\n            S...')
+#4 C:\xampp\htdocs\emslk\app\Models\EwasteListModel.php(43): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(37): App\Models\EwasteListModel->getColDash('58')
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-22 13:39:58 --> Unknown column 'bids.bid_status_c' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+            SELECT 
+                e.*, 
+                b.bid_status_c, 
+                b.bid_id
+            FROM 
+                ewaste_listings e
+            LEFT JOIN 
+                bids b ON e.item_id = b.item_id
+            WHERE 
+                b.UserId = \'58\' OR (bids.bid_status_c = \'Bids Pending\' OR bids.bid_status_c IS NULL)
+                
+            GROUP BY 
+                e.item_id;
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                e.*, 
+                b.bid_status_c, 
+                b.bid_id
+            FROM 
+                ewaste_listings e
+            LEFT JOIN 
+                bids b ON e.item_id = b.item_id
+            WHERE 
+                b.UserId = \'58\' OR (bids.bid_status_c = \'Bids Pending\' OR bids.bid_status_c IS NULL)
+                
+            GROUP BY 
+                e.item_id;
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                e.*, 
+                b.bid_status_c, 
+                b.bid_id
+            FROM 
+                ewaste_listings e
+            LEFT JOIN 
+                bids b ON e.item_id = b.item_id
+            WHERE 
+                b.UserId = \'58\' OR (bids.bid_status_c = \'Bids Pending\' OR bids.bid_status_c IS NULL)
+                
+            GROUP BY 
+                e.item_id;
+        ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                e.*, 
+                b.bid_status_c, 
+                b.bid_id
+            FROM 
+                ewaste_listings e
+            LEFT JOIN 
+                bids b ON e.item_id = b.item_id
+            WHERE 
+                b.UserId = \'58\' OR (bids.bid_status_c = \'Bids Pending\' OR bids.bid_status_c IS NULL)
+                
+            GROUP BY 
+                e.item_id;
+        ')
+ 5 APPPATH\Models\EwasteListModel.php(43): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(37): App\Models\EwasteListModel->getColDash('58')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-22 13:39:59 --> mysqli_sql_exception: Unknown column 'bids.bid_status_c' in 'where clause' in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n            S...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\r\n            S...')
+#4 C:\xampp\htdocs\emslk\app\Models\EwasteListModel.php(43): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(37): App\Models\EwasteListModel->getColDash('58')
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-22 13:39:59 --> Unknown column 'bids.bid_status_c' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+            SELECT 
+                e.*, 
+                b.bid_status_c, 
+                b.bid_id
+            FROM 
+                ewaste_listings e
+            LEFT JOIN 
+                bids b ON e.item_id = b.item_id
+            WHERE 
+                b.UserId = \'58\' OR (bids.bid_status_c = \'Bids Pending\' OR bids.bid_status_c IS NULL)
+                
+            GROUP BY 
+                e.item_id;
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                e.*, 
+                b.bid_status_c, 
+                b.bid_id
+            FROM 
+                ewaste_listings e
+            LEFT JOIN 
+                bids b ON e.item_id = b.item_id
+            WHERE 
+                b.UserId = \'58\' OR (bids.bid_status_c = \'Bids Pending\' OR bids.bid_status_c IS NULL)
+                
+            GROUP BY 
+                e.item_id;
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                e.*, 
+                b.bid_status_c, 
+                b.bid_id
+            FROM 
+                ewaste_listings e
+            LEFT JOIN 
+                bids b ON e.item_id = b.item_id
+            WHERE 
+                b.UserId = \'58\' OR (bids.bid_status_c = \'Bids Pending\' OR bids.bid_status_c IS NULL)
+                
+            GROUP BY 
+                e.item_id;
+        ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                e.*, 
+                b.bid_status_c, 
+                b.bid_id
+            FROM 
+                ewaste_listings e
+            LEFT JOIN 
+                bids b ON e.item_id = b.item_id
+            WHERE 
+                b.UserId = \'58\' OR (bids.bid_status_c = \'Bids Pending\' OR bids.bid_status_c IS NULL)
+                
+            GROUP BY 
+                e.item_id;
+        ')
+ 5 APPPATH\Models\EwasteListModel.php(43): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(37): App\Models\EwasteListModel->getColDash('58')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

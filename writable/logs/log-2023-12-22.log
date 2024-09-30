@@ -1,0 +1,683 @@
+CRITICAL - 2023-12-22 08:57:57 --> Invalid file: "sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/menu_', [], true)
+ 3 APPPATH\Controllers\Sys.php(495): view('sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayEwrBiddingForm('4')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 08:57:58 --> Invalid file: "sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/menu_', [], true)
+ 3 APPPATH\Controllers\Sys.php(32): view('sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 08:57:58 --> Invalid file: "sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/menu_', [], true)
+ 3 APPPATH\Controllers\Sys.php(32): view('sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 08:57:58 --> Invalid file: "sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/menu_', [], true)
+ 3 APPPATH\Controllers\Sys.php(32): view('sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 08:57:58 --> Invalid file: "sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/menu_', [], true)
+ 3 APPPATH\Controllers\Sys.php(32): view('sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 09:42:07 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(489): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayEwrBiddingForm('assets', 'img', 'messages-1.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 09:42:07 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(489): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayEwrBiddingForm('assets', 'img', 'messages-2.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 09:42:07 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(489): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayEwrBiddingForm('assets', 'img', 'logo.png')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 09:42:07 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(489): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayEwrBiddingForm('assets', 'img', 'messages-3.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 09:42:19 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(489): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayEwrBiddingForm('assets', 'img', 'logo.png')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 09:42:19 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(489): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayEwrBiddingForm('assets', 'img', 'messages-2.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 09:42:19 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(489): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayEwrBiddingForm('assets', 'img', 'messages-3.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 09:42:19 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(489): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayEwrBiddingForm('assets', 'img', 'messages-1.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 09:51:48 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(516): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayEwrBiddingForm('assets', 'img', 'logo.png')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 09:51:48 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(516): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayEwrBiddingForm('assets', 'img', 'messages-2.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 09:51:48 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(516): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayEwrBiddingForm('assets', 'img', 'messages-1.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 09:51:48 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(516): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->displayEwrBiddingForm('assets', 'img', 'messages-3.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 09:52:39 --> Invalid file: "sys/viewEwcInventory.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/viewEwcInventory.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/viewEwcInventory', [], true)
+ 3 APPPATH\Controllers\Sys.php(505): view('sys/viewEwcInventory', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->unpublishInventoryItem('5')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 09:54:04 --> Invalid file: "sys/viewEwcInventory.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/viewEwcInventory.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/viewEwcInventory', [], true)
+ 3 APPPATH\Controllers\Sys.php(477): view('sys/viewEwcInventory', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('5')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 09:54:36 --> Invalid file: "sys/viewEwcInventory.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/viewEwcInventory.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/viewEwcInventory', [], true)
+ 3 APPPATH\Controllers\Sys.php(505): view('sys/viewEwcInventory', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->unpublishInventoryItem('5')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 09:57:39 --> Undefined variable $inventoryItems
+in APPPATH\Views\sys\ewc_inventory.php on line 25.
+ 1 APPPATH\Views\sys\ewc_inventory.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $inventoryItems', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_inventory', [], true)
+ 5 APPPATH\Controllers\Sys.php(505): view('sys/ewc_inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->unpublishInventoryItem('3')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:01:58 --> Undefined variable $inventoryItems
+in APPPATH\Views\sys\ewc_inventory.php on line 25.
+ 1 APPPATH\Views\sys\ewc_inventory.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $inventoryItems', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_inventory', [], true)
+ 5 APPPATH\Controllers\Sys.php(505): view('sys/ewc_inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->unpublishInventoryItem('2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:08:28 --> Undefined variable $inventoryItems
+in APPPATH\Views\sys\ewc_inventory.php on line 25.
+ 1 APPPATH\Views\sys\ewc_inventory.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $inventoryItems', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_inventory', [], true)
+ 5 APPPATH\Controllers\Sys.php(482): view('sys/ewc_inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('3')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:08:28 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(446): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'logo.png')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:08:29 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(446): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'messages-1.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:08:29 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(446): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'messages-2.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:08:29 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(446): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'messages-3.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:10:56 --> Undefined variable $inventoryItems
+in APPPATH\Views\sys\ewc_inventory.php on line 25.
+ 1 APPPATH\Views\sys\ewc_inventory.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $inventoryItems', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_inventory', [], true)
+ 5 APPPATH\Controllers\Sys.php(514): view('sys/ewc_inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->unpublishInventoryItem('3')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:11:05 --> Undefined variable $inventoryItems
+in APPPATH\Views\sys\ewc_inventory.php on line 25.
+ 1 APPPATH\Views\sys\ewc_inventory.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $inventoryItems', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_inventory', [], true)
+ 5 APPPATH\Controllers\Sys.php(485): view('sys/ewc_inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('3')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:11:05 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(449): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'messages-1.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:11:05 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(449): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'logo.png')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:11:05 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(449): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'messages-3.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:11:05 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(449): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'messages-2.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:15:08 --> Undefined variable $inventoryItems
+in APPPATH\Views\sys\ewc_inventory.php on line 25.
+ 1 APPPATH\Views\sys\ewc_inventory.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $inventoryItems', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_inventory', [], true)
+ 5 APPPATH\Controllers\Sys.php(485): view('sys/ewc_inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('3')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:15:08 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(449): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'messages-1.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:15:08 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(449): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'logo.png')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:15:08 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(449): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'messages-2.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:15:08 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(449): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'messages-3.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:15:11 --> Undefined variable $inventoryItems
+in APPPATH\Views\sys\ewc_inventory.php on line 25.
+ 1 APPPATH\Views\sys\ewc_inventory.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $inventoryItems', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_inventory', [], true)
+ 5 APPPATH\Controllers\Sys.php(485): view('sys/ewc_inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('3')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:15:11 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(449): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'logo.png')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:15:11 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(449): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'messages-2.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:15:11 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(449): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'messages-1.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:15:11 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(449): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'messages-3.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:15:18 --> Undefined variable $inventoryItems
+in APPPATH\Views\sys\ewc_inventory.php on line 25.
+ 1 APPPATH\Views\sys\ewc_inventory.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $inventoryItems', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_inventory', [], true)
+ 5 APPPATH\Controllers\Sys.php(514): view('sys/ewc_inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->unpublishInventoryItem('3')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:17:45 --> Undefined variable $inventoryItems
+in APPPATH\Views\sys\ewc_inventory.php on line 25.
+ 1 APPPATH\Views\sys\ewc_inventory.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $inventoryItems', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_inventory', [], true)
+ 5 APPPATH\Controllers\Sys.php(513): view('sys/ewc_inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->unpublishInventoryItem('3')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:17:56 --> Undefined variable $inventoryItems
+in APPPATH\Views\sys\ewc_inventory.php on line 25.
+ 1 APPPATH\Views\sys\ewc_inventory.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $inventoryItems', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_inventory', [], true)
+ 5 APPPATH\Controllers\Sys.php(484): view('sys/ewc_inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('3')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:17:57 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(448): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'messages-1.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:17:57 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(448): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'logo.png')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:17:57 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(448): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'messages-3.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:17:57 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(448): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'messages-2.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:20:30 --> Undefined variable $inventoryItems
+in APPPATH\Views\sys\ewc_inventory.php on line 25.
+ 1 APPPATH\Views\sys\ewc_inventory.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $inventoryItems', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_inventory', [], true)
+ 5 APPPATH\Controllers\Sys.php(484): view('sys/ewc_inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('3')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:20:31 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(448): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'messages-2.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:20:31 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(448): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'logo.png')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:20:31 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(448): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'messages-1.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:20:31 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(448): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'messages-3.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:22:13 --> Undefined variable $inventoryItems
+in APPPATH\Views\sys\ewc_inventory.php on line 25.
+ 1 APPPATH\Views\sys\ewc_inventory.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $inventoryItems', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_inventory', [], true)
+ 5 APPPATH\Controllers\Sys.php(479): view('sys/ewc_inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('3')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:22:13 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(443): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'logo.png')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:22:13 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(443): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'messages-1.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:22:13 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(443): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'messages-3.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:22:13 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(443): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'messages-2.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:24:49 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(443): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'messages-1.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:24:49 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(443): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'logo.png')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:24:49 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(443): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'messages-3.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:24:49 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(443): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'messages-2.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:25:13 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(443): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'messages-3.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:25:13 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(443): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'logo.png')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:25:13 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(443): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'messages-1.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:25:13 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(443): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publishInventoryItem('assets', 'img', 'messages-2.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:25:18 --> Undefined variable $inventoryItems
+in APPPATH\Views\sys\ewc_inventory.php on line 25.
+ 1 APPPATH\Views\sys\ewc_inventory.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $inventoryItems', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_inventory', [], true)
+ 5 APPPATH\Controllers\Sys.php(515): view('sys/ewc_inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->unpublishInventoryItem('2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:29:06 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(501): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->unpublishInventoryItem('assets', 'img', 'messages-1.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:29:06 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(501): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->unpublishInventoryItem('assets', 'img', 'logo.png')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:29:06 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(501): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->unpublishInventoryItem('assets', 'img', 'messages-2.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 10:29:06 --> Invalid file: "sys/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/dashboard', [], true)
+ 3 APPPATH\Controllers\Sys.php(501): view('sys/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->unpublishInventoryItem('assets', 'img', 'messages-3.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

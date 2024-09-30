@@ -1,0 +1,52 @@
+CRITICAL - 2023-10-30 10:52:15 --> Undefined variable $data
+in APPPATH\Controllers\Sys.php on line 29.
+ 1 APPPATH\Controllers\Sys.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 12:30:05 --> Invalid file: "detailed_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detailed_view.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('detailed_view', [], true)
+ 3 APPPATH\Controllers\Sys.php(135): view('detailed_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedView('9')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 12:30:05 --> Invalid file: "detailed_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detailed_view.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('detailed_view', [], true)
+ 3 APPPATH\Controllers\Sys.php(135): view('detailed_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedView('assets', 'img', 'messages-1.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 12:30:05 --> Invalid file: "detailed_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detailed_view.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('detailed_view', [], true)
+ 3 APPPATH\Controllers\Sys.php(135): view('detailed_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedView('assets', 'img', 'logo.png')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 12:30:05 --> Invalid file: "detailed_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detailed_view.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('detailed_view', [], true)
+ 3 APPPATH\Controllers\Sys.php(135): view('detailed_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedView('assets', 'img', 'messages-3.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 12:30:05 --> Invalid file: "detailed_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detailed_view.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('detailed_view', [], true)
+ 3 APPPATH\Controllers\Sys.php(135): view('detailed_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedView('assets', 'img', 'messages-2.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

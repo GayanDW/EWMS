@@ -1,0 +1,32 @@
+CRITICAL - 2023-08-22 08:03:39 --> Too few arguments to function App\Controllers\Customer::find(), 0 passed in C:\xampp\htdocs\ewms\system\CodeIgniter.php on line 932 and exactly 2 expected
+in APPPATH\Controllers\Customer.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Customer->find()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-22 10:49:15 --> Invalid file: "customer/list.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('customer/list.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('customer/list', [], true)
+ 3 APPPATH\Controllers\Customer.php(13): view('customer/list')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Customer->find()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-22 10:50:45 --> Invalid file: "customer/list.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('customer/list.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('customer/list', [], true)
+ 3 APPPATH\Controllers\Customer.php(13): view('customer/list')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Customer->find()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-22 15:40:10 --> syntax error, unexpected token "{"
+in APPPATH\Controllers\Sys.php on line 8.
+ 1 SYSTEMPATH\Router\Router.php(510): CodeIgniter\Router\AutoRouter->getRoute('/sys', 'get')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('/sys')
+ 3 SYSTEMPATH\CodeIgniter.php(813): CodeIgniter\Router\Router->handle('/sys')
+ 4 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

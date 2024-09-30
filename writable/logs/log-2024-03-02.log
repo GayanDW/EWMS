@@ -1,0 +1,96 @@
+CRITICAL - 2024-03-02 12:18:54 --> Undefined variable $user
+in APPPATH\Views\sys\login.php on line 83.
+ 1 APPPATH\Views\sys\login.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\login.php', 83)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\login.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/login', [], true)
+ 5 APPPATH\Controllers\User.php(29): view('sys/login', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->login()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 12:19:41 --> Undefined variable $user
+in APPPATH\Views\sys\login.php on line 83.
+ 1 APPPATH\Views\sys\login.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\login.php', 83)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\login.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/login', [], true)
+ 5 APPPATH\Controllers\User.php(53): view('sys/login')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->login()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 17:47:18 --> Call to undefined method App\Controllers\Sys::getAdminUserId()
+in APPPATH\Controllers\Sys.php on line 1443.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->handlePasswordResetRequest()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 18:42:15 --> Undefined variable $userId
+in APPPATH\Views\sys\reset_password.php on line 35.
+ 1 APPPATH\Views\sys\reset_password.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userId', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\reset_password.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\reset_password.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/reset_password', [], true)
+ 5 APPPATH\Controllers\Sys.php(1469): view('sys/reset_password')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewResetbA('61')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 18:42:15 --> Undefined variable $userId
+in APPPATH\Views\sys\reset_password.php on line 35.
+ 1 APPPATH\Views\sys\reset_password.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userId', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\reset_password.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\reset_password.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/reset_password', [], true)
+ 5 APPPATH\Controllers\Sys.php(1469): view('sys/reset_password')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewResetbA('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 18:42:15 --> Undefined variable $userId
+in APPPATH\Views\sys\reset_password.php on line 35.
+ 1 APPPATH\Views\sys\reset_password.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userId', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\reset_password.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\reset_password.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/reset_password', [], true)
+ 5 APPPATH\Controllers\Sys.php(1469): view('sys/reset_password')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewResetbA('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 18:42:15 --> Undefined variable $userId
+in APPPATH\Views\sys\reset_password.php on line 35.
+ 1 APPPATH\Views\sys\reset_password.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userId', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\reset_password.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\reset_password.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/reset_password', [], true)
+ 5 APPPATH\Controllers\Sys.php(1469): view('sys/reset_password')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewResetbA('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 18:55:03 --> Too few arguments to function App\Controllers\Sys::resetUserPassword(), 0 passed in C:\xampp\htdocs\ewms\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Sys.php on line 1475.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->resetUserPassword()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 19:04:04 --> Too few arguments to function App\Controllers\Sys::resetUserPassword(), 0 passed in C:\xampp\htdocs\ewms\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Sys.php on line 1474.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->resetUserPassword()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 20:26:16 --> Call to a member function setError() on null
+in APPPATH\Controllers\User.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->login()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-02 20:26:39 --> Call to a member function setError() on null
+in APPPATH\Controllers\User.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->login()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

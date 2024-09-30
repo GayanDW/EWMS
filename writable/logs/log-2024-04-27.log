@@ -1,0 +1,30 @@
+CRITICAL - 2024-04-27 05:06:16 --> Undefined constant "App\Controllers\inventoryItems"
+in APPPATH\Controllers\Sys.php on line 1454.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->filter()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-27 05:07:43 --> Undefined constant "App\Controllers\inventoryItems"
+in APPPATH\Controllers\Sys.php on line 1454.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->filter()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-27 05:09:52 --> Undefined constant "App\Controllers\inventoryItems"
+in APPPATH\Controllers\Sys.php on line 1454.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->filter()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-27 05:10:00 --> Undefined constant "App\Controllers\inventoryItems"
+in APPPATH\Controllers\Sys.php on line 1454.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->filter()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-27 05:12:32 --> Undefined constant "App\Controllers\inventoryItems"
+in APPPATH\Controllers\Sys.php on line 1454.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->filter()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

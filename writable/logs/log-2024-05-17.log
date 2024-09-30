@@ -1,0 +1,11 @@
+CRITICAL - 2024-05-17 05:44:54 --> Undefined variable $message
+in APPPATH\Views\sys\suspended.php on line 34.
+ 1 APPPATH\Views\sys\suspended.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message', 'C:\\xampp\\htdocs\\ems\\app\\Views\\sys\\suspended.php', 34)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ems\\app\\Views\\sys\\suspended.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/suspended', [], true)
+ 5 APPPATH\Controllers\User.php(37): view('sys/suspended')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->login()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

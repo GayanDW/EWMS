@@ -1,0 +1,319 @@
+CRITICAL - 2024-02-18 02:07:47 --> Undefined variable $query
+in APPPATH\Controllers\Sys.php on line 653.
+ 1 APPPATH\Controllers\Sys.php(653): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $query', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 653)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->filter()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 02:08:03 --> Undefined variable $query
+in APPPATH\Controllers\Sys.php on line 653.
+ 1 APPPATH\Controllers\Sys.php(653): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $query', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 653)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->filter()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 02:10:42 --> Undefined variable $query
+in APPPATH\Controllers\Sys.php on line 653.
+ 1 APPPATH\Controllers\Sys.php(653): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $query', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 653)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->filter()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 02:51:07 --> CodeIgniter\HTTP\Request::fetchGlobal(): Argument #3 ($filter) must be of type ?int, string given, called in C:\xampp\htdocs\ewms\system\HTTP\IncomingRequest.php on line 782
+in SYSTEMPATH\HTTP\RequestTrait.php on line 253.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(782): CodeIgniter\HTTP\Request->fetchGlobal('post', 'min_cost', '', null)
+ 2 APPPATH\Controllers\Sys.php(652): CodeIgniter\HTTP\IncomingRequest->getPost('min_cost', '')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->filter()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 02:51:22 --> CodeIgniter\HTTP\Request::fetchGlobal(): Argument #3 ($filter) must be of type ?int, string given, called in C:\xampp\htdocs\ewms\system\HTTP\IncomingRequest.php on line 782
+in SYSTEMPATH\HTTP\RequestTrait.php on line 253.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(782): CodeIgniter\HTTP\Request->fetchGlobal('post', 'min_cost', '', null)
+ 2 APPPATH\Controllers\Sys.php(652): CodeIgniter\HTTP\IncomingRequest->getPost('min_cost', '')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->filter()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 05:31:15 --> foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\Sys.php on line 696.
+ 1 APPPATH\Controllers\Sys.php(696): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 696)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->calculateSellingPrice()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 05:42:01 --> Undefined variable $selectedItemIDs
+in APPPATH\Views\sys\ewc_inventory.php on line 93.
+ 1 APPPATH\Views\sys\ewc_inventory.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedItemIDs', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php', 93)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_inventory', [], true)
+ 5 APPPATH\Controllers\Sys.php(644): view('sys/ewc_inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcInventory()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 05:42:07 --> Undefined variable $selectedItemIDs
+in APPPATH\Views\sys\ewc_inventory.php on line 93.
+ 1 APPPATH\Views\sys\ewc_inventory.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedItemIDs', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php', 93)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_inventory', [], true)
+ 5 APPPATH\Controllers\Sys.php(644): view('sys/ewc_inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcInventory()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 05:43:07 --> Undefined variable $selectedItemIDs
+in APPPATH\Views\sys\ewc_inventory.php on line 93.
+ 1 APPPATH\Views\sys\ewc_inventory.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedItemIDs', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php', 93)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_inventory', [], true)
+ 5 APPPATH\Controllers\Sys.php(644): view('sys/ewc_inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcInventory()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 05:43:08 --> Undefined variable $selectedItemIDs
+in APPPATH\Views\sys\ewc_inventory.php on line 93.
+ 1 APPPATH\Views\sys\ewc_inventory.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedItemIDs', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php', 93)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_inventory', [], true)
+ 5 APPPATH\Controllers\Sys.php(644): view('sys/ewc_inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcInventory()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 05:43:12 --> Undefined variable $selectedItemIDs
+in APPPATH\Views\sys\ewc_inventory.php on line 93.
+ 1 APPPATH\Views\sys\ewc_inventory.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedItemIDs', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php', 93)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_inventory', [], true)
+ 5 APPPATH\Controllers\Sys.php(644): view('sys/ewc_inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcInventory()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 05:44:20 --> Undefined variable $selectedItemIDs
+in APPPATH\Views\sys\ewc_inventory.php on line 89.
+ 1 APPPATH\Views\sys\ewc_inventory.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedItemIDs', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php', 89)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_inventory', [], true)
+ 5 APPPATH\Controllers\Sys.php(644): view('sys/ewc_inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcInventory()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 05:44:21 --> Undefined variable $selectedItemIDs
+in APPPATH\Views\sys\ewc_inventory.php on line 89.
+ 1 APPPATH\Views\sys\ewc_inventory.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedItemIDs', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php', 89)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_inventory', [], true)
+ 5 APPPATH\Controllers\Sys.php(644): view('sys/ewc_inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcInventory()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 05:44:24 --> Undefined variable $selectedItemIDs
+in APPPATH\Views\sys\ewc_inventory.php on line 89.
+ 1 APPPATH\Views\sys\ewc_inventory.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedItemIDs', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php', 89)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_inventory', [], true)
+ 5 APPPATH\Controllers\Sys.php(644): view('sys/ewc_inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcInventory()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 08:52:16 --> Undefined array key "status"
+in APPPATH\Views\sys\ewc_inventory.php on line 89.
+ 1 APPPATH\Views\sys\ewc_inventory.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php', 89)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_inventory', [], true)
+ 5 APPPATH\Controllers\Sys.php(720): view('sys/ewc_inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->calculateSellingPrice()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 08:52:34 --> Undefined array key "status"
+in APPPATH\Views\sys\ewc_inventory.php on line 89.
+ 1 APPPATH\Views\sys\ewc_inventory.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php', 89)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_inventory', [], true)
+ 5 APPPATH\Controllers\Sys.php(644): view('sys/ewc_inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcInventory()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 08:56:15 --> Undefined array key "status"
+in APPPATH\Views\sys\ewc_inventory.php on line 91.
+ 1 APPPATH\Views\sys\ewc_inventory.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php', 91)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_inventory', [], true)
+ 5 APPPATH\Controllers\Sys.php(644): view('sys/ewc_inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcInventory()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 08:56:34 --> Undefined array key "status"
+in APPPATH\Views\sys\ewc_inventory.php on line 91.
+ 1 APPPATH\Views\sys\ewc_inventory.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php', 91)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_inventory.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_inventory', [], true)
+ 5 APPPATH\Controllers\Sys.php(644): view('sys/ewc_inventory', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcInventory()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 09:01:27 --> Class "App\Controllers\EwcListingsModel" not found
+in APPPATH\Controllers\Sys.php on line 728.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publish()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 10:56:02 --> Too few arguments to function App\Controllers\Sys::publish(), 0 passed in C:\xampp\htdocs\ewms\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Sys.php on line 725.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publish()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 10:56:33 --> Too few arguments to function App\Controllers\Sys::publish(), 0 passed in C:\xampp\htdocs\ewms\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Sys.php on line 725.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publish()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 10:57:04 --> Too few arguments to function App\Controllers\Sys::publish(), 0 passed in C:\xampp\htdocs\ewms\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Sys.php on line 725.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publish()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 10:59:16 --> Too few arguments to function App\Controllers\Sys::publish(), 0 passed in C:\xampp\htdocs\ewms\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Sys.php on line 725.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publish()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 10:59:22 --> Too few arguments to function App\Controllers\Sys::publish(), 0 passed in C:\xampp\htdocs\ewms\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Sys.php on line 725.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publish()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 11:00:10 --> Too few arguments to function App\Controllers\Sys::publish(), 0 passed in C:\xampp\htdocs\ewms\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Sys.php on line 725.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publish()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 11:10:03 --> Undefined array key "name"
+in APPPATH\Controllers\Sys.php on line 753.
+ 1 APPPATH\Controllers\Sys.php(753): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 753)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publish()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 11:10:49 --> Undefined array key "name"
+in APPPATH\Controllers\Sys.php on line 753.
+ 1 APPPATH\Controllers\Sys.php(753): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 753)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->publish()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 11:12:23 --> Undefined variable $message
+in APPPATH\Views\sys\thank_you.php on line 25.
+ 1 APPPATH\Views\sys\thank_you.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\thank_you.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\thank_you.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/thank_you', [], true)
+ 5 APPPATH\Controllers\Sys.php(105): view('sys/thank_you')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->thank_you()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 11:18:14 --> Undefined variable $message
+in APPPATH\Views\sys\thank_you.php on line 25.
+ 1 APPPATH\Views\sys\thank_you.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\thank_you.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\thank_you.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/thank_you', [], true)
+ 5 APPPATH\Controllers\Sys.php(105): view('sys/thank_you')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->thank_you()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 11:19:22 --> Undefined variable $message
+in APPPATH\Views\sys\thank_you.php on line 25.
+ 1 APPPATH\Views\sys\thank_you.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\thank_you.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\thank_you.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/thank_you', [], true)
+ 5 APPPATH\Controllers\Sys.php(105): view('sys/thank_you')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->thank_you()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 11:19:30 --> Undefined variable $message
+in APPPATH\Views\sys\thank_you.php on line 25.
+ 1 APPPATH\Views\sys\thank_you.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\thank_you.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\thank_you.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/thank_you', [], true)
+ 5 APPPATH\Controllers\Sys.php(105): view('sys/thank_you')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->thank_you()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 11:24:33 --> Class "App\Models\EwcSalesListModel" not found
+in APPPATH\Views\sys\content_e-Waste Recycler.php on line 5.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste recycler', [], true)
+ 4 APPPATH\Controllers\Sys.php(89): view('sys/content_e-waste recycler', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 18:18:50 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\detailed_view.php on line 21.
+ 1 APPPATH\Views\sys\detailed_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/detailed_view', [], true)
+ 5 APPPATH\Controllers\Sys.php(210): view('sys/detailed_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedView('assets', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 18:18:50 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\detailed_view.php on line 21.
+ 1 APPPATH\Views\sys\detailed_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/detailed_view', [], true)
+ 5 APPPATH\Controllers\Sys.php(210): view('sys/detailed_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedView('assets', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 18:18:50 --> Trying to access array offset on value of type null
+in APPPATH\Views\sys\detailed_view.php on line 21.
+ 1 APPPATH\Views\sys\detailed_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\detailed_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/detailed_view', [], true)
+ 5 APPPATH\Controllers\Sys.php(210): view('sys/detailed_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedView('assets', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

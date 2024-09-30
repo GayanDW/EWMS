@@ -1,0 +1,58 @@
+CRITICAL - 2023-10-20 07:20:17 --> Call to a member function getError() on null
+in APPPATH\Views\sys\content_addEwaste.php on line 107.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_addEwaste', [], true)
+ 4 APPPATH\Controllers\Sys.php(40): view('sys/content_addEwaste')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->addEwasteView()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 07:50:01 --> Call to a member function getError() on null
+in APPPATH\Views\sys\content_addEwaste.php on line 42.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_addEwaste', [], true)
+ 4 APPPATH\Controllers\Sys.php(40): view('sys/content_addEwaste')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->addEwasteView()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 07:50:03 --> Call to a member function getError() on null
+in APPPATH\Views\sys\content_addEwaste.php on line 42.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_addEwaste', [], true)
+ 4 APPPATH\Controllers\Sys.php(40): view('sys/content_addEwaste')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->addEwasteView()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 07:53:53 --> Call to a member function getError() on null
+in APPPATH\Views\sys\content_addEwaste.php on line 42.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_addEwaste', [], true)
+ 4 APPPATH\Controllers\Sys.php(40): view('sys/content_addEwaste')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->addEwasteView()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:11:31 --> Call to undefined method CodeIgniter\Validation\Validation::setErrors()
+in APPPATH\Controllers\Sys.php on line 87.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->submitEwaste()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:11:40 --> Call to undefined method CodeIgniter\Validation\Validation::setErrors()
+in APPPATH\Controllers\Sys.php on line 87.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->submitEwaste()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:11:59 --> Call to undefined method CodeIgniter\Validation\Validation::setErrors()
+in APPPATH\Controllers\Sys.php on line 87.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->submitEwaste()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

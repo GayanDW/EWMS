@@ -1,0 +1,188 @@
+ERROR - 2024-05-19 04:06:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SUM(total_payment) AS Total_Payment
+FROM 
+    ewaste_listings 
+
+WHERE 
+ ...' at line 4 in C:\xampp\htdocs\ems\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ems\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT \r\n    ew...', 0)
+#1 C:\xampp\htdocs\ems\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n    ew...')
+#2 C:\xampp\htdocs\ems\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n    ew...')
+#3 C:\xampp\htdocs\ems\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT \r\n    ew...')
+#4 C:\xampp\htdocs\ems\app\Models\EwasteListModel.php(47): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\ems\app\Controllers\Sys.php(2969): App\Models\EwasteListModel->getCollectedInfo('53')
+#6 C:\xampp\htdocs\ems\system\CodeIgniter.php(932): App\Controllers\Sys->viewCollected1()
+#7 C:\xampp\htdocs\ems\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\ems\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ems\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-19 04:06:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SUM(total_payment) AS Total_Payment
+FROM 
+    ewaste_listings 
+
+WHERE 
+ ...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 
+    ewaste_listings.*,
+    SUM(ewaste_listings.amount) AS total_income
+    SUM(total_payment) AS Total_Payment
+FROM 
+    ewaste_listings 
+
+WHERE 
+    ewaste_listings.UserId = \'53\' 
+    AND ewaste_listings.item_status_c != \'Deleted\'
+    AND ewaste_listings.collection_status= \'Collected\'
+GROUP BY 
+    ewaste_listings.item_id;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+    ewaste_listings.*,
+    SUM(ewaste_listings.amount) AS total_income
+    SUM(total_payment) AS Total_Payment
+FROM 
+    ewaste_listings 
+
+WHERE 
+    ewaste_listings.UserId = \'53\' 
+    AND ewaste_listings.item_status_c != \'Deleted\'
+    AND ewaste_listings.collection_status= \'Collected\'
+GROUP BY 
+    ewaste_listings.item_id;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+    ewaste_listings.*,
+    SUM(ewaste_listings.amount) AS total_income
+    SUM(total_payment) AS Total_Payment
+FROM 
+    ewaste_listings 
+
+WHERE 
+    ewaste_listings.UserId = \'53\' 
+    AND ewaste_listings.item_status_c != \'Deleted\'
+    AND ewaste_listings.collection_status= \'Collected\'
+GROUP BY 
+    ewaste_listings.item_id;')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT 
+    ewaste_listings.*,
+    SUM(ewaste_listings.amount) AS total_income
+    SUM(total_payment) AS Total_Payment
+FROM 
+    ewaste_listings 
+
+WHERE 
+    ewaste_listings.UserId = \'53\' 
+    AND ewaste_listings.item_status_c != \'Deleted\'
+    AND ewaste_listings.collection_status= \'Collected\'
+GROUP BY 
+    ewaste_listings.item_id;')
+ 5 APPPATH\Models\EwasteListModel.php(47): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(2969): App\Models\EwasteListModel->getCollectedInfo('53')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewCollected1()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-19 04:09:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM 
+    ewaste_listings 
+
+WHERE 
+    ewaste_listings.UserId = '53' 
+  ...' at line 5 in C:\xampp\htdocs\ems\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ems\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT \r\n    ew...', 0)
+#1 C:\xampp\htdocs\ems\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n    ew...')
+#2 C:\xampp\htdocs\ems\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n    ew...')
+#3 C:\xampp\htdocs\ems\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT \r\n    ew...')
+#4 C:\xampp\htdocs\ems\app\Models\EwasteListModel.php(47): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\ems\app\Controllers\Sys.php(2969): App\Models\EwasteListModel->getCollectedInfo('53')
+#6 C:\xampp\htdocs\ems\system\CodeIgniter.php(932): App\Controllers\Sys->viewCollected1()
+#7 C:\xampp\htdocs\ems\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\ems\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ems\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-19 04:09:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM 
+    ewaste_listings 
+
+WHERE 
+    ewaste_listings.UserId = '53' 
+  ...' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 
+    ewaste_listings.*,
+    SUM(ewaste_listings.amount) AS total_income,
+    
+FROM 
+    ewaste_listings 
+
+WHERE 
+    ewaste_listings.UserId = \'53\' 
+    AND ewaste_listings.item_status_c != \'Deleted\'
+    AND ewaste_listings.collection_status= \'Collected\'
+GROUP BY 
+    ewaste_listings.item_id;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+    ewaste_listings.*,
+    SUM(ewaste_listings.amount) AS total_income,
+    
+FROM 
+    ewaste_listings 
+
+WHERE 
+    ewaste_listings.UserId = \'53\' 
+    AND ewaste_listings.item_status_c != \'Deleted\'
+    AND ewaste_listings.collection_status= \'Collected\'
+GROUP BY 
+    ewaste_listings.item_id;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+    ewaste_listings.*,
+    SUM(ewaste_listings.amount) AS total_income,
+    
+FROM 
+    ewaste_listings 
+
+WHERE 
+    ewaste_listings.UserId = \'53\' 
+    AND ewaste_listings.item_status_c != \'Deleted\'
+    AND ewaste_listings.collection_status= \'Collected\'
+GROUP BY 
+    ewaste_listings.item_id;')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT 
+    ewaste_listings.*,
+    SUM(ewaste_listings.amount) AS total_income,
+    
+FROM 
+    ewaste_listings 
+
+WHERE 
+    ewaste_listings.UserId = \'53\' 
+    AND ewaste_listings.item_status_c != \'Deleted\'
+    AND ewaste_listings.collection_status= \'Collected\'
+GROUP BY 
+    ewaste_listings.item_id;')
+ 5 APPPATH\Models\EwasteListModel.php(47): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(2969): App\Models\EwasteListModel->getCollectedInfo('53')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewCollected1()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-19 04:30:16 --> Undefined array key "total_income"
+in APPPATH\Views\sys\collected.php on line 59.
+ 1 APPPATH\Views\sys\collected.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "total_income"', 'C:\\xampp\\htdocs\\ems\\app\\Views\\sys\\collected.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ems\\app\\Views\\sys\\collected.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/collected', [], true)
+ 5 APPPATH\Controllers\Sys.php(2975): view('sys/collected', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewCollected1()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-19 04:31:14 --> Undefined array key "total_income"
+in APPPATH\Views\sys\collected.php on line 59.
+ 1 APPPATH\Views\sys\collected.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "total_income"', 'C:\\xampp\\htdocs\\ems\\app\\Views\\sys\\collected.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ems\\app\\Views\\sys\\collected.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/collected', [], true)
+ 5 APPPATH\Controllers\Sys.php(2975): view('sys/collected', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewCollected1()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

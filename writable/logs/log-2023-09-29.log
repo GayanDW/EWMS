@@ -1,0 +1,75 @@
+CRITICAL - 2023-09-29 10:28:24 --> Undefined variable $district_list
+in APPPATH\Views\web\registerewastecollector.php on line 195.
+ 1 APPPATH\Views\web\registerewastecollector.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $district_list', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastecollector.php', 195)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastecollector.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/registerewastecollector', [], true)
+ 5 APPPATH\Controllers\Web.php(25): view('web/registerewastecollector')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->register_ewastecollector()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 10:31:12 --> Undefined variable $district_list
+in APPPATH\Views\web\registerewastecollector.php on line 195.
+ 1 APPPATH\Views\web\registerewastecollector.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $district_list', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastecollector.php', 195)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastecollector.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/registerewastecollector', [], true)
+ 5 APPPATH\Controllers\Web.php(25): view('web/registerewastecollector')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->register_ewastecollector()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 10:35:26 --> Undefined variable $district_list
+in APPPATH\Views\web\registerewastecollector.php on line 195.
+ 1 APPPATH\Views\web\registerewastecollector.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $district_list', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastecollector.php', 195)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastecollector.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/registerewastecollector', [], true)
+ 5 APPPATH\Controllers\Web.php(112): view('web/registerewastecollector', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->save_ewaste_collector()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 10:51:41 --> Undefined variable $district_list
+in APPPATH\Views\web\registerewastecollector.php on line 195.
+ 1 APPPATH\Views\web\registerewastecollector.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $district_list', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastecollector.php', 195)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewastecollector.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/registerewastecollector', [], true)
+ 5 APPPATH\Controllers\Web.php(112): view('web/registerewastecollector', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->save_ewaste_collector()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 11:07:46 --> Undefined variable $district_list
+in APPPATH\Views\web\registerewasterecycler.php on line 182.
+ 1 APPPATH\Views\web\registerewasterecycler.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $district_list', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewasterecycler.php', 182)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewasterecycler.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/registerewasterecycler', [], true)
+ 5 APPPATH\Controllers\Web.php(31): view('web/registerewasterecycler')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->register_ewasterecycler()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 11:09:10 --> Undefined variable $district_list
+in APPPATH\Views\web\registerewasterecycler.php on line 182.
+ 1 APPPATH\Views\web\registerewasterecycler.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $district_list', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewasterecycler.php', 182)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\web\\registerewasterecycler.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/registerewasterecycler', [], true)
+ 5 APPPATH\Controllers\Web.php(31): view('web/registerewasterecycler')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->register_ewasterecycler()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 11:14:30 --> syntax error, unexpected variable "$data", expecting ")"
+in APPPATH\Controllers\Web.php on line 31.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Web.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Web')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Web')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\Web', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

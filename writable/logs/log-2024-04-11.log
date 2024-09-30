@@ -1,0 +1,33 @@
+CRITICAL - 2024-04-11 07:24:16 --> Undefined array key "rem_quantity"
+in APPPATH\Views\sys\detailed_view_ewc.php on line 37.
+ 1 APPPATH\Views\sys\detailed_view_ewc.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rem_quantity"', 'C:\\xampp\\htdocs\\ems\\app\\Views\\sys\\detailed_view_ewc.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ems\\app\\Views\\sys\\detailed_view_ewc.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/detailed_view_ewc', [], true)
+ 5 APPPATH\Controllers\Sys.php(311): view('sys/detailed_view_ewc', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedViewEwc('10')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-11 07:24:29 --> Undefined array key "rem_quantity"
+in APPPATH\Views\sys\detailed_view_ewc.php on line 37.
+ 1 APPPATH\Views\sys\detailed_view_ewc.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rem_quantity"', 'C:\\xampp\\htdocs\\ems\\app\\Views\\sys\\detailed_view_ewc.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ems\\app\\Views\\sys\\detailed_view_ewc.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/detailed_view_ewc', [], true)
+ 5 APPPATH\Controllers\Sys.php(311): view('sys/detailed_view_ewc', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedViewEwc('7')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-11 07:24:49 --> Undefined array key "rem_quantity"
+in APPPATH\Views\sys\detailed_view_ewc.php on line 37.
+ 1 APPPATH\Views\sys\detailed_view_ewc.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rem_quantity"', 'C:\\xampp\\htdocs\\ems\\app\\Views\\sys\\detailed_view_ewc.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ems\\app\\Views\\sys\\detailed_view_ewc.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/detailed_view_ewc', [], true)
+ 5 APPPATH\Controllers\Sys.php(311): view('sys/detailed_view_ewc', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->detailedViewEwc('10')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

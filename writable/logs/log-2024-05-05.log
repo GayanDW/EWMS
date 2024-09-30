@@ -1,0 +1,260 @@
+CRITICAL - 2024-05-05 03:33:03 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH\Controllers\Sys.php on line 1851.
+ 1 SYSTEMPATH\Router\Router.php(510): CodeIgniter\Router\AutoRouter->getRoute('/sys/viewListingSetItemsEwc/1714827797', 'get')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('/sys/viewListingSetItemsEwc/1714827797')
+ 3 SYSTEMPATH\CodeIgniter.php(813): CodeIgniter\Router\Router->handle('/sys/viewListingSetItemsEwc/1714827797')
+ 4 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-05 03:33:14 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH\Controllers\Sys.php on line 1851.
+ 1 SYSTEMPATH\Router\Router.php(510): CodeIgniter\Router\AutoRouter->getRoute('/sys/viewEwcListings', 'get')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('/sys/viewEwcListings')
+ 3 SYSTEMPATH\CodeIgniter.php(813): CodeIgniter\Router\Router->handle('/sys/viewEwcListings')
+ 4 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-05 03:33:16 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH\Controllers\Sys.php on line 1851.
+ 1 SYSTEMPATH\Router\Router.php(510): CodeIgniter\Router\AutoRouter->getRoute('/sys/dashboard', 'get')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('/sys/dashboard')
+ 3 SYSTEMPATH\CodeIgniter.php(813): CodeIgniter\Router\Router->handle('/sys/dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-05 03:33:17 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH\Controllers\Sys.php on line 1851.
+ 1 SYSTEMPATH\Router\Router.php(510): CodeIgniter\Router\AutoRouter->getRoute('/sys/thankYou', 'get')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('/sys/thankYou')
+ 3 SYSTEMPATH\CodeIgniter.php(813): CodeIgniter\Router\Router->handle('/sys/thankYou')
+ 4 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-05 03:34:12 --> Undefined array key "listingSet"
+in APPPATH\Views\sys\received_requests.php on line 44.
+ 1 APPPATH\Views\sys\received_requests.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "listingSet"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\received_requests.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\received_requests.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/received_requests', [], true)
+ 5 APPPATH\Controllers\Sys.php(1863): view('sys/received_requests', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewReqEwc('1714827797')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-05 03:34:34 --> Undefined array key "listingSet"
+in APPPATH\Views\sys\received_requests.php on line 44.
+ 1 APPPATH\Views\sys\received_requests.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "listingSet"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\received_requests.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\received_requests.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/received_requests', [], true)
+ 5 APPPATH\Controllers\Sys.php(1863): view('sys/received_requests', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewReqEwc('1714827797')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-05 03:48:11 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 391.
+ 1 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Sys.php(1902): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ReqRespond()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-05 05:49:43 --> mysqli_sql_exception: Table 'emslk.recycling_summary' doesn't exist in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\xampp\htdocs\emslk\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\xampp\htdocs\emslk\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\emslk\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\emslk\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(2482): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->ewrsubmit()
+#9 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#10 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-05 05:49:43 --> Table 'emslk.recycling_summary' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `recycling_summary` (`UserId`, `month_year`, `recovered_material_name`, `recovered_mass`, `recovered_unit`, `disposed_material_name`, `disposed_mass`, `disposed_unit`) VALUES (\'61\', \'1970-01-01\', \'Gold\', \'5\', \'g\', \'Lead\', \'7\', \'g\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `recycling_summary` (`UserId`, `month_year`, `recovered_material_name`, `recovered_mass`, `recovered_unit`, `disposed_material_name`, `disposed_mass`, `disposed_unit`) VALUES (\'61\', \'1970-01-01\', \'Gold\', \'5\', \'g\', \'Lead\', \'7\', \'g\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `recycling_summary` (`UserId`, `month_year`, `recovered_material_name`, `recovered_mass`, `recovered_unit`, `disposed_material_name`, `disposed_mass`, `disposed_unit`) VALUES (\'61\', \'1970-01-01\', \'Gold\', \'5\', \'g\', \'Lead\', \'7\', \'g\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `recycling_summary` (`UserId`, `month_year`, `recovered_material_name`, `recovered_mass`, `recovered_unit`, `disposed_material_name`, `disposed_mass`, `disposed_unit`) VALUES (:UserId:, :month_year:, :recovered_material_name:, :recovered_mass:, :recovered_unit:, :disposed_material_name:, :disposed_mass:, :disposed_unit:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Sys.php(2482): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewrsubmit()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-05 06:01:36 --> mysqli_sql_exception: Table 'emslk.recycling_summary' doesn't exist in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\xampp\htdocs\emslk\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\xampp\htdocs\emslk\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\emslk\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\emslk\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(2482): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->ewrsubmit()
+#9 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#10 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-05 06:01:36 --> Table 'emslk.recycling_summary' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `recycling_summary` (`UserId`, `month_year`, `recovered_material_name`, `recovered_mass`, `recovered_unit`, `disposed_material_name`, `disposed_mass`, `disposed_unit`) VALUES (\'61\', \'1970-01-01\', \'Gold\', \'5\', \'g\', \'Lead\', \'6\', \'g\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `recycling_summary` (`UserId`, `month_year`, `recovered_material_name`, `recovered_mass`, `recovered_unit`, `disposed_material_name`, `disposed_mass`, `disposed_unit`) VALUES (\'61\', \'1970-01-01\', \'Gold\', \'5\', \'g\', \'Lead\', \'6\', \'g\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `recycling_summary` (`UserId`, `month_year`, `recovered_material_name`, `recovered_mass`, `recovered_unit`, `disposed_material_name`, `disposed_mass`, `disposed_unit`) VALUES (\'61\', \'1970-01-01\', \'Gold\', \'5\', \'g\', \'Lead\', \'6\', \'g\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `recycling_summary` (`UserId`, `month_year`, `recovered_material_name`, `recovered_mass`, `recovered_unit`, `disposed_material_name`, `disposed_mass`, `disposed_unit`) VALUES (:UserId:, :month_year:, :recovered_material_name:, :recovered_mass:, :recovered_unit:, :disposed_material_name:, :disposed_mass:, :disposed_unit:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Sys.php(2482): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewrsubmit()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-05 06:10:26 --> mysqli_sql_exception: Unknown column 'month_year' in 'field list' in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\xampp\htdocs\emslk\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\xampp\htdocs\emslk\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\emslk\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\emslk\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(2482): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->ewrsubmit()
+#9 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#10 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-05 06:10:26 --> Unknown column 'month_year' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `recycling_summary` (`UserId`, `month_year`, `recovered_material_name`, `recovered_mass`, `recovered_unit`, `disposed_material_name`, `disposed_mass`, `disposed_unit`) VALUES (\'61\', \'2024-05-01\', \'Gold\', \'4\', \'g\', \'Lead\', \'5\', \'g\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `recycling_summary` (`UserId`, `month_year`, `recovered_material_name`, `recovered_mass`, `recovered_unit`, `disposed_material_name`, `disposed_mass`, `disposed_unit`) VALUES (\'61\', \'2024-05-01\', \'Gold\', \'4\', \'g\', \'Lead\', \'5\', \'g\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `recycling_summary` (`UserId`, `month_year`, `recovered_material_name`, `recovered_mass`, `recovered_unit`, `disposed_material_name`, `disposed_mass`, `disposed_unit`) VALUES (\'61\', \'2024-05-01\', \'Gold\', \'4\', \'g\', \'Lead\', \'5\', \'g\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `recycling_summary` (`UserId`, `month_year`, `recovered_material_name`, `recovered_mass`, `recovered_unit`, `disposed_material_name`, `disposed_mass`, `disposed_unit`) VALUES (:UserId:, :month_year:, :recovered_material_name:, :recovered_mass:, :recovered_unit:, :disposed_material_name:, :disposed_mass:, :disposed_unit:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Sys.php(2482): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewrsubmit()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-05 10:42:13 --> mysqli_sql_exception: Unknown column 'rem_quantity' in 'where clause' in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\emslk\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\emslk\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\emslk\app\Models\EwasteListModel.php(289): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(988): App\Models\EwasteListModel->getSummary('2023', '12')
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#9 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-05-05 10:42:13 --> Unknown column 'rem_quantity' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `ewaste_listings`
+WHERE YEAR(date_added) = 2023 AND MONTH(date_added) = 12 AND `item_status_g` NOT IN (\'Deleted\') AND `rem_quantity` >0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `ewaste_listings`
+WHERE YEAR(date_added) = 2023 AND MONTH(date_added) = 12 AND `item_status_g` NOT IN (\'Deleted\') AND `rem_quantity` >0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `ewaste_listings`
+WHERE YEAR(date_added) = 2023 AND MONTH(date_added) = 12 AND `item_status_g` NOT IN (\'Deleted\') AND `rem_quantity` >0')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `ewaste_listings`
+WHERE YEAR(date_added) = 2023 AND MONTH(date_added) = 12 AND `item_status_g` NOT IN (\'Deleted\') AND `rem_quantity` >0', [], false)
+ 5 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Models\EwasteListModel.php(289): CodeIgniter\Model->countAllResults()
+ 7 APPPATH\Controllers\Sys.php(988): App\Models\EwasteListModel->getSummary('2023', '12')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-05 10:46:00 --> mysqli_sql_exception: Unknown column 'rem_quantity' in 'where clause' in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\emslk\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\emslk\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\emslk\app\Models\EwasteListModel.php(289): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(988): App\Models\EwasteListModel->getSummary('2023', '12')
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#9 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-05-05 10:46:00 --> Unknown column 'rem_quantity' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `ewaste_listings`
+WHERE YEAR(date_added) = 2023 AND MONTH(date_added) = 12 AND `item_status_g` NOT IN (\'Deleted\') AND `rem_quantity` >0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `ewaste_listings`
+WHERE YEAR(date_added) = 2023 AND MONTH(date_added) = 12 AND `item_status_g` NOT IN (\'Deleted\') AND `rem_quantity` >0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `ewaste_listings`
+WHERE YEAR(date_added) = 2023 AND MONTH(date_added) = 12 AND `item_status_g` NOT IN (\'Deleted\') AND `rem_quantity` >0')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `ewaste_listings`
+WHERE YEAR(date_added) = 2023 AND MONTH(date_added) = 12 AND `item_status_g` NOT IN (\'Deleted\') AND `rem_quantity` >0', [], false)
+ 5 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Models\EwasteListModel.php(289): CodeIgniter\Model->countAllResults()
+ 7 APPPATH\Controllers\Sys.php(988): App\Models\EwasteListModel->getSummary('2023', '12')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-05 11:57:17 --> Undefined variable $months
+in APPPATH\Views\sys\ewg_monthy_listings.php on line 5.
+ 1 APPPATH\Views\sys\ewg_monthy_listings.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $months', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_monthy_listings.php', 5)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_monthy_listings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewg_monthy_listings', [], true)
+ 5 APPPATH\Controllers\Sys.php(994): view('sys/ewg_monthy_listings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-05 11:59:22 --> Undefined variable $months
+in APPPATH\Views\sys\ewg_monthy_listings.php on line 5.
+ 1 APPPATH\Views\sys\ewg_monthy_listings.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $months', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_monthy_listings.php', 5)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_monthy_listings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewg_monthy_listings', [], true)
+ 5 APPPATH\Controllers\Sys.php(991): view('sys/ewg_monthy_listings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-05 11:59:28 --> Undefined variable $months
+in APPPATH\Views\sys\ewg_monthy_listings.php on line 5.
+ 1 APPPATH\Views\sys\ewg_monthy_listings.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $months', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_monthy_listings.php', 5)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_monthy_listings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewg_monthy_listings', [], true)
+ 5 APPPATH\Controllers\Sys.php(991): view('sys/ewg_monthy_listings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-05 12:30:16 --> Call to undefined method App\Models\EwasteListModel::yearly_listings
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Sys.php(1000): CodeIgniter\Model->__call('yearly_listings', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

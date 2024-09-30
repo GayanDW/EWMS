@@ -1,0 +1,18 @@
+CRITICAL - 2023-09-08 15:36:11 --> Invalid file: "web/registerewastecollecter.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('web/registerewastecollecter.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/registerewastecollecter', [], true)
+ 3 APPPATH\Controllers\Web.php(16): view('web/registerewastecollecter')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->register_ewastecollecter()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-08 15:36:18 --> Invalid file: "web/registerewastecollecter.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('web/registerewastecollecter.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/registerewastecollecter', [], true)
+ 3 APPPATH\Controllers\Web.php(16): view('web/registerewastecollecter')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->register_ewastecollecter()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

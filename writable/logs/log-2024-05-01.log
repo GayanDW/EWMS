@@ -1,0 +1,382 @@
+CRITICAL - 2024-05-01 04:13:51 --> Undefined variable $listings
+in APPPATH\Controllers\Sys.php on line 1554.
+ 1 APPPATH\Controllers\Sys.php(1554): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $listings', 'C:\\xampp\\htdocs\\emslk\\app\\Controllers\\Sys.php', 1554)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-01 04:18:46 --> Call to a member function findfirst() on array
+in APPPATH\Controllers\Sys.php on line 1551.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-01 04:19:11 --> Call to a member function getFirstRow() on array
+in APPPATH\Controllers\Sys.php on line 1551.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-01 04:19:33 --> Call to a member function findAll() on array
+in APPPATH\Controllers\Sys.php on line 1551.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-01 05:07:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM
+            ewc_listings
+        LEFT JOIN
+            ewr_req ON ewc...' at line 4 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n        SELEC...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n        SELEC...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#3 C:\xampp\htdocs\emslk\app\Models\EwcListingsModel.php(50): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...', Array)
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1551): App\Models\EwcListingsModel->getListingsToEwc('59')
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-01 05:07:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM
+            ewc_listings
+        LEFT JOIN
+            ewr_req ON ewc...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+        SELECT 
+           ewc_listings.*,
+           
+        FROM
+            ewc_listings
+        LEFT JOIN
+            ewr_req ON ewc_listings.listing_set = ewr_req.listing_set
+        WHERE
+            ewc_listings.UserId = \'59\'
+       
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+           ewc_listings.*,
+           
+        FROM
+            ewc_listings
+        LEFT JOIN
+            ewr_req ON ewc_listings.listing_set = ewr_req.listing_set
+        WHERE
+            ewc_listings.UserId = \'59\'
+       
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+           ewc_listings.*,
+           
+        FROM
+            ewc_listings
+        LEFT JOIN
+            ewr_req ON ewc_listings.listing_set = ewr_req.listing_set
+        WHERE
+            ewc_listings.UserId = \'59\'
+       
+    ')
+ 4 APPPATH\Models\EwcListingsModel.php(50): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+           ewc_listings.*,
+           
+        FROM
+            ewc_listings
+        LEFT JOIN
+            ewr_req ON ewc_listings.listing_set = ewr_req.listing_set
+        WHERE
+            ewc_listings.UserId = ?
+       
+    ', [...])
+ 5 APPPATH\Controllers\Sys.php(1551): App\Models\EwcListingsModel->getListingsToEwc('59')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-01 05:08:42 --> mysqli_sql_exception: Unknown column 'ewr_req.rec_status_c' in 'field list' in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n        SELEC...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n        SELEC...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#3 C:\xampp\htdocs\emslk\app\Models\EwcListingsModel.php(50): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...', Array)
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1551): App\Models\EwcListingsModel->getListingsToEwc('59')
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-01 05:08:42 --> Unknown column 'ewr_req.rec_status_c' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+        SELECT 
+           ewc_listings.*,
+           ewr_req.rec_status_c
+        FROM
+            ewc_listings
+        LEFT JOIN
+            ewr_req ON ewc_listings.listing_set = ewr_req.listing_set
+        WHERE
+            ewc_listings.UserId = \'59\'
+       
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+           ewc_listings.*,
+           ewr_req.rec_status_c
+        FROM
+            ewc_listings
+        LEFT JOIN
+            ewr_req ON ewc_listings.listing_set = ewr_req.listing_set
+        WHERE
+            ewc_listings.UserId = \'59\'
+       
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+           ewc_listings.*,
+           ewr_req.rec_status_c
+        FROM
+            ewc_listings
+        LEFT JOIN
+            ewr_req ON ewc_listings.listing_set = ewr_req.listing_set
+        WHERE
+            ewc_listings.UserId = \'59\'
+       
+    ')
+ 4 APPPATH\Models\EwcListingsModel.php(50): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+           ewc_listings.*,
+           ewr_req.rec_status_c
+        FROM
+            ewc_listings
+        LEFT JOIN
+            ewr_req ON ewc_listings.listing_set = ewr_req.listing_set
+        WHERE
+            ewc_listings.UserId = ?
+       
+    ', [...])
+ 5 APPPATH\Controllers\Sys.php(1551): App\Models\EwcListingsModel->getListingsToEwc('59')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-01 05:32:44 --> Undefined variable $req_status_c
+in APPPATH\Views\sys\ewc_listings.php on line 79.
+ 1 APPPATH\Views\sys\ewc_listings.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $req_status_c', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_listings.php', 79)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_listings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_listings', [], true)
+ 5 APPPATH\Controllers\Sys.php(1579): view('sys/ewc_listings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-01 05:33:22 --> Undefined variable $req_status_c
+in APPPATH\Views\sys\ewc_listings.php on line 79.
+ 1 APPPATH\Views\sys\ewc_listings.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $req_status_c', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_listings.php', 79)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_listings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_listings', [], true)
+ 5 APPPATH\Controllers\Sys.php(1579): view('sys/ewc_listings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-01 05:51:58 --> Call to undefined method App\Models\EwcListingsModel::getListingsToEw
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Sys.php(1551): CodeIgniter\Model->__call('getListingsToEw', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-01 06:53:51 --> mysqli_sql_exception: Unknown column 'date_added' in 'field list' in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n    SELECT \r\n...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n    SELECT \r\n...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n    SELECT \r\n...')
+#3 C:\xampp\htdocs\emslk\app\Models\EwcListingsModel.php(41): CodeIgniter\Database\BaseConnection->query('\r\n    SELECT \r\n...', Array)
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1548): App\Models\EwcListingsModel->getListingsToEwc('59')
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-01 06:53:51 --> Unknown column 'date_added' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+    SELECT 
+        e.*, 
+        r.req_status_c
+    FROM 
+        ewc_listings e
+    LEFT JOIN (
+        SELECT 
+            listing_set,
+            req_status_c,
+            MAX(date_added) as latest_date  -- Assuming there is a date field to determine the latest
+        FROM 
+            ewr_req
+        GROUP BY 
+            listing_set
+    ) r ON e.listing_set = r.listing_set
+    WHERE 
+        e.UserId = \'59\'
+    ORDER BY 
+        e.date_added DESC, 
+        e.time_added DESC
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT 
+        e.*, 
+        r.req_status_c
+    FROM 
+        ewc_listings e
+    LEFT JOIN (
+        SELECT 
+            listing_set,
+            req_status_c,
+            MAX(date_added) as latest_date  -- Assuming there is a date field to determine the latest
+        FROM 
+            ewr_req
+        GROUP BY 
+            listing_set
+    ) r ON e.listing_set = r.listing_set
+    WHERE 
+        e.UserId = \'59\'
+    ORDER BY 
+        e.date_added DESC, 
+        e.time_added DESC
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT 
+        e.*, 
+        r.req_status_c
+    FROM 
+        ewc_listings e
+    LEFT JOIN (
+        SELECT 
+            listing_set,
+            req_status_c,
+            MAX(date_added) as latest_date  -- Assuming there is a date field to determine the latest
+        FROM 
+            ewr_req
+        GROUP BY 
+            listing_set
+    ) r ON e.listing_set = r.listing_set
+    WHERE 
+        e.UserId = \'59\'
+    ORDER BY 
+        e.date_added DESC, 
+        e.time_added DESC
+    ')
+ 4 APPPATH\Models\EwcListingsModel.php(41): CodeIgniter\Database\BaseConnection->query('
+    SELECT 
+        e.*, 
+        r.req_status_c
+    FROM 
+        ewc_listings e
+    LEFT JOIN (
+        SELECT 
+            listing_set,
+            req_status_c,
+            MAX(date_added) as latest_date  -- Assuming there is a date field to determine the latest
+        FROM 
+            ewr_req
+        GROUP BY 
+            listing_set
+    ) r ON e.listing_set = r.listing_set
+    WHERE 
+        e.UserId = ?
+    ORDER BY 
+        e.date_added DESC, 
+        e.time_added DESC
+    ', [...])
+ 5 APPPATH\Controllers\Sys.php(1548): App\Models\EwcListingsModel->getListingsToEwc('59')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-01 08:10:25 --> Undefined array key "date_added"
+in APPPATH\Views\sys\ewc_listings.php on line 30.
+ 1 APPPATH\Views\sys\ewc_listings.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "date_added"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_listings.php', 30)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_listings.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_listings', [], true)
+ 5 APPPATH\Controllers\Sys.php(1577): view('sys/ewc_listings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewEwcListings()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-01 18:11:11 --> mysqli_sql_exception: Unknown column 'rem_quantity' in 'where clause' in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\emslk\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\emslk\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\emslk\app\Models\EwasteListModel.php(289): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(987): App\Models\EwasteListModel->getSummary('2023', '3')
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#9 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-05-01 18:11:11 --> Unknown column 'rem_quantity' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `ewaste_listings`
+WHERE YEAR(date_added) = 2023 AND MONTH(date_added) = 3 AND `item_status_g` NOT IN (\'Deleted\') AND `rem_quantity` >0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `ewaste_listings`
+WHERE YEAR(date_added) = 2023 AND MONTH(date_added) = 3 AND `item_status_g` NOT IN (\'Deleted\') AND `rem_quantity` >0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `ewaste_listings`
+WHERE YEAR(date_added) = 2023 AND MONTH(date_added) = 3 AND `item_status_g` NOT IN (\'Deleted\') AND `rem_quantity` >0')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `ewaste_listings`
+WHERE YEAR(date_added) = 2023 AND MONTH(date_added) = 3 AND `item_status_g` NOT IN (\'Deleted\') AND `rem_quantity` >0', [], false)
+ 5 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Models\EwasteListModel.php(289): CodeIgniter\Model->countAllResults()
+ 7 APPPATH\Controllers\Sys.php(987): App\Models\EwasteListModel->getSummary('2023', '3')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-01 18:11:17 --> mysqli_sql_exception: Unknown column 'rem_quantity' in 'where clause' in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\emslk\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\emslk\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\emslk\app\Models\EwasteListModel.php(289): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(987): App\Models\EwasteListModel->getSummary('2024', '3')
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#9 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-05-01 18:11:17 --> Unknown column 'rem_quantity' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `ewaste_listings`
+WHERE YEAR(date_added) = 2024 AND MONTH(date_added) = 3 AND `item_status_g` NOT IN (\'Deleted\') AND `rem_quantity` >0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `ewaste_listings`
+WHERE YEAR(date_added) = 2024 AND MONTH(date_added) = 3 AND `item_status_g` NOT IN (\'Deleted\') AND `rem_quantity` >0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `ewaste_listings`
+WHERE YEAR(date_added) = 2024 AND MONTH(date_added) = 3 AND `item_status_g` NOT IN (\'Deleted\') AND `rem_quantity` >0')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `ewaste_listings`
+WHERE YEAR(date_added) = 2024 AND MONTH(date_added) = 3 AND `item_status_g` NOT IN (\'Deleted\') AND `rem_quantity` >0', [], false)
+ 5 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Models\EwasteListModel.php(289): CodeIgniter\Model->countAllResults()
+ 7 APPPATH\Controllers\Sys.php(987): App\Models\EwasteListModel->getSummary('2024', '3')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthly_listings()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

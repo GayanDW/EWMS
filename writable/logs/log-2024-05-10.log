@@ -1,0 +1,540 @@
+CRITICAL - 2024-05-10 02:38:19 --> Invalid file: "sys/report_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/report_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/report_', [], true)
+ 3 APPPATH\Controllers\Sys.php(973): view('sys/report_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->view_reports()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-10 03:21:18 --> Undefined variable $selectedMonth
+in APPPATH\Views\sys\ewc_transactions.php on line 14.
+ 1 APPPATH\Views\sys\ewc_transactions.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedMonth', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_transactions', [], true)
+ 5 APPPATH\Controllers\Sys.php(1081): view('sys/ewc_transactions', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcTransactions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-10 03:21:38 --> Undefined variable $selectedMonth
+in APPPATH\Views\sys\ewc_transactions.php on line 14.
+ 1 APPPATH\Views\sys\ewc_transactions.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedMonth', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_transactions', [], true)
+ 5 APPPATH\Controllers\Sys.php(1081): view('sys/ewc_transactions', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcTransactions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-10 03:23:24 --> Undefined variable $selectedMonth
+in APPPATH\Views\sys\ewc_transactions.php on line 14.
+ 1 APPPATH\Views\sys\ewc_transactions.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedMonth', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_transactions', [], true)
+ 5 APPPATH\Controllers\Sys.php(1083): view('sys/ewc_transactions', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcTransactions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-10 03:23:55 --> Undefined variable $selectedMonth
+in APPPATH\Views\sys\ewc_transactions.php on line 14.
+ 1 APPPATH\Views\sys\ewc_transactions.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedMonth', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_transactions', [], true)
+ 5 APPPATH\Controllers\Sys.php(1083): view('sys/ewc_transactions', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcTransactions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-10 03:44:11 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY item_type' at line 10 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT \r\n      ...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 C:\xampp\htdocs\emslk\app\Models\EwcInventoryModel.php(64): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...')
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1072): App\Models\EwcInventoryModel->getEwcTransactions('59', '2024', NULL)
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->ewcTransactions()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-10 03:44:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY item_type' at line 10
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 
+        item_type AS Category, 
+        SUM(total_payment * (payment_method = \'Cash\')) AS Cash_Payment, 
+        SUM(total_payment * (payment_method = \'bank_deposit\')) AS Bank_Payment, 
+        SUM(total_payment) AS Total_Payment
+    FROM ewc_inventory
+    WHERE UserId = 59
+    AND YEAR(date_collected) = 2024
+    AND MONTH(date_collected) = 
+    GROUP BY item_type
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+        item_type AS Category, 
+        SUM(total_payment * (payment_method = \'Cash\')) AS Cash_Payment, 
+        SUM(total_payment * (payment_method = \'bank_deposit\')) AS Bank_Payment, 
+        SUM(total_payment) AS Total_Payment
+    FROM ewc_inventory
+    WHERE UserId = 59
+    AND YEAR(date_collected) = 2024
+    AND MONTH(date_collected) = 
+    GROUP BY item_type
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+        item_type AS Category, 
+        SUM(total_payment * (payment_method = \'Cash\')) AS Cash_Payment, 
+        SUM(total_payment * (payment_method = \'bank_deposit\')) AS Bank_Payment, 
+        SUM(total_payment) AS Total_Payment
+    FROM ewc_inventory
+    WHERE UserId = 59
+    AND YEAR(date_collected) = 2024
+    AND MONTH(date_collected) = 
+    GROUP BY item_type
+    ')
+ 4 APPPATH\Models\EwcInventoryModel.php(64): CodeIgniter\Database\BaseConnection->query('SELECT 
+        item_type AS Category, 
+        SUM(total_payment * (payment_method = \'Cash\')) AS Cash_Payment, 
+        SUM(total_payment * (payment_method = \'bank_deposit\')) AS Bank_Payment, 
+        SUM(total_payment) AS Total_Payment
+    FROM ewc_inventory
+    WHERE UserId = 59
+    AND YEAR(date_collected) = 2024
+    AND MONTH(date_collected) = 
+    GROUP BY item_type
+    ')
+ 5 APPPATH\Controllers\Sys.php(1072): App\Models\EwcInventoryModel->getEwcTransactions('59', '2024', null)
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcTransactions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-10 03:45:05 --> Undefined variable $UserId
+in APPPATH\Controllers\Sys.php on line 1072.
+ 1 APPPATH\Controllers\Sys.php(1072): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $UserId', 'C:\\xampp\\htdocs\\emslk\\app\\Controllers\\Sys.php', 1072)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcTransactions()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-10 03:45:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY item_type' at line 10 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT \r\n      ...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 C:\xampp\htdocs\emslk\app\Models\EwcInventoryModel.php(64): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...')
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1072): App\Models\EwcInventoryModel->getEwcTransactions('59', '2024', NULL)
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->ewcTransactions()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-10 03:45:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY item_type' at line 10
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 
+        item_type AS Category, 
+        SUM(total_payment * (payment_method = \'Cash\')) AS Cash_Payment, 
+        SUM(total_payment * (payment_method = \'bank_deposit\')) AS Bank_Payment, 
+        SUM(total_payment) AS Total_Payment
+    FROM ewc_inventory
+    WHERE UserId = 59
+    AND YEAR(date_collected) = 2024
+    AND MONTH(date_collected) = 
+    GROUP BY item_type
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+        item_type AS Category, 
+        SUM(total_payment * (payment_method = \'Cash\')) AS Cash_Payment, 
+        SUM(total_payment * (payment_method = \'bank_deposit\')) AS Bank_Payment, 
+        SUM(total_payment) AS Total_Payment
+    FROM ewc_inventory
+    WHERE UserId = 59
+    AND YEAR(date_collected) = 2024
+    AND MONTH(date_collected) = 
+    GROUP BY item_type
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+        item_type AS Category, 
+        SUM(total_payment * (payment_method = \'Cash\')) AS Cash_Payment, 
+        SUM(total_payment * (payment_method = \'bank_deposit\')) AS Bank_Payment, 
+        SUM(total_payment) AS Total_Payment
+    FROM ewc_inventory
+    WHERE UserId = 59
+    AND YEAR(date_collected) = 2024
+    AND MONTH(date_collected) = 
+    GROUP BY item_type
+    ')
+ 4 APPPATH\Models\EwcInventoryModel.php(64): CodeIgniter\Database\BaseConnection->query('SELECT 
+        item_type AS Category, 
+        SUM(total_payment * (payment_method = \'Cash\')) AS Cash_Payment, 
+        SUM(total_payment * (payment_method = \'bank_deposit\')) AS Bank_Payment, 
+        SUM(total_payment) AS Total_Payment
+    FROM ewc_inventory
+    WHERE UserId = 59
+    AND YEAR(date_collected) = 2024
+    AND MONTH(date_collected) = 
+    GROUP BY item_type
+    ')
+ 5 APPPATH\Controllers\Sys.php(1072): App\Models\EwcInventoryModel->getEwcTransactions('59', '2024', null)
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcTransactions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-10 03:50:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY item_type' at line 10 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT \r\n      ...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 C:\xampp\htdocs\emslk\app\Models\EwcInventoryModel.php(64): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...')
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1072): App\Models\EwcInventoryModel->getEwcTransactions('59', '2024', NULL)
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->ewcTransactions()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-10 03:50:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY item_type' at line 10
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 
+        item_type AS Category, 
+        SUM(total_payment * (payment_method = \'Cash\')) AS Cash_Payment, 
+        SUM(total_payment * (payment_method = \'bank_deposit\')) AS Bank_Payment, 
+        SUM(total_payment) AS Total_Payment
+    FROM ewc_inventory
+    WHERE UserId = 59
+    AND YEAR(date_collected) = 2024
+    AND MONTH(date_collected) = 
+    GROUP BY item_type
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+        item_type AS Category, 
+        SUM(total_payment * (payment_method = \'Cash\')) AS Cash_Payment, 
+        SUM(total_payment * (payment_method = \'bank_deposit\')) AS Bank_Payment, 
+        SUM(total_payment) AS Total_Payment
+    FROM ewc_inventory
+    WHERE UserId = 59
+    AND YEAR(date_collected) = 2024
+    AND MONTH(date_collected) = 
+    GROUP BY item_type
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+        item_type AS Category, 
+        SUM(total_payment * (payment_method = \'Cash\')) AS Cash_Payment, 
+        SUM(total_payment * (payment_method = \'bank_deposit\')) AS Bank_Payment, 
+        SUM(total_payment) AS Total_Payment
+    FROM ewc_inventory
+    WHERE UserId = 59
+    AND YEAR(date_collected) = 2024
+    AND MONTH(date_collected) = 
+    GROUP BY item_type
+    ')
+ 4 APPPATH\Models\EwcInventoryModel.php(64): CodeIgniter\Database\BaseConnection->query('SELECT 
+        item_type AS Category, 
+        SUM(total_payment * (payment_method = \'Cash\')) AS Cash_Payment, 
+        SUM(total_payment * (payment_method = \'bank_deposit\')) AS Bank_Payment, 
+        SUM(total_payment) AS Total_Payment
+    FROM ewc_inventory
+    WHERE UserId = 59
+    AND YEAR(date_collected) = 2024
+    AND MONTH(date_collected) = 
+    GROUP BY item_type
+    ')
+ 5 APPPATH\Controllers\Sys.php(1072): App\Models\EwcInventoryModel->getEwcTransactions('59', '2024', null)
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcTransactions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-10 03:50:59 --> Undefined variable $selectedMonth
+in APPPATH\Views\sys\ewc_transactions.php on line 14.
+ 1 APPPATH\Views\sys\ewc_transactions.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedMonth', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_transactions', [], true)
+ 5 APPPATH\Controllers\Sys.php(1083): view('sys/ewc_transactions', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcTransactions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-10 05:25:12 --> Array to string conversion
+in APPPATH\Views\sys\ewc_transactions.php on line 47.
+ 1 APPPATH\Views\sys\ewc_transactions.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php', 47)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_transactions', [], true)
+ 5 APPPATH\Controllers\Sys.php(1086): view('sys/ewc_transactions', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcTransactions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-10 05:26:27 --> Array to string conversion
+in APPPATH\Views\sys\ewc_transactions.php on line 47.
+ 1 APPPATH\Views\sys\ewc_transactions.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php', 47)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_transactions', [], true)
+ 5 APPPATH\Controllers\Sys.php(1089): view('sys/ewc_transactions', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcTransactions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-10 05:27:25 --> Array to string conversion
+in APPPATH\Views\sys\ewc_transactions.php on line 47.
+ 1 APPPATH\Views\sys\ewc_transactions.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php', 47)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_transactions', [], true)
+ 5 APPPATH\Controllers\Sys.php(1086): view('sys/ewc_transactions', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcTransactions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-10 07:08:36 --> Undefined variable $totals
+in APPPATH\Views\sys\ewc_transactions.php on line 71.
+ 1 APPPATH\Views\sys\ewc_transactions.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totals', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php', 71)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_transactions', [], true)
+ 5 APPPATH\Controllers\Sys.php(1086): view('sys/ewc_transactions', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcTransactions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-10 07:09:34 --> Undefined variable $totals
+in APPPATH\Views\sys\ewc_transactions.php on line 72.
+ 1 APPPATH\Views\sys\ewc_transactions.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totals', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php', 72)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_transactions', [], true)
+ 5 APPPATH\Controllers\Sys.php(1086): view('sys/ewc_transactions', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcTransactions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-10 07:13:38 --> Undefined array key "totalCategories"
+in APPPATH\Views\sys\ewc_transactions.php on line 71.
+ 1 APPPATH\Views\sys\ewc_transactions.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "totalCategories"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php', 71)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_transactions', [], true)
+ 5 APPPATH\Controllers\Sys.php(1087): view('sys/ewc_transactions', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcTransactions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-10 07:14:18 --> Undefined variable $summary
+in APPPATH\Controllers\Sys.php on line 1074.
+ 1 APPPATH\Controllers\Sys.php(1074): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $summary', 'C:\\xampp\\htdocs\\emslk\\app\\Controllers\\Sys.php', 1074)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcTransactions()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-10 07:16:05 --> Undefined array key "totalCategories"
+in APPPATH\Views\sys\ewc_transactions.php on line 71.
+ 1 APPPATH\Views\sys\ewc_transactions.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "totalCategories"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php', 71)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_transactions', [], true)
+ 5 APPPATH\Controllers\Sys.php(1095): view('sys/ewc_transactions', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcTransactions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-10 07:16:30 --> Undefined constant "App\Controllers\totals"
+in APPPATH\Controllers\Sys.php on line 1074.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcTransactions()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-10 07:18:47 --> Undefined array key "totalCategories"
+in APPPATH\Views\sys\ewc_transactions.php on line 71.
+ 1 APPPATH\Views\sys\ewc_transactions.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "totalCategories"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php', 71)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_transactions', [], true)
+ 5 APPPATH\Controllers\Sys.php(1089): view('sys/ewc_transactions', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcTransactions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-10 07:25:01 --> Undefined array key "totalCategories"
+in APPPATH\Views\sys\ewc_transactions.php on line 76.
+ 1 APPPATH\Views\sys\ewc_transactions.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "totalCategories"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php', 76)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_transactions', [], true)
+ 5 APPPATH\Controllers\Sys.php(1089): view('sys/ewc_transactions', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcTransactions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-10 07:26:41 --> Undefined array key "totalCategories"
+in APPPATH\Views\sys\ewc_transactions.php on line 71.
+ 1 APPPATH\Views\sys\ewc_transactions.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "totalCategories"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php', 71)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_transactions.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_transactions', [], true)
+ 5 APPPATH\Controllers\Sys.php(1088): view('sys/ewc_transactions', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcTransactions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-10 09:30:29 --> Undefined array key "selectedMonth"
+in APPPATH\Controllers\Sys.php on line 1098.
+ 1 APPPATH\Controllers\Sys.php(1098): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "selectedMonth"', 'C:\\xampp\\htdocs\\emslk\\app\\Controllers\\Sys.php', 1098)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->EwrRequests()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-10 09:30:34 --> Undefined array key "selectedMonth"
+in APPPATH\Controllers\Sys.php on line 1098.
+ 1 APPPATH\Controllers\Sys.php(1098): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "selectedMonth"', 'C:\\xampp\\htdocs\\emslk\\app\\Controllers\\Sys.php', 1098)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->EwrRequests()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-10 15:08:11 --> Invalid file: "sys/report_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/report_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/report_', [], true)
+ 3 APPPATH\Controllers\Sys.php(973): view('sys/report_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->view_reports()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-10 16:34:39 --> Invalid file: "sys/report_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/report_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/report_', [], true)
+ 3 APPPATH\Controllers\Sys.php(973): view('sys/report_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->view_reports()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-10 17:16:36 --> Undefined variable $collectionsInfo
+in APPPATH\Views\sys\ewr_collections.php on line 53.
+ 1 APPPATH\Views\sys\ewr_collections.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $collectionsInfo', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewr_collections.php', 53)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewr_collections.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewr_collections', [], true)
+ 5 APPPATH\Controllers\Sys.php(1134): view('sys/ewr_collections', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-10 17:42:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 4 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(DI...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(DI...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(DI...')
+#3 C:\xampp\htdocs\emslk\app\Models\EwrInventoryModel.php(45): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(DI...')
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1128): App\Models\EwrInventoryModel->getCollectionActivity('2023', '')
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-10 17:42:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(DISTINCT listing_set) AS count 
+                                   FROM ewr_inventory 
+                                   WHERE status1 = \'Collected\' AND UserId = 2023
+                                   AND YEAR(recycled_at) =  ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(DISTINCT listing_set) AS count 
+                                   FROM ewr_inventory 
+                                   WHERE status1 = \'Collected\' AND UserId = 2023
+                                   AND YEAR(recycled_at) =  ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(DISTINCT listing_set) AS count 
+                                   FROM ewr_inventory 
+                                   WHERE status1 = \'Collected\' AND UserId = 2023
+                                   AND YEAR(recycled_at) =  ')
+ 4 APPPATH\Models\EwrInventoryModel.php(45): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(DISTINCT listing_set) AS count 
+                                   FROM ewr_inventory 
+                                   WHERE status1 = \'Collected\' AND UserId = 2023
+                                   AND YEAR(recycled_at) =  ')
+ 5 APPPATH\Controllers\Sys.php(1128): App\Models\EwrInventoryModel->getCollectionActivity('2023', '')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-10 17:44:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 4 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(DI...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(DI...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(DI...')
+#3 C:\xampp\htdocs\emslk\app\Models\EwrInventoryModel.php(45): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(DI...')
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1128): App\Models\EwrInventoryModel->getCollectionActivity('2023', '')
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-10 17:44:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(DISTINCT listing_set) AS count 
+                FROM ewr_inventory 
+                WHERE status1 = \'Collected\' AND UserId = 2023
+                AND YEAR(recycled_at) =  ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(DISTINCT listing_set) AS count 
+                FROM ewr_inventory 
+                WHERE status1 = \'Collected\' AND UserId = 2023
+                AND YEAR(recycled_at) =  ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(DISTINCT listing_set) AS count 
+                FROM ewr_inventory 
+                WHERE status1 = \'Collected\' AND UserId = 2023
+                AND YEAR(recycled_at) =  ')
+ 4 APPPATH\Models\EwrInventoryModel.php(45): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(DISTINCT listing_set) AS count 
+                FROM ewr_inventory 
+                WHERE status1 = \'Collected\' AND UserId = 2023
+                AND YEAR(recycled_at) =  ')
+ 5 APPPATH\Controllers\Sys.php(1128): App\Models\EwrInventoryModel->getCollectionActivity('2023', '')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-10 17:47:51 --> Undefined variable $selectedMonth
+in APPPATH\Views\sys\ewr_collections.php on line 14.
+ 1 APPPATH\Views\sys\ewr_collections.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedMonth', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewr_collections.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewr_collections.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewr_collections', [], true)
+ 5 APPPATH\Controllers\Sys.php(1123): view('sys/ewr_collections', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-10 17:51:13 --> Undefined array key "collectorsServed"
+in APPPATH\Views\sys\ewr_collections.php on line 49.
+ 1 APPPATH\Views\sys\ewr_collections.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "collectorsServed"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewr_collections.php', 49)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewr_collections.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewr_collections', [], true)
+ 5 APPPATH\Controllers\Sys.php(1126): view('sys/ewr_collections', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-10 17:51:56 --> Too few arguments to function esc(), 0 passed in C:\xampp\htdocs\emslk\app\Views\sys\ewr_collections.php on line 49 and at least 1 expected
+in SYSTEMPATH\Common.php on line 424.
+ 1 APPPATH\Views\sys\ewr_collections.php(49): esc()
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewr_collections.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewr_collections', [], true)
+ 5 APPPATH\Controllers\Sys.php(1126): view('sys/ewr_collections', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-10 17:52:44 --> Undefined array key "count"
+in APPPATH\Views\sys\ewr_collections.php on line 60.
+ 1 APPPATH\Views\sys\ewr_collections.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "count"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewr_collections.php', 60)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewr_collections.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewr_collections', [], true)
+ 5 APPPATH\Controllers\Sys.php(1126): view('sys/ewr_collections', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

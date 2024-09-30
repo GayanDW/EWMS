@@ -1,0 +1,350 @@
+CRITICAL - 2024-04-28 04:51:43 --> CodeIgniter\HTTP\Request::fetchGlobal(): Argument #3 ($filter) must be of type ?int, string given, called in C:\xampp\htdocs\emslk\system\HTTP\IncomingRequest.php on line 782
+in SYSTEMPATH\HTTP\RequestTrait.php on line 253.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(782): CodeIgniter\HTTP\Request->fetchGlobal('post', 'item_type', '', null)
+ 2 APPPATH\Controllers\Sys.php(1415): CodeIgniter\HTTP\IncomingRequest->getPost('item_type', '')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->filter()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-28 04:54:05 --> CodeIgniter\HTTP\Request::fetchGlobal(): Argument #3 ($filter) must be of type ?int, string given, called in C:\xampp\htdocs\emslk\system\HTTP\IncomingRequest.php on line 782
+in SYSTEMPATH\HTTP\RequestTrait.php on line 253.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(782): CodeIgniter\HTTP\Request->fetchGlobal('post', 'item_type', '', null)
+ 2 APPPATH\Controllers\Sys.php(1415): CodeIgniter\HTTP\IncomingRequest->getPost('item_type', '')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->filter()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-28 04:55:34 --> CodeIgniter\HTTP\Request::fetchGlobal(): Argument #3 ($filter) must be of type ?int, string given, called in C:\xampp\htdocs\emslk\system\HTTP\IncomingRequest.php on line 782
+in SYSTEMPATH\HTTP\RequestTrait.php on line 253.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(782): CodeIgniter\HTTP\Request->fetchGlobal('post', 'item_type', '', null)
+ 2 APPPATH\Controllers\Sys.php(1415): CodeIgniter\HTTP\IncomingRequest->getPost('item_type', '', null)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->filter()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-28 04:55:42 --> CodeIgniter\HTTP\Request::fetchGlobal(): Argument #3 ($filter) must be of type ?int, string given, called in C:\xampp\htdocs\emslk\system\HTTP\IncomingRequest.php on line 782
+in SYSTEMPATH\HTTP\RequestTrait.php on line 253.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(782): CodeIgniter\HTTP\Request->fetchGlobal('post', 'item_type', '', null)
+ 2 APPPATH\Controllers\Sys.php(1415): CodeIgniter\HTTP\IncomingRequest->getPost('item_type', '', null)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->filter()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-28 05:03:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND `total_payment` < IS NULL' at line 5 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\emslk\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\emslk\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\emslk\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\emslk\app\Models\EwcInventoryModel.php(33): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1420): App\Models\EwcInventoryModel->filterInventory('59', NULL, NULL, NULL)
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->filter()
+#9 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#10 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-04-28 05:03:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND `total_payment` < IS NULL' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `ewc_inventory`
+WHERE `UserId` = \'59\'
+AND `list_status_c` = \'not published\'
+AND `total_payment` > IS NULL
+AND `total_payment` < IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `ewc_inventory`
+WHERE `UserId` = \'59\'
+AND `list_status_c` = \'not published\'
+AND `total_payment` > IS NULL
+AND `total_payment` < IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `ewc_inventory`
+WHERE `UserId` = \'59\'
+AND `list_status_c` = \'not published\'
+AND `total_payment` > IS NULL
+AND `total_payment` < IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ewc_inventory`
+WHERE `UserId` = :UserId:
+AND `list_status_c` = :list_status_c:
+AND `total_payment` > IS NULL
+AND `total_payment` < IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\EwcInventoryModel.php(33): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Sys.php(1420): App\Models\EwcInventoryModel->filterInventory('59', null, null, null)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->filter()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-28 05:03:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND `total_payment` < IS NULL' at line 5 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\emslk\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\emslk\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\emslk\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\emslk\app\Models\EwcInventoryModel.php(33): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1420): App\Models\EwcInventoryModel->filterInventory('59', NULL, NULL, NULL)
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->filter()
+#9 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#10 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-04-28 05:03:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND `total_payment` < IS NULL' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `ewc_inventory`
+WHERE `UserId` = \'59\'
+AND `list_status_c` = \'not published\'
+AND `total_payment` > IS NULL
+AND `total_payment` < IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `ewc_inventory`
+WHERE `UserId` = \'59\'
+AND `list_status_c` = \'not published\'
+AND `total_payment` > IS NULL
+AND `total_payment` < IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `ewc_inventory`
+WHERE `UserId` = \'59\'
+AND `list_status_c` = \'not published\'
+AND `total_payment` > IS NULL
+AND `total_payment` < IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ewc_inventory`
+WHERE `UserId` = :UserId:
+AND `list_status_c` = :list_status_c:
+AND `total_payment` > IS NULL
+AND `total_payment` < IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\EwcInventoryModel.php(33): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Sys.php(1420): App\Models\EwcInventoryModel->filterInventory('59', null, null, null)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->filter()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-28 05:04:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND `total_payment` < IS NULL' at line 5 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\emslk\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\emslk\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\emslk\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\emslk\app\Models\EwcInventoryModel.php(33): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1420): App\Models\EwcInventoryModel->filterInventory('59', NULL, NULL, NULL)
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->filter()
+#9 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#10 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-04-28 05:04:13 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND `total_payment` < IS NULL' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `ewc_inventory`
+WHERE `UserId` = \'59\'
+AND `list_status_c` = \'not published\'
+AND `total_payment` > IS NULL
+AND `total_payment` < IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `ewc_inventory`
+WHERE `UserId` = \'59\'
+AND `list_status_c` = \'not published\'
+AND `total_payment` > IS NULL
+AND `total_payment` < IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `ewc_inventory`
+WHERE `UserId` = \'59\'
+AND `list_status_c` = \'not published\'
+AND `total_payment` > IS NULL
+AND `total_payment` < IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ewc_inventory`
+WHERE `UserId` = :UserId:
+AND `list_status_c` = :list_status_c:
+AND `total_payment` > IS NULL
+AND `total_payment` < IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\EwcInventoryModel.php(33): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Sys.php(1420): App\Models\EwcInventoryModel->filterInventory('59', null, null, null)
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->filter()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-28 05:36:14 --> CodeIgniter\HTTP\Request::fetchGlobal(): Argument #3 ($filter) must be of type ?int, array given, called in C:\xampp\htdocs\emslk\system\HTTP\IncomingRequest.php on line 782
+in SYSTEMPATH\HTTP\RequestTrait.php on line 253.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(782): CodeIgniter\HTTP\Request->fetchGlobal('post', 'selected_items', [], null)
+ 2 APPPATH\Controllers\Sys.php(1433): CodeIgniter\HTTP\IncomingRequest->getPost('selected_items', [])
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->calculateSellingPrice()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-28 05:36:35 --> CodeIgniter\HTTP\Request::fetchGlobal(): Argument #3 ($filter) must be of type ?int, array given, called in C:\xampp\htdocs\emslk\system\HTTP\IncomingRequest.php on line 782
+in SYSTEMPATH\HTTP\RequestTrait.php on line 253.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(782): CodeIgniter\HTTP\Request->fetchGlobal('post', 'selected_items', [], null)
+ 2 APPPATH\Controllers\Sys.php(1433): CodeIgniter\HTTP\IncomingRequest->getPost('selected_items', [])
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->calculateSellingPrice()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-28 09:50:41 --> Class "EwrRequestModel" not found
+in APPPATH\Views\sys\content_e-Waste Recycler.php on line 74.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste recycler', [], true)
+ 4 APPPATH\Controllers\Sys.php(58): view('sys/content_e-waste recycler', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-28 09:54:03 --> Class "EwrRequestModel" not found
+in APPPATH\Views\sys\content_e-Waste Recycler.php on line 74.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste recycler', [], true)
+ 4 APPPATH\Controllers\Sys.php(59): view('sys/content_e-waste recycler', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-28 09:57:22 --> Undefined array key "collector_name"
+in APPPATH\Views\sys\content_e-Waste Recycler.php on line 11.
+ 1 APPPATH\Views\sys\content_e-Waste Recycler.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "collector_name"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Recycler.php', 11)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Recycler.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste recycler', [], true)
+ 5 APPPATH\Controllers\Sys.php(59): view('sys/content_e-waste recycler', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-28 09:59:03 --> Undefined array key "listing_set"
+in APPPATH\Views\sys\content_e-Waste Recycler.php on line 8.
+ 1 APPPATH\Views\sys\content_e-Waste Recycler.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "listing_set"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Recycler.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Recycler.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste recycler', [], true)
+ 5 APPPATH\Controllers\Sys.php(60): view('sys/content_e-waste recycler', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-28 10:01:33 --> Undefined variable $rlistings
+in APPPATH\Views\sys\content_e-Waste Recycler.php on line 7.
+ 1 APPPATH\Views\sys\content_e-Waste Recycler.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rlistings', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Recycler.php', 7)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Recycler.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste recycler', [], true)
+ 5 APPPATH\Controllers\Sys.php(60): view('sys/content_e-waste recycler', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-28 10:01:48 --> Undefined array key "listing_set"
+in APPPATH\Views\sys\content_e-Waste Recycler.php on line 8.
+ 1 APPPATH\Views\sys\content_e-Waste Recycler.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "listing_set"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Recycler.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Recycler.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste recycler', [], true)
+ 5 APPPATH\Controllers\Sys.php(60): view('sys/content_e-waste recycler', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-28 10:01:53 --> Undefined array key "listing_set"
+in APPPATH\Views\sys\content_e-Waste Recycler.php on line 8.
+ 1 APPPATH\Views\sys\content_e-Waste Recycler.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "listing_set"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Recycler.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Recycler.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste recycler', [], true)
+ 5 APPPATH\Controllers\Sys.php(60): view('sys/content_e-waste recycler', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-28 10:03:35 --> Undefined array key "listing_set"
+in APPPATH\Views\sys\content_e-Waste Recycler.php on line 8.
+ 1 APPPATH\Views\sys\content_e-Waste Recycler.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "listing_set"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Recycler.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Recycler.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste recycler', [], true)
+ 5 APPPATH\Controllers\Sys.php(60): view('sys/content_e-waste recycler', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-28 10:03:36 --> Undefined array key "listing_set"
+in APPPATH\Views\sys\content_e-Waste Recycler.php on line 8.
+ 1 APPPATH\Views\sys\content_e-Waste Recycler.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "listing_set"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Recycler.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Recycler.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste recycler', [], true)
+ 5 APPPATH\Controllers\Sys.php(60): view('sys/content_e-waste recycler', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-28 10:03:39 --> Undefined array key "listing_set"
+in APPPATH\Views\sys\content_e-Waste Recycler.php on line 8.
+ 1 APPPATH\Views\sys\content_e-Waste Recycler.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "listing_set"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Recycler.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Recycler.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste recycler', [], true)
+ 5 APPPATH\Controllers\Sys.php(60): view('sys/content_e-waste recycler', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-28 10:03:46 --> Undefined array key "listing_set"
+in APPPATH\Views\sys\content_e-Waste Recycler.php on line 8.
+ 1 APPPATH\Views\sys\content_e-Waste Recycler.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "listing_set"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Recycler.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Recycler.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste recycler', [], true)
+ 5 APPPATH\Controllers\Sys.php(60): view('sys/content_e-waste recycler', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-28 10:10:38 --> Call to a member function where() on array
+in APPPATH\Views\sys\content_e-Waste Recycler.php on line 72.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste recycler', [], true)
+ 4 APPPATH\Controllers\Sys.php(58): view('sys/content_e-waste recycler', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-28 10:15:02 --> Call to a member function where() on array
+in APPPATH\Views\sys\content_e-Waste Recycler.php on line 72.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste recycler', [], true)
+ 4 APPPATH\Controllers\Sys.php(58): view('sys/content_e-waste recycler', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-28 10:15:10 --> Call to a member function where() on array
+in APPPATH\Views\sys\content_e-Waste Recycler.php on line 72.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste recycler', [], true)
+ 4 APPPATH\Controllers\Sys.php(58): view('sys/content_e-waste recycler', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

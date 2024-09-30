@@ -1,0 +1,66 @@
+CRITICAL - 2024-03-30 01:40:24 --> Undefined variable $listItems
+in APPPATH\Views\sys\listed_items.php on line 23.
+ 1 APPPATH\Views\sys\listed_items.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $listItems', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\listed_items.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\listed_items.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/listed_items', [], true)
+ 5 APPPATH\Controllers\Sys.php(2398): view('sys/listed_items', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewitemsAll()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 01:41:26 --> Undefined array key "businessName"
+in APPPATH\Views\sys\listed_items.php on line 26.
+ 1 APPPATH\Views\sys\listed_items.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "businessName"', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\listed_items.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\listed_items.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/listed_items', [], true)
+ 5 APPPATH\Controllers\Sys.php(2398): view('sys/listed_items', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewitemsAll()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 01:42:57 --> Undefined array key "description"
+in APPPATH\Views\sys\listed_items.php on line 33.
+ 1 APPPATH\Views\sys\listed_items.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "description"', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\listed_items.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\listed_items.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/listed_items', [], true)
+ 5 APPPATH\Controllers\Sys.php(2398): view('sys/listed_items', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewitemsAll()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 01:44:01 --> Undefined array key "total_payment"
+in APPPATH\Views\sys\listed_items.php on line 34.
+ 1 APPPATH\Views\sys\listed_items.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "total_payment"', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\listed_items.php', 34)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\listed_items.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/listed_items', [], true)
+ 5 APPPATH\Controllers\Sys.php(2398): view('sys/listed_items', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewitemsAll()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 01:44:39 --> Undefined array key "list_status_c"
+in APPPATH\Views\sys\listed_items.php on line 35.
+ 1 APPPATH\Views\sys\listed_items.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "list_status_c"', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\listed_items.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\listed_items.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/listed_items', [], true)
+ 5 APPPATH\Controllers\Sys.php(2398): view('sys/listed_items', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewitemsAll()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 01:56:06 --> Undefined array key "Amount"
+in APPPATH\Views\sys\listed_items.php on line 47.
+ 1 APPPATH\Views\sys\listed_items.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Amount"', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\listed_items.php', 47)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\listed_items.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/listed_items', [], true)
+ 5 APPPATH\Controllers\Sys.php(2398): view('sys/listed_items', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewitemsAll()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

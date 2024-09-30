@@ -1,0 +1,11 @@
+CRITICAL - 2024-04-21 11:05:25 --> Undefined array key "rejection_reason"
+in APPPATH\Views\sys\rejected_bids.php on line 47.
+ 1 APPPATH\Views\sys\rejected_bids.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rejection_reason"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\rejected_bids.php', 47)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\rejected_bids.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/rejected_bids', [], true)
+ 5 APPPATH\Controllers\Sys.php(92): view('sys/rejected_bids', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->rejectedBids()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

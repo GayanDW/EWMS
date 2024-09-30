@@ -1,0 +1,287 @@
+CRITICAL - 2024-03-19 03:17:51 --> Undefined variable $totalCollections
+in APPPATH\Views\sys\ewc_collection_activity_analysis.php on line 51.
+ 1 APPPATH\Views\sys\ewc_collection_activity_analysis.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalCollections', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_collection_activity_analysis.php', 51)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_collection_activity_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_collection_activity_analysis', [], true)
+ 5 APPPATH\Controllers\Sys.php(954): view('sys/ewc_collection_activity_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->collectionActivityAnalysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 03:18:02 --> Undefined variable $totalCollections
+in APPPATH\Views\sys\ewc_collection_activity_analysis.php on line 51.
+ 1 APPPATH\Views\sys\ewc_collection_activity_analysis.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalCollections', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_collection_activity_analysis.php', 51)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_collection_activity_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_collection_activity_analysis', [], true)
+ 5 APPPATH\Controllers\Sys.php(954): view('sys/ewc_collection_activity_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->collectionActivityAnalysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 03:59:26 --> Undefined array key 0
+in APPPATH\Views\sys\ewc_bid_analysis.php on line 15.
+ 1 APPPATH\Views\sys\ewc_bid_analysis.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_bid_analysis.php', 15)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_bid_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_bid_analysis', [], true)
+ 5 APPPATH\Controllers\Sys.php(979): view('sys/ewc_bid_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcBidAnalysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 03:59:50 --> Undefined array key 0
+in APPPATH\Views\sys\ewc_bid_analysis.php on line 15.
+ 1 APPPATH\Views\sys\ewc_bid_analysis.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_bid_analysis.php', 15)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewc_bid_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_bid_analysis', [], true)
+ 5 APPPATH\Controllers\Sys.php(979): view('sys/ewc_bid_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcBidAnalysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 04:16:41 --> Invalid file: "sys/ewr_materials.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/ewr_materials.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewr_materials', [], true)
+ 3 APPPATH\Controllers\Sys.php(1004): view('sys/ewr_materials', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcPurchases()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 04:17:13 --> Invalid file: "sys/ewr_materials.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/ewr_materials.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewr_materials', [], true)
+ 3 APPPATH\Controllers\Sys.php(1004): view('sys/ewr_materials')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcPurchases()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 06:41:54 --> Call to undefined method App\Models\EwrInventoryModel::getMonthlyInventorySummary
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Sys.php(1029): CodeIgniter\Model->__call('getMonthlyInventorySummary', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthlyRecycling()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 06:42:02 --> Call to undefined method App\Models\EwrInventoryModel::getMonthlyInventorySummary
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Sys.php(1029): CodeIgniter\Model->__call('getMonthlyInventorySummary', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthlyRecycling()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 06:44:17 --> Call to undefined method App\Models\EwrInventoryModel::getMonthlyInventorySummary
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Sys.php(1029): CodeIgniter\Model->__call('getMonthlyInventorySummary', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthlyRecycling()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 06:44:38 --> Call to undefined method App\Models\EwrInventoryModel::getMonthlyInventorySummary
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Sys.php(1029): CodeIgniter\Model->__call('getMonthlyInventorySummary', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthlyRecycling()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-19 08:28:57 --> mysqli_sql_exception: Unknown column 'statud' in 'where clause' in C:\xampp\htdocs\ewms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ewms\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT batch_id...', 0)
+#1 C:\xampp\htdocs\ewms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT batch_id...')
+#2 C:\xampp\htdocs\ewms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT batch_id...')
+#3 C:\xampp\htdocs\ewms\app\Models\EwrInventoryModel.php(14): CodeIgniter\Database\BaseConnection->query('SELECT batch_id...', Array)
+#4 C:\xampp\htdocs\ewms\app\Controllers\Sys.php(1029): App\Models\EwrInventoryModel->getMonthlyInventorySummary('61', '2024', '3')
+#5 C:\xampp\htdocs\ewms\system\CodeIgniter.php(932): App\Controllers\Sys->monthlyRecycling()
+#6 C:\xampp\htdocs\ewms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\ewms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ewms\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-19 08:28:57 --> Unknown column 'statud' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT batch_id, SUM(weight) as total_weight_kg FROM `ewr_inventory`
+                                WHERE UserId = \'61\'
+                                AND YEAR(recycled_at) = \'2024\'
+                                AND MONTH(recycled_at) = \'3\'
+                                AND weight_unit = \'g\'
+                                AND statud = \'recycled\'
+                                GROUP BY batch_id', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT batch_id, SUM(weight) as total_weight_kg FROM `ewr_inventory`
+                                WHERE UserId = \'61\'
+                                AND YEAR(recycled_at) = \'2024\'
+                                AND MONTH(recycled_at) = \'3\'
+                                AND weight_unit = \'g\'
+                                AND statud = \'recycled\'
+                                GROUP BY batch_id')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT batch_id, SUM(weight) as total_weight_kg FROM `ewr_inventory`
+                                WHERE UserId = \'61\'
+                                AND YEAR(recycled_at) = \'2024\'
+                                AND MONTH(recycled_at) = \'3\'
+                                AND weight_unit = \'g\'
+                                AND statud = \'recycled\'
+                                GROUP BY batch_id')
+ 4 APPPATH\Models\EwrInventoryModel.php(14): CodeIgniter\Database\BaseConnection->query('SELECT batch_id, SUM(weight) as total_weight_kg FROM `ewr_inventory`
+                                WHERE UserId = ?
+                                AND YEAR(recycled_at) = ?
+                                AND MONTH(recycled_at) = ?
+                                AND weight_unit = \'g\'
+                                AND statud = \'recycled\'
+                                GROUP BY batch_id', [...])
+ 5 APPPATH\Controllers\Sys.php(1029): App\Models\EwrInventoryModel->getMonthlyInventorySummary('61', '2024', '3')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->monthlyRecycling()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 11:45:23 --> Invalid file: "sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/menu_', [], true)
+ 3 APPPATH\Controllers\Sys.php(116): view('sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 11:45:36 --> Invalid file: "ewr/ewr_request_analysis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ewr/ewr_request_analysis.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('ewr/ewr_request_analysis', [], true)
+ 3 APPPATH\Controllers\Sys.php(1060): view('ewr/ewr_request_analysis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->requestAnalysis()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-19 11:59:19 --> mysqli_sql_exception: Unknown column 'date_added' in 'where clause' in C:\xampp\htdocs\ewms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ewms\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `req_sta...', 0)
+#1 C:\xampp\htdocs\ewms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `req_sta...')
+#2 C:\xampp\htdocs\ewms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `req_sta...')
+#3 C:\xampp\htdocs\ewms\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `req_sta...', Array, false)
+#4 C:\xampp\htdocs\ewms\app\Models\EwrRequestModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ewms\app\Controllers\Sys.php(1054): App\Models\EwrRequestModel->getRequestSummary('61', '2024', NULL)
+#6 C:\xampp\htdocs\ewms\system\CodeIgniter.php(932): App\Controllers\Sys->requestAnalysis()
+#7 C:\xampp\htdocs\ewms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\ewms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ewms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-19 11:59:19 --> Unknown column 'date_added' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `req_status_r`, COUNT(*) as count
+FROM `ewr_req`
+WHERE `UserId` = \'61\'
+AND YEAR(date_added) = \'2024\'
+GROUP BY `req_status_r`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `req_status_r`, COUNT(*) as count
+FROM `ewr_req`
+WHERE `UserId` = \'61\'
+AND YEAR(date_added) = \'2024\'
+GROUP BY `req_status_r`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `req_status_r`, COUNT(*) as count
+FROM `ewr_req`
+WHERE `UserId` = \'61\'
+AND YEAR(date_added) = \'2024\'
+GROUP BY `req_status_r`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `req_status_r`, COUNT(*) as count
+FROM `ewr_req`
+WHERE `UserId` = :UserId:
+AND YEAR(date_added) = :YEAR(date_added):
+GROUP BY `req_status_r`', [...], false)
+ 5 APPPATH\Models\EwrRequestModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Sys.php(1054): App\Models\EwrRequestModel->getRequestSummary('61', '2024', null)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->requestAnalysis()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 14:13:53 --> Invalid file: "sys/ewr_materials.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/ewr_materials.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewr_materials', [], true)
+ 3 APPPATH\Controllers\Sys.php(1033): view('sys/ewr_materials')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcPurchases()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 14:13:58 --> Invalid file: "sys/ewr_materials.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/ewr_materials.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewr_materials', [], true)
+ 3 APPPATH\Controllers\Sys.php(1033): view('sys/ewr_materials')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcPurchases()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 14:19:56 --> Invalid file: "sys/ewr_materials.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/ewr_materials.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewr_materials', [], true)
+ 3 APPPATH\Controllers\Sys.php(1033): view('sys/ewr_materials')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcPurchases()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 16:58:06 --> Undefined variable $transactionAnalysis
+in APPPATH\Views\sys\ewr_payments.php on line 44.
+ 1 APPPATH\Views\sys\ewr_payments.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transactionAnalysis', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewr_payments.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewr_payments.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewr_payments', [], true)
+ 5 APPPATH\Controllers\Sys.php(1044): view('sys/ewr_payments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->generateTransactionReport()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 17:01:32 --> Undefined variable $transactionAnalysis
+in APPPATH\Views\sys\ewr_payments.php on line 44.
+ 1 APPPATH\Views\sys\ewr_payments.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transactionAnalysis', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewr_payments.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewr_payments.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewr_payments', [], true)
+ 5 APPPATH\Controllers\Sys.php(1043): view('sys/ewr_payments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->generateTransactionReport()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 17:01:41 --> Undefined variable $transactionAnalysis
+in APPPATH\Views\sys\ewr_payments.php on line 44.
+ 1 APPPATH\Views\sys\ewr_payments.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transactionAnalysis', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewr_payments.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewr_payments.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewr_payments', [], true)
+ 5 APPPATH\Controllers\Sys.php(1043): view('sys/ewr_payments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->generateTransactionReport()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 17:05:10 --> Undefined array key "payment_method"
+in APPPATH\Views\sys\ewr_payments.php on line 56.
+ 1 APPPATH\Views\sys\ewr_payments.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "payment_method"', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewr_payments.php', 56)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewr_payments.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewr_payments', [], true)
+ 5 APPPATH\Controllers\Sys.php(1053): view('sys/ewr_payments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->generateTransactionReport()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 17:06:30 --> Undefined array key "payment_method"
+in APPPATH\Views\sys\ewr_payments.php on line 57.
+ 1 APPPATH\Views\sys\ewr_payments.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "payment_method"', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewr_payments.php', 57)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\ewr_payments.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewr_payments', [], true)
+ 5 APPPATH\Controllers\Sys.php(1053): view('sys/ewr_payments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->generateTransactionReport()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 17:24:23 --> Invalid file: "sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/menu_', [], true)
+ 3 APPPATH\Controllers\Sys.php(841): view('sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->view_reports()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

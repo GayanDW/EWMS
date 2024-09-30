@@ -1,0 +1,684 @@
+ERROR - 2024-05-11 05:26:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inv...' at line 7 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT ewr_req....', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ewr_req....')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ewr_req....')
+#3 C:\xampp\htdocs\emslk\app\Models\EwrInventoryModel.php(52): CodeIgniter\Database\BaseConnection->query('SELECT ewr_req....')
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1122): App\Models\EwrInventoryModel->getCollectionActivity(NULL, '2024', '3')
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-11 05:26:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inv...' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT ewr_req.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count 
+                FROM 
+                    ewr_inventory 
+                LEFT JOIN 
+                    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = 
+                AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inventory.recycled_at) = 3 ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ewr_req.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count 
+                FROM 
+                    ewr_inventory 
+                LEFT JOIN 
+                    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = 
+                AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inventory.recycled_at) = 3 ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ewr_req.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count 
+                FROM 
+                    ewr_inventory 
+                LEFT JOIN 
+                    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = 
+                AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inventory.recycled_at) = 3 ')
+ 4 APPPATH\Models\EwrInventoryModel.php(52): CodeIgniter\Database\BaseConnection->query('SELECT ewr_req.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count 
+                FROM 
+                    ewr_inventory 
+                LEFT JOIN 
+                    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = 
+                AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inventory.recycled_at) = 3 ')
+ 5 APPPATH\Controllers\Sys.php(1122): App\Models\EwrInventoryModel->getCollectionActivity(null, '2024', '3')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-11 05:28:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inv...' at line 7 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT ewr_req....', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ewr_req....')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ewr_req....')
+#3 C:\xampp\htdocs\emslk\app\Models\EwrInventoryModel.php(52): CodeIgniter\Database\BaseConnection->query('SELECT ewr_req....')
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1122): App\Models\EwrInventoryModel->getCollectionActivity(NULL, '2024', '3')
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-11 05:28:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inv...' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT ewr_req.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count 
+                FROM 
+                    ewr_inventory 
+                LEFT JOIN 
+                    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = 
+                AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inventory.recycled_at) = 3 ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ewr_req.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count 
+                FROM 
+                    ewr_inventory 
+                LEFT JOIN 
+                    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = 
+                AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inventory.recycled_at) = 3 ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ewr_req.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count 
+                FROM 
+                    ewr_inventory 
+                LEFT JOIN 
+                    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = 
+                AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inventory.recycled_at) = 3 ')
+ 4 APPPATH\Models\EwrInventoryModel.php(52): CodeIgniter\Database\BaseConnection->query('SELECT ewr_req.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count 
+                FROM 
+                    ewr_inventory 
+                LEFT JOIN 
+                    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = 
+                AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inventory.recycled_at) = 3 ')
+ 5 APPPATH\Controllers\Sys.php(1122): App\Models\EwrInventoryModel->getCollectionActivity(null, '2024', '3')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-11 05:28:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inv...' at line 7 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT ewr_req....', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ewr_req....')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ewr_req....')
+#3 C:\xampp\htdocs\emslk\app\Models\EwrInventoryModel.php(52): CodeIgniter\Database\BaseConnection->query('SELECT ewr_req....')
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1122): App\Models\EwrInventoryModel->getCollectionActivity(NULL, '2024', '3')
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-11 05:28:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inv...' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT ewr_req.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count 
+                FROM 
+                    ewr_inventory 
+                LEFT JOIN 
+                    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = 
+                AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inventory.recycled_at) = 3 ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ewr_req.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count 
+                FROM 
+                    ewr_inventory 
+                LEFT JOIN 
+                    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = 
+                AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inventory.recycled_at) = 3 ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ewr_req.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count 
+                FROM 
+                    ewr_inventory 
+                LEFT JOIN 
+                    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = 
+                AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inventory.recycled_at) = 3 ')
+ 4 APPPATH\Models\EwrInventoryModel.php(52): CodeIgniter\Database\BaseConnection->query('SELECT ewr_req.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count 
+                FROM 
+                    ewr_inventory 
+                LEFT JOIN 
+                    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = 
+                AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inventory.recycled_at) = 3 ')
+ 5 APPPATH\Controllers\Sys.php(1122): App\Models\EwrInventoryModel->getCollectionActivity(null, '2024', '3')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-11 05:29:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(recycled_at) = 2024 
+                AND MONTH(recycled_at) = 3' at line 7 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT district...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT district...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT district...')
+#3 C:\xampp\htdocs\emslk\app\Models\EwrInventoryModel.php(52): CodeIgniter\Database\BaseConnection->query('SELECT district...')
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1122): App\Models\EwrInventoryModel->getCollectionActivity(NULL, '2024', '3')
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-11 05:29:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(recycled_at) = 2024 
+                AND MONTH(recycled_at) = 3' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT district, COUNT(DISTINCT listing_set) AS count 
+                FROM 
+                    ewr_inventory 
+                LEFT JOIN 
+                    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+                WHERE status1 = \'Collected\' AND UserId = 
+                AND YEAR(recycled_at) = 2024 
+                AND MONTH(recycled_at) = 3 ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT district, COUNT(DISTINCT listing_set) AS count 
+                FROM 
+                    ewr_inventory 
+                LEFT JOIN 
+                    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+                WHERE status1 = \'Collected\' AND UserId = 
+                AND YEAR(recycled_at) = 2024 
+                AND MONTH(recycled_at) = 3 ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT district, COUNT(DISTINCT listing_set) AS count 
+                FROM 
+                    ewr_inventory 
+                LEFT JOIN 
+                    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+                WHERE status1 = \'Collected\' AND UserId = 
+                AND YEAR(recycled_at) = 2024 
+                AND MONTH(recycled_at) = 3 ')
+ 4 APPPATH\Models\EwrInventoryModel.php(52): CodeIgniter\Database\BaseConnection->query('SELECT district, COUNT(DISTINCT listing_set) AS count 
+                FROM 
+                    ewr_inventory 
+                LEFT JOIN 
+                    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+                WHERE status1 = \'Collected\' AND UserId = 
+                AND YEAR(recycled_at) = 2024 
+                AND MONTH(recycled_at) = 3 ')
+ 5 APPPATH\Controllers\Sys.php(1122): App\Models\EwrInventoryModel->getCollectionActivity(null, '2024', '3')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-11 05:31:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(recycled_at) = 2024 
+                AND MONTH(recycled_at) = 3' at line 7 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT ewr_req....', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ewr_req....')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ewr_req....')
+#3 C:\xampp\htdocs\emslk\app\Models\EwrInventoryModel.php(52): CodeIgniter\Database\BaseConnection->query('SELECT ewr_req....')
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1122): App\Models\EwrInventoryModel->getCollectionActivity(NULL, '2024', '3')
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-11 05:31:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(recycled_at) = 2024 
+                AND MONTH(recycled_at) = 3' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT ewr_req.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count 
+                FROM 
+                    ewr_inventory 
+                LEFT JOIN 
+                    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = 
+                AND YEAR(recycled_at) = 2024 
+                AND MONTH(recycled_at) = 3 ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ewr_req.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count 
+                FROM 
+                    ewr_inventory 
+                LEFT JOIN 
+                    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = 
+                AND YEAR(recycled_at) = 2024 
+                AND MONTH(recycled_at) = 3 ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ewr_req.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count 
+                FROM 
+                    ewr_inventory 
+                LEFT JOIN 
+                    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = 
+                AND YEAR(recycled_at) = 2024 
+                AND MONTH(recycled_at) = 3 ')
+ 4 APPPATH\Models\EwrInventoryModel.php(52): CodeIgniter\Database\BaseConnection->query('SELECT ewr_req.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count 
+                FROM 
+                    ewr_inventory 
+                LEFT JOIN 
+                    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = 
+                AND YEAR(recycled_at) = 2024 
+                AND MONTH(recycled_at) = 3 ')
+ 5 APPPATH\Controllers\Sys.php(1122): App\Models\EwrInventoryModel->getCollectionActivity(null, '2024', '3')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-11 05:31:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(recycled_at) = 2024 
+                AND MONTH(recycled_at) = 3' at line 10 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT district...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT district...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT district...')
+#3 C:\xampp\htdocs\emslk\app\Models\EwrInventoryModel.php(54): CodeIgniter\Database\BaseConnection->query('SELECT district...')
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1122): App\Models\EwrInventoryModel->getCollectionActivity(NULL, '2024', '3')
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-11 05:31:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(recycled_at) = 2024 
+                AND MONTH(recycled_at) = 3' at line 10
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT district, COUNT(DISTINCT listing_set) AS count 
+               
+                FROM 
+    ewr_inventory 
+LEFT JOIN 
+    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+
+
+                WHERE status1 = \'Collected\' AND UserId = 
+                AND YEAR(recycled_at) = 2024 
+                AND MONTH(recycled_at) = 3 ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT district, COUNT(DISTINCT listing_set) AS count 
+               
+                FROM 
+    ewr_inventory 
+LEFT JOIN 
+    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+
+
+                WHERE status1 = \'Collected\' AND UserId = 
+                AND YEAR(recycled_at) = 2024 
+                AND MONTH(recycled_at) = 3 ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT district, COUNT(DISTINCT listing_set) AS count 
+               
+                FROM 
+    ewr_inventory 
+LEFT JOIN 
+    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+
+
+                WHERE status1 = \'Collected\' AND UserId = 
+                AND YEAR(recycled_at) = 2024 
+                AND MONTH(recycled_at) = 3 ')
+ 4 APPPATH\Models\EwrInventoryModel.php(54): CodeIgniter\Database\BaseConnection->query('SELECT district, COUNT(DISTINCT listing_set) AS count 
+               
+                FROM 
+    ewr_inventory 
+LEFT JOIN 
+    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+
+
+                WHERE status1 = \'Collected\' AND UserId = 
+                AND YEAR(recycled_at) = 2024 
+                AND MONTH(recycled_at) = 3 ')
+ 5 APPPATH\Controllers\Sys.php(1122): App\Models\EwrInventoryModel->getCollectionActivity(null, '2024', '3')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-11 05:32:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(recycled_at) = 2024 
+                AND MONTH(recycled_at) = 3' at line 10 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT district...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT district...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT district...')
+#3 C:\xampp\htdocs\emslk\app\Models\EwrInventoryModel.php(54): CodeIgniter\Database\BaseConnection->query('SELECT district...')
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1122): App\Models\EwrInventoryModel->getCollectionActivity(NULL, '2024', '3')
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-11 05:32:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(recycled_at) = 2024 
+                AND MONTH(recycled_at) = 3' at line 10
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT district, COUNT(DISTINCT listing_set) AS count 
+               
+                FROM 
+    ewr_inventory 
+INNER JOIN 
+    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+
+
+                WHERE status1 = \'Collected\' AND UserId = 
+                AND YEAR(recycled_at) = 2024 
+                AND MONTH(recycled_at) = 3 ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT district, COUNT(DISTINCT listing_set) AS count 
+               
+                FROM 
+    ewr_inventory 
+INNER JOIN 
+    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+
+
+                WHERE status1 = \'Collected\' AND UserId = 
+                AND YEAR(recycled_at) = 2024 
+                AND MONTH(recycled_at) = 3 ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT district, COUNT(DISTINCT listing_set) AS count 
+               
+                FROM 
+    ewr_inventory 
+INNER JOIN 
+    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+
+
+                WHERE status1 = \'Collected\' AND UserId = 
+                AND YEAR(recycled_at) = 2024 
+                AND MONTH(recycled_at) = 3 ')
+ 4 APPPATH\Models\EwrInventoryModel.php(54): CodeIgniter\Database\BaseConnection->query('SELECT district, COUNT(DISTINCT listing_set) AS count 
+               
+                FROM 
+    ewr_inventory 
+INNER JOIN 
+    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+
+
+                WHERE status1 = \'Collected\' AND UserId = 
+                AND YEAR(recycled_at) = 2024 
+                AND MONTH(recycled_at) = 3 ')
+ 5 APPPATH\Controllers\Sys.php(1122): App\Models\EwrInventoryModel->getCollectionActivity(null, '2024', '3')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-11 05:35:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inv...' at line 7 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT ewr_req....', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ewr_req....')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ewr_req....')
+#3 C:\xampp\htdocs\emslk\app\Models\EwrInventoryModel.php(51): CodeIgniter\Database\BaseConnection->query('SELECT ewr_req....')
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1122): App\Models\EwrInventoryModel->getCollectionActivity(NULL, '2024', '3')
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-11 05:35:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inv...' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT ewr_req.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count 
+                FROM 
+                    ewr_inventory 
+                LEFT JOIN 
+                    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = 
+                AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inventory.recycled_at) = 3 ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ewr_req.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count 
+                FROM 
+                    ewr_inventory 
+                LEFT JOIN 
+                    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = 
+                AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inventory.recycled_at) = 3 ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ewr_req.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count 
+                FROM 
+                    ewr_inventory 
+                LEFT JOIN 
+                    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = 
+                AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inventory.recycled_at) = 3 ')
+ 4 APPPATH\Models\EwrInventoryModel.php(51): CodeIgniter\Database\BaseConnection->query('SELECT ewr_req.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count 
+                FROM 
+                    ewr_inventory 
+                LEFT JOIN 
+                    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = 
+                AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inventory.recycled_at) = 3 ')
+ 5 APPPATH\Controllers\Sys.php(1122): App\Models\EwrInventoryModel->getCollectionActivity(null, '2024', '3')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-11 05:36:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inv...' at line 7 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT ewr_req....', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ewr_req....')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ewr_req....')
+#3 C:\xampp\htdocs\emslk\app\Models\EwrInventoryModel.php(51): CodeIgniter\Database\BaseConnection->query('SELECT ewr_req....')
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1122): App\Models\EwrInventoryModel->getCollectionActivity(NULL, '2024', '3')
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-11 05:36:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inv...' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT ewr_req.*, COUNT(DISTINCT ewr_inventory.listing_set) AS count 
+                FROM 
+                    ewr_inventory 
+                LEFT JOIN 
+                    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = 
+                AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inventory.recycled_at) = 3 ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ewr_req.*, COUNT(DISTINCT ewr_inventory.listing_set) AS count 
+                FROM 
+                    ewr_inventory 
+                LEFT JOIN 
+                    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = 
+                AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inventory.recycled_at) = 3 ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ewr_req.*, COUNT(DISTINCT ewr_inventory.listing_set) AS count 
+                FROM 
+                    ewr_inventory 
+                LEFT JOIN 
+                    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = 
+                AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inventory.recycled_at) = 3 ')
+ 4 APPPATH\Models\EwrInventoryModel.php(51): CodeIgniter\Database\BaseConnection->query('SELECT ewr_req.*, COUNT(DISTINCT ewr_inventory.listing_set) AS count 
+                FROM 
+                    ewr_inventory 
+                LEFT JOIN 
+                    ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = 
+                AND YEAR(ewr_inventory.recycled_at) = 2024 
+                AND MONTH(ewr_inventory.recycled_at) = 3 ')
+ 5 APPPATH\Controllers\Sys.php(1122): App\Models\EwrInventoryModel->getCollectionActivity(null, '2024', '3')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-11 05:51:35 --> mysqli_sql_exception: Unknown column 'ewr_req.district' in 'field list' in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT ewr_req....', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ewr_req....')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ewr_req....')
+#3 C:\xampp\htdocs\emslk\app\Models\EwrInventoryModel.php(54): CodeIgniter\Database\BaseConnection->query('SELECT ewr_req....', Array)
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1122): App\Models\EwrInventoryModel->getCollectionActivity(NULL, '2024', '3')
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-11 05:51:35 --> Unknown column 'ewr_req.district' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT ewr_req.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count 
+            FROM ewr_inventory 
+            LEFT JOIN ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+            WHERE ewr_inventory.status1 = \'Collected\' 
+            AND ewr_inventory.UserId = NULL 
+            AND YEAR(ewr_inventory.recycled_at) = \'2024\' AND MONTH(ewr_inventory.recycled_at) = \'3\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ewr_req.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count 
+            FROM ewr_inventory 
+            LEFT JOIN ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+            WHERE ewr_inventory.status1 = \'Collected\' 
+            AND ewr_inventory.UserId = NULL 
+            AND YEAR(ewr_inventory.recycled_at) = \'2024\' AND MONTH(ewr_inventory.recycled_at) = \'3\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ewr_req.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count 
+            FROM ewr_inventory 
+            LEFT JOIN ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+            WHERE ewr_inventory.status1 = \'Collected\' 
+            AND ewr_inventory.UserId = NULL 
+            AND YEAR(ewr_inventory.recycled_at) = \'2024\' AND MONTH(ewr_inventory.recycled_at) = \'3\'')
+ 4 APPPATH\Models\EwrInventoryModel.php(54): CodeIgniter\Database\BaseConnection->query('SELECT ewr_req.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count 
+            FROM ewr_inventory 
+            LEFT JOIN ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set 
+            WHERE ewr_inventory.status1 = \'Collected\' 
+            AND ewr_inventory.UserId = ? 
+            AND YEAR(ewr_inventory.recycled_at) = ? AND MONTH(ewr_inventory.recycled_at) = ?', [...])
+ 5 APPPATH\Controllers\Sys.php(1122): App\Models\EwrInventoryModel->getCollectionActivity(null, '2024', '3')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-11 06:01:23 --> mysqli_sql_exception: Unknown column 'ewr_req.district' in 'field list' in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT ewr_req....', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ewr_req....')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ewr_req....')
+#3 C:\xampp\htdocs\emslk\app\Models\EwrInventoryModel.php(55): CodeIgniter\Database\BaseConnection->query('SELECT ewr_req....', Array)
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1122): App\Models\EwrInventoryModel->getCollectionActivity('61', '2024', NULL)
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-11 06:01:23 --> Unknown column 'ewr_req.district' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT ewr_req.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count
+                FROM ewr_inventory
+                LEFT JOIN ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = \'61\'
+                AND YEAR(ewr_inventory.recycled_at) = \'2024\'
+                GROUP BY ewr_req.district', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ewr_req.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count
+                FROM ewr_inventory
+                LEFT JOIN ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = \'61\'
+                AND YEAR(ewr_inventory.recycled_at) = \'2024\'
+                GROUP BY ewr_req.district')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ewr_req.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count
+                FROM ewr_inventory
+                LEFT JOIN ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = \'61\'
+                AND YEAR(ewr_inventory.recycled_at) = \'2024\'
+                GROUP BY ewr_req.district')
+ 4 APPPATH\Models\EwrInventoryModel.php(55): CodeIgniter\Database\BaseConnection->query('SELECT ewr_req.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count
+                FROM ewr_inventory
+                LEFT JOIN ewr_req ON ewr_req.listing_set = ewr_inventory.listing_set
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = ?
+                AND YEAR(ewr_inventory.recycled_at) = ?
+                GROUP BY ewr_req.district', [...])
+ 5 APPPATH\Controllers\Sys.php(1122): App\Models\EwrInventoryModel->getCollectionActivity('61', '2024', null)
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-11 06:02:57 --> mysqli_sql_exception: Unknown column 'ewr_req.district' in 'group statement' in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT ewc_list...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ewc_list...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ewc_list...')
+#3 C:\xampp\htdocs\emslk\app\Models\EwrInventoryModel.php(55): CodeIgniter\Database\BaseConnection->query('SELECT ewc_list...', Array)
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1122): App\Models\EwrInventoryModel->getCollectionActivity('61', '2024', NULL)
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-11 06:02:57 --> Unknown column 'ewr_req.district' in 'group statement'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT ewc_listings.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count
+                FROM ewr_inventory
+                LEFT JOIN ewc_listings ON ewc_listings.listing_set = ewr_inventory.listing_set
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = \'61\'
+                AND YEAR(ewr_inventory.recycled_at) = \'2024\'
+                GROUP BY ewr_req.district', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ewc_listings.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count
+                FROM ewr_inventory
+                LEFT JOIN ewc_listings ON ewc_listings.listing_set = ewr_inventory.listing_set
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = \'61\'
+                AND YEAR(ewr_inventory.recycled_at) = \'2024\'
+                GROUP BY ewr_req.district')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ewc_listings.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count
+                FROM ewr_inventory
+                LEFT JOIN ewc_listings ON ewc_listings.listing_set = ewr_inventory.listing_set
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = \'61\'
+                AND YEAR(ewr_inventory.recycled_at) = \'2024\'
+                GROUP BY ewr_req.district')
+ 4 APPPATH\Models\EwrInventoryModel.php(55): CodeIgniter\Database\BaseConnection->query('SELECT ewc_listings.district, COUNT(DISTINCT ewr_inventory.listing_set) AS count
+                FROM ewr_inventory
+                LEFT JOIN ewc_listings ON ewc_listings.listing_set = ewr_inventory.listing_set
+                WHERE ewr_inventory.status1 = \'Collected\' AND ewr_inventory.UserId = ?
+                AND YEAR(ewr_inventory.recycled_at) = ?
+                GROUP BY ewr_req.district', [...])
+ 5 APPPATH\Controllers\Sys.php(1122): App\Models\EwrInventoryModel->getCollectionActivity('61', '2024', null)
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-11 06:03:17 --> Undefined variable $collectionActivities
+in APPPATH\Views\sys\ewr_collections.php on line 56.
+ 1 APPPATH\Views\sys\ewr_collections.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $collectionActivities', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewr_collections.php', 56)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewr_collections.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewr_collections', [], true)
+ 5 APPPATH\Controllers\Sys.php(1126): view('sys/ewr_collections', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-11 06:20:08 --> Undefined variable $params
+in APPPATH\Models\EwrInventoryModel.php on line 54.
+ 1 APPPATH\Models\EwrInventoryModel.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $params', 'C:\\xampp\\htdocs\\emslk\\app\\Models\\EwrInventoryModel.php', 54)
+ 2 APPPATH\Controllers\Sys.php(1122): App\Models\EwrInventoryModel->getCollectionActivity('61', '2024', '')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-11 07:04:36 --> Undefined property: App\Controllers\Sys::$inventoryModel
+in APPPATH\Controllers\Sys.php on line 1123.
+ 1 APPPATH\Controllers\Sys.php(1123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Sys::$inventoryModel', 'C:\\xampp\\htdocs\\emslk\\app\\Controllers\\Sys.php', 1123)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-11 07:31:17 --> Undefined constant "App\Controllers\inventoryModel"
+in APPPATH\Controllers\Sys.php on line 1123.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-11 07:35:38 --> Undefined variable $district
+in APPPATH\Models\EwrInventoryModel.php on line 35.
+ 1 APPPATH\Models\EwrInventoryModel.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $district', 'C:\\xampp\\htdocs\\emslk\\app\\Models\\EwrInventoryModel.php', 35)
+ 2 APPPATH\Controllers\Sys.php(1123): App\Models\EwrInventoryModel->getCollectionActivity('61', '2024', '3', 'Colombo')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->EwrCollections()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-11 11:13:06 --> Undefined array key "selectedYear"
+in APPPATH\Controllers\Sys.php on line 2360.
+ 1 APPPATH\Controllers\Sys.php(2360): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "selectedYear"', 'C:\\xampp\\htdocs\\emslk\\app\\Controllers\\Sys.php', 2360)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->recycled_items()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-11 11:13:45 --> Too few arguments to function App\Models\RecycledMaterialsModel::getMonthlyRecycledSummary(), 1 passed in C:\xampp\htdocs\emslk\app\Controllers\Sys.php on line 2360 and exactly 2 expected
+in APPPATH\Models\RecycledMaterialsModel.php on line 13.
+ 1 APPPATH\Controllers\Sys.php(2360): App\Models\RecycledMaterialsModel->getMonthlyRecycledSummary('3')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->recycled_items()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

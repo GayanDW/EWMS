@@ -1,0 +1,660 @@
+CRITICAL - 2024-04-18 06:28:43 --> Too few arguments to function App\Controllers\Sys::viewBidsewc(), 1 passed in C:\xampp\htdocs\emslk\system\CodeIgniter.php on line 932 and exactly 2 expected
+in APPPATH\Controllers\Sys.php on line 460.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBidsewc('21')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 06:39:21 --> Undefined variable $itemId
+in APPPATH\Views\sys\content_e-Waste Collector.php on line 72.
+ 1 APPPATH\Views\sys\content_e-Waste Collector.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $itemId', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Collector.php', 72)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Collector.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste collector', [], true)
+ 5 APPPATH\Controllers\Sys.php(51): view('sys/content_e-waste collector', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 06:39:22 --> Undefined variable $itemId
+in APPPATH\Views\sys\content_e-Waste Collector.php on line 72.
+ 1 APPPATH\Views\sys\content_e-Waste Collector.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $itemId', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Collector.php', 72)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Collector.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste collector', [], true)
+ 5 APPPATH\Controllers\Sys.php(51): view('sys/content_e-waste collector', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 06:39:23 --> Undefined variable $itemId
+in APPPATH\Views\sys\content_e-Waste Collector.php on line 72.
+ 1 APPPATH\Views\sys\content_e-Waste Collector.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $itemId', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Collector.php', 72)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Collector.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste collector', [], true)
+ 5 APPPATH\Controllers\Sys.php(51): view('sys/content_e-waste collector', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 06:39:25 --> Undefined variable $itemId
+in APPPATH\Views\sys\content_e-Waste Collector.php on line 72.
+ 1 APPPATH\Views\sys\content_e-Waste Collector.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $itemId', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Collector.php', 72)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Collector.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste collector', [], true)
+ 5 APPPATH\Controllers\Sys.php(51): view('sys/content_e-waste collector', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 06:44:57 --> Too few arguments to function App\Controllers\Sys::viewBidsewc(), 1 passed in C:\xampp\htdocs\emslk\system\CodeIgniter.php on line 932 and exactly 2 expected
+in APPPATH\Controllers\Sys.php on line 460.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBidsewc('21')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 07:13:32 --> Too few arguments to function App\Models\BiddingModel::getDetailedListings(), 1 passed in C:\xampp\htdocs\emslk\app\Controllers\Sys.php on line 465 and exactly 2 expected
+in APPPATH\Models\BiddingModel.php on line 16.
+ 1 APPPATH\Controllers\Sys.php(465): App\Models\BiddingModel->getDetailedListings(null)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBidsewc('21')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-18 07:14:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '/ Ensure we are only looking at bids for the specific item
+        GROUP BY ...' at line 19 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n        SELEC...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n        SELEC...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#4 C:\xampp\htdocs\emslk\app\Models\BiddingModel.php(17): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(465): App\Models\BiddingModel->getDetailedListings(NULL, '21')
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->viewBidsewc('21')
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-18 07:14:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '/ Ensure we are only looking at bids for the specific item
+        GROUP BY ...' at line 19
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+        SELECT 
+            e.item_id,
+            e.contact_name,
+            b.bid_price_per_item,
+            b.your_note,
+            p.pref_day,
+            p.slot_start,
+            p.slot_end,
+            p.alt_day1,
+            p.alt_start1,
+            p.alt_end1
+        FROM 
+            ewaste_listings e
+        LEFT JOIN 
+            bids b ON e.item_id = b.item_id AND b.UserId = \'\' AND b.item_id = \'21\'
+        LEFT JOIN 
+            pickup_details p ON e.item_id = p.item_id
+        WHERE 
+            e.item_id = \'21\'  // Ensure we are only looking at bids for the specific item
+        GROUP BY 
+            b.bid_id;
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            e.item_id,
+            e.contact_name,
+            b.bid_price_per_item,
+            b.your_note,
+            p.pref_day,
+            p.slot_start,
+            p.slot_end,
+            p.alt_day1,
+            p.alt_start1,
+            p.alt_end1
+        FROM 
+            ewaste_listings e
+        LEFT JOIN 
+            bids b ON e.item_id = b.item_id AND b.UserId = \'\' AND b.item_id = \'21\'
+        LEFT JOIN 
+            pickup_details p ON e.item_id = p.item_id
+        WHERE 
+            e.item_id = \'21\'  // Ensure we are only looking at bids for the specific item
+        GROUP BY 
+            b.bid_id;
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            e.item_id,
+            e.contact_name,
+            b.bid_price_per_item,
+            b.your_note,
+            p.pref_day,
+            p.slot_start,
+            p.slot_end,
+            p.alt_day1,
+            p.alt_start1,
+            p.alt_end1
+        FROM 
+            ewaste_listings e
+        LEFT JOIN 
+            bids b ON e.item_id = b.item_id AND b.UserId = \'\' AND b.item_id = \'21\'
+        LEFT JOIN 
+            pickup_details p ON e.item_id = p.item_id
+        WHERE 
+            e.item_id = \'21\'  // Ensure we are only looking at bids for the specific item
+        GROUP BY 
+            b.bid_id;
+    ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            e.item_id,
+            e.contact_name,
+            b.bid_price_per_item,
+            b.your_note,
+            p.pref_day,
+            p.slot_start,
+            p.slot_end,
+            p.alt_day1,
+            p.alt_start1,
+            p.alt_end1
+        FROM 
+            ewaste_listings e
+        LEFT JOIN 
+            bids b ON e.item_id = b.item_id AND b.UserId = \'\' AND b.item_id = \'21\'
+        LEFT JOIN 
+            pickup_details p ON e.item_id = p.item_id
+        WHERE 
+            e.item_id = \'21\'  // Ensure we are only looking at bids for the specific item
+        GROUP BY 
+            b.bid_id;
+    ')
+ 5 APPPATH\Models\BiddingModel.php(17): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(465): App\Models\BiddingModel->getDetailedListings(null, '21')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBidsewc('21')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-18 07:15:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '/ Ensure we are only looking at bids for the specific item
+        GROUP BY ...' at line 19 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n        SELEC...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n        SELEC...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#4 C:\xampp\htdocs\emslk\app\Models\BiddingModel.php(17): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(465): App\Models\BiddingModel->getDetailedListings(NULL, '21')
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->viewBidsewc('21')
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-18 07:15:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '/ Ensure we are only looking at bids for the specific item
+        GROUP BY ...' at line 19
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+        SELECT 
+            e.item_id,
+            e.contact_name,
+            b.bid_price_per_item,
+            b.your_note,
+            p.pref_day,
+            p.slot_start,
+            p.slot_end,
+            p.alt_day1,
+            p.alt_start1,
+            p.alt_end1
+        FROM 
+            ewaste_listings e
+        LEFT JOIN 
+            bids b ON e.item_id = b.item_id AND b.UserId = \'\' AND b.item_id = \'21\'
+        LEFT JOIN 
+            pickup_details p ON e.item_id = p.item_id
+        WHERE 
+            e.item_id = \'21\'  // Ensure we are only looking at bids for the specific item
+        GROUP BY 
+            b.bid_id;
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            e.item_id,
+            e.contact_name,
+            b.bid_price_per_item,
+            b.your_note,
+            p.pref_day,
+            p.slot_start,
+            p.slot_end,
+            p.alt_day1,
+            p.alt_start1,
+            p.alt_end1
+        FROM 
+            ewaste_listings e
+        LEFT JOIN 
+            bids b ON e.item_id = b.item_id AND b.UserId = \'\' AND b.item_id = \'21\'
+        LEFT JOIN 
+            pickup_details p ON e.item_id = p.item_id
+        WHERE 
+            e.item_id = \'21\'  // Ensure we are only looking at bids for the specific item
+        GROUP BY 
+            b.bid_id;
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            e.item_id,
+            e.contact_name,
+            b.bid_price_per_item,
+            b.your_note,
+            p.pref_day,
+            p.slot_start,
+            p.slot_end,
+            p.alt_day1,
+            p.alt_start1,
+            p.alt_end1
+        FROM 
+            ewaste_listings e
+        LEFT JOIN 
+            bids b ON e.item_id = b.item_id AND b.UserId = \'\' AND b.item_id = \'21\'
+        LEFT JOIN 
+            pickup_details p ON e.item_id = p.item_id
+        WHERE 
+            e.item_id = \'21\'  // Ensure we are only looking at bids for the specific item
+        GROUP BY 
+            b.bid_id;
+    ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            e.item_id,
+            e.contact_name,
+            b.bid_price_per_item,
+            b.your_note,
+            p.pref_day,
+            p.slot_start,
+            p.slot_end,
+            p.alt_day1,
+            p.alt_start1,
+            p.alt_end1
+        FROM 
+            ewaste_listings e
+        LEFT JOIN 
+            bids b ON e.item_id = b.item_id AND b.UserId = \'\' AND b.item_id = \'21\'
+        LEFT JOIN 
+            pickup_details p ON e.item_id = p.item_id
+        WHERE 
+            e.item_id = \'21\'  // Ensure we are only looking at bids for the specific item
+        GROUP BY 
+            b.bid_id;
+    ')
+ 5 APPPATH\Models\BiddingModel.php(17): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(465): App\Models\BiddingModel->getDetailedListings(null, '21')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBidsewc('21')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-18 07:15:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '/ Ensure we are only looking at bids for the specific item
+        GROUP BY ...' at line 19 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n        SELEC...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n        SELEC...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#4 C:\xampp\htdocs\emslk\app\Models\BiddingModel.php(17): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(465): App\Models\BiddingModel->getDetailedListings(NULL, '21')
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->viewBidsewc('21')
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-18 07:15:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '/ Ensure we are only looking at bids for the specific item
+        GROUP BY ...' at line 19
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+        SELECT 
+            e.item_id,
+            e.contact_name,
+            b.bid_price_per_item,
+            b.your_note,
+            p.pref_day,
+            p.slot_start,
+            p.slot_end,
+            p.alt_day1,
+            p.alt_start1,
+            p.alt_end1
+        FROM 
+            ewaste_listings e
+        LEFT JOIN 
+            bids b ON e.item_id = b.item_id AND b.UserId = \'\' AND b.item_id = \'21\'
+        LEFT JOIN 
+            pickup_details p ON e.item_id = p.item_id
+        WHERE 
+            e.item_id = \'21\'  // Ensure we are only looking at bids for the specific item
+        GROUP BY 
+            b.bid_id;
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            e.item_id,
+            e.contact_name,
+            b.bid_price_per_item,
+            b.your_note,
+            p.pref_day,
+            p.slot_start,
+            p.slot_end,
+            p.alt_day1,
+            p.alt_start1,
+            p.alt_end1
+        FROM 
+            ewaste_listings e
+        LEFT JOIN 
+            bids b ON e.item_id = b.item_id AND b.UserId = \'\' AND b.item_id = \'21\'
+        LEFT JOIN 
+            pickup_details p ON e.item_id = p.item_id
+        WHERE 
+            e.item_id = \'21\'  // Ensure we are only looking at bids for the specific item
+        GROUP BY 
+            b.bid_id;
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            e.item_id,
+            e.contact_name,
+            b.bid_price_per_item,
+            b.your_note,
+            p.pref_day,
+            p.slot_start,
+            p.slot_end,
+            p.alt_day1,
+            p.alt_start1,
+            p.alt_end1
+        FROM 
+            ewaste_listings e
+        LEFT JOIN 
+            bids b ON e.item_id = b.item_id AND b.UserId = \'\' AND b.item_id = \'21\'
+        LEFT JOIN 
+            pickup_details p ON e.item_id = p.item_id
+        WHERE 
+            e.item_id = \'21\'  // Ensure we are only looking at bids for the specific item
+        GROUP BY 
+            b.bid_id;
+    ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            e.item_id,
+            e.contact_name,
+            b.bid_price_per_item,
+            b.your_note,
+            p.pref_day,
+            p.slot_start,
+            p.slot_end,
+            p.alt_day1,
+            p.alt_start1,
+            p.alt_end1
+        FROM 
+            ewaste_listings e
+        LEFT JOIN 
+            bids b ON e.item_id = b.item_id AND b.UserId = \'\' AND b.item_id = \'21\'
+        LEFT JOIN 
+            pickup_details p ON e.item_id = p.item_id
+        WHERE 
+            e.item_id = \'21\'  // Ensure we are only looking at bids for the specific item
+        GROUP BY 
+            b.bid_id;
+    ')
+ 5 APPPATH\Models\BiddingModel.php(17): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(465): App\Models\BiddingModel->getDetailedListings(null, '21')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBidsewc('21')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-18 07:15:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '/ Ensure we are only looking at bids for the specific item
+        GROUP BY ...' at line 19 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n        SELEC...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n        SELEC...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#4 C:\xampp\htdocs\emslk\app\Models\BiddingModel.php(17): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(465): App\Models\BiddingModel->getDetailedListings(NULL, '21')
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->viewBidsewc('21')
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-18 07:15:57 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '/ Ensure we are only looking at bids for the specific item
+        GROUP BY ...' at line 19
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+        SELECT 
+            e.item_id,
+            e.contact_name,
+            b.bid_price_per_item,
+            b.your_note,
+            p.pref_day,
+            p.slot_start,
+            p.slot_end,
+            p.alt_day1,
+            p.alt_start1,
+            p.alt_end1
+        FROM 
+            ewaste_listings e
+        LEFT JOIN 
+            bids b ON e.item_id = b.item_id AND b.UserId = \'\' AND b.item_id = \'21\'
+        LEFT JOIN 
+            pickup_details p ON e.item_id = p.item_id
+        WHERE 
+            e.item_id = \'21\'  // Ensure we are only looking at bids for the specific item
+        GROUP BY 
+            b.bid_id;
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            e.item_id,
+            e.contact_name,
+            b.bid_price_per_item,
+            b.your_note,
+            p.pref_day,
+            p.slot_start,
+            p.slot_end,
+            p.alt_day1,
+            p.alt_start1,
+            p.alt_end1
+        FROM 
+            ewaste_listings e
+        LEFT JOIN 
+            bids b ON e.item_id = b.item_id AND b.UserId = \'\' AND b.item_id = \'21\'
+        LEFT JOIN 
+            pickup_details p ON e.item_id = p.item_id
+        WHERE 
+            e.item_id = \'21\'  // Ensure we are only looking at bids for the specific item
+        GROUP BY 
+            b.bid_id;
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            e.item_id,
+            e.contact_name,
+            b.bid_price_per_item,
+            b.your_note,
+            p.pref_day,
+            p.slot_start,
+            p.slot_end,
+            p.alt_day1,
+            p.alt_start1,
+            p.alt_end1
+        FROM 
+            ewaste_listings e
+        LEFT JOIN 
+            bids b ON e.item_id = b.item_id AND b.UserId = \'\' AND b.item_id = \'21\'
+        LEFT JOIN 
+            pickup_details p ON e.item_id = p.item_id
+        WHERE 
+            e.item_id = \'21\'  // Ensure we are only looking at bids for the specific item
+        GROUP BY 
+            b.bid_id;
+    ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            e.item_id,
+            e.contact_name,
+            b.bid_price_per_item,
+            b.your_note,
+            p.pref_day,
+            p.slot_start,
+            p.slot_end,
+            p.alt_day1,
+            p.alt_start1,
+            p.alt_end1
+        FROM 
+            ewaste_listings e
+        LEFT JOIN 
+            bids b ON e.item_id = b.item_id AND b.UserId = \'\' AND b.item_id = \'21\'
+        LEFT JOIN 
+            pickup_details p ON e.item_id = p.item_id
+        WHERE 
+            e.item_id = \'21\'  // Ensure we are only looking at bids for the specific item
+        GROUP BY 
+            b.bid_id;
+    ')
+ 5 APPPATH\Models\BiddingModel.php(17): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(465): App\Models\BiddingModel->getDetailedListings(null, '21')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBidsewc('21')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-18 07:16:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '/ Ensure we are only looking at bids for the specific item
+        GROUP BY ...' at line 19 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n        SELEC...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n        SELEC...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#4 C:\xampp\htdocs\emslk\app\Models\BiddingModel.php(17): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(465): App\Models\BiddingModel->getDetailedListings(NULL, '21')
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->viewBidsewc('21')
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-18 07:16:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '/ Ensure we are only looking at bids for the specific item
+        GROUP BY ...' at line 19
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+        SELECT 
+            e.item_id,
+            e.contact_name,
+            b.bid_price_per_item,
+            b.your_note,
+            p.pref_day,
+            p.slot_start,
+            p.slot_end,
+            p.alt_day1,
+            p.alt_start1,
+            p.alt_end1
+        FROM 
+            ewaste_listings e
+        LEFT JOIN 
+            bids b ON e.item_id = b.item_id AND b.UserId = \'\' AND b.item_id = \'21\'
+        LEFT JOIN 
+            pickup_details p ON e.item_id = p.item_id
+        WHERE 
+            e.item_id = \'21\'  // Ensure we are only looking at bids for the specific item
+        GROUP BY 
+            b.bid_id;
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            e.item_id,
+            e.contact_name,
+            b.bid_price_per_item,
+            b.your_note,
+            p.pref_day,
+            p.slot_start,
+            p.slot_end,
+            p.alt_day1,
+            p.alt_start1,
+            p.alt_end1
+        FROM 
+            ewaste_listings e
+        LEFT JOIN 
+            bids b ON e.item_id = b.item_id AND b.UserId = \'\' AND b.item_id = \'21\'
+        LEFT JOIN 
+            pickup_details p ON e.item_id = p.item_id
+        WHERE 
+            e.item_id = \'21\'  // Ensure we are only looking at bids for the specific item
+        GROUP BY 
+            b.bid_id;
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            e.item_id,
+            e.contact_name,
+            b.bid_price_per_item,
+            b.your_note,
+            p.pref_day,
+            p.slot_start,
+            p.slot_end,
+            p.alt_day1,
+            p.alt_start1,
+            p.alt_end1
+        FROM 
+            ewaste_listings e
+        LEFT JOIN 
+            bids b ON e.item_id = b.item_id AND b.UserId = \'\' AND b.item_id = \'21\'
+        LEFT JOIN 
+            pickup_details p ON e.item_id = p.item_id
+        WHERE 
+            e.item_id = \'21\'  // Ensure we are only looking at bids for the specific item
+        GROUP BY 
+            b.bid_id;
+    ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            e.item_id,
+            e.contact_name,
+            b.bid_price_per_item,
+            b.your_note,
+            p.pref_day,
+            p.slot_start,
+            p.slot_end,
+            p.alt_day1,
+            p.alt_start1,
+            p.alt_end1
+        FROM 
+            ewaste_listings e
+        LEFT JOIN 
+            bids b ON e.item_id = b.item_id AND b.UserId = \'\' AND b.item_id = \'21\'
+        LEFT JOIN 
+            pickup_details p ON e.item_id = p.item_id
+        WHERE 
+            e.item_id = \'21\'  // Ensure we are only looking at bids for the specific item
+        GROUP BY 
+            b.bid_id;
+    ')
+ 5 APPPATH\Models\BiddingModel.php(17): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(465): App\Models\BiddingModel->getDetailedListings(null, '21')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBidsewc('21')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 14:16:21 --> Undefined array key "bid_status_g"
+in APPPATH\Views\sys\content_e-Waste Generator.php on line 147.
+ 1 APPPATH\Views\sys\content_e-Waste Generator.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "bid_status_g"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Generator.php', 147)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\content_e-Waste Generator.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste generator', [], true)
+ 5 APPPATH\Controllers\Sys.php(51): view('sys/content_e-waste generator', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 15:04:24 --> Undefined array key "bid_status_c"
+in APPPATH\Views\sys\view_one_bid.php on line 48.
+ 1 APPPATH\Views\sys\view_one_bid.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "bid_status_c"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\view_one_bid.php', 48)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\view_one_bid.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/view_one_bid', [], true)
+ 5 APPPATH\Controllers\Sys.php(471): view('sys/view_one_bid', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewBidsewc('24')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

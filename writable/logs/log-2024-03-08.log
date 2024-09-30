@@ -1,0 +1,184 @@
+CRITICAL - 2024-03-08 05:40:16 --> Invalid file: "user/resetpassword.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/resetpassword.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('user/resetpassword', [], true)
+ 3 APPPATH\Controllers\User.php(88): view('user/resetpassword')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->sendResetLink()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-08 06:06:29 --> Class "App\Controllers\ResettokenModel" not found
+in APPPATH\Controllers\User.php on line 101.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->sendResetLink()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-08 06:07:38 --> Class "Model" not found
+in APPPATH\Models\ResettokenModel.php on line 3.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(314): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ewms\\app\\Models\\ResettokenModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\ResettokenModel')
+ 4 APPPATH\Controllers\User.php(102): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\ResettokenModel')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->sendResetLink()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-08 06:08:44 --> Undefined property: stdClass::$Id
+in APPPATH\Controllers\User.php on line 104.
+ 1 APPPATH\Controllers\User.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Id', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\User.php', 104)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->sendResetLink()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-08 06:23:21 --> Invalid file: "user/reset_password_form.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/reset_password_form.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('user/reset_password_form', [], true)
+ 3 APPPATH\Controllers\User.php(135): view('user/reset_password_form', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->reset_password('7fdafc7fbe90a7454b4c75c48e119835')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-08 06:38:43 --> Invalid file: "user/reset_password_form.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/reset_password_form.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('user/reset_password_form', [], true)
+ 3 APPPATH\Controllers\User.php(151): view('user/reset_password_form', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->save_reset_password()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-08 15:31:53 --> Invalid file: "user/login.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/login.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('user/login', [], true)
+ 3 APPPATH\Controllers\User.php(173): view('user/login', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->save_reset_password()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-08 15:33:25 --> Invalid file: "user/reset_password_form.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/reset_password_form.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('user/reset_password_form', [], true)
+ 3 APPPATH\Controllers\User.php(159): view('user/reset_password_form', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->save_reset_password()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-08 17:30:13 --> Invalid file: "sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/menu_', [], true)
+ 3 APPPATH\Controllers\Sys.php(111): view('sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-08 17:30:30 --> Call to undefined function form_open()
+in APPPATH\Views\sys\user_management.php on line 68.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_management', [], true)
+ 4 APPPATH\Controllers\Sys.php(1398): view('sys/user_management', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewUserMgt()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-08 17:57:45 --> Undefined variable $users
+in APPPATH\Views\sys\user_management.php on line 35.
+ 1 APPPATH\Views\sys\user_management.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\user_management.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\user_management.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_management', [], true)
+ 5 APPPATH\Controllers\User.php(230): view('sys/user_management', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->adminSendResetLink()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-08 17:58:30 --> Undefined variable $users
+in APPPATH\Views\sys\user_management.php on line 35.
+ 1 APPPATH\Views\sys\user_management.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\user_management.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\user_management.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_management', [], true)
+ 5 APPPATH\Controllers\User.php(230): view('sys/user_management', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->adminSendResetLink()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-08 17:59:56 --> Undefined variable $users
+in APPPATH\Views\sys\user_management.php on line 30.
+ 1 APPPATH\Views\sys\user_management.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\user_management.php', 30)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\user_management.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_management', [], true)
+ 5 APPPATH\Controllers\User.php(230): view('sys/user_management', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->adminSendResetLink()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-08 18:00:18 --> Undefined variable $users
+in APPPATH\Views\sys\user_management.php on line 30.
+ 1 APPPATH\Views\sys\user_management.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\user_management.php', 30)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\user_management.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_management', [], true)
+ 5 APPPATH\Controllers\User.php(230): view('sys/user_management', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->adminSendResetLink()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-08 18:00:39 --> Undefined variable $users
+in APPPATH\Views\sys\user_management.php on line 30.
+ 1 APPPATH\Views\sys\user_management.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\user_management.php', 30)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\user_management.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_management', [], true)
+ 5 APPPATH\Controllers\User.php(230): view('sys/user_management', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->adminSendResetLink()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-08 18:01:07 --> Undefined variable $users
+in APPPATH\Views\sys\user_management.php on line 30.
+ 1 APPPATH\Views\sys\user_management.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\user_management.php', 30)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\user_management.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_management', [], true)
+ 5 APPPATH\Controllers\User.php(230): view('sys/user_management', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->adminSendResetLink()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-08 18:04:31 --> Undefined variable $users
+in APPPATH\Views\sys\user_management.php on line 30.
+ 1 APPPATH\Views\sys\user_management.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\user_management.php', 30)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\user_management.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_management', [], true)
+ 5 APPPATH\Controllers\User.php(230): view('sys/user_management', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->adminSendResetLink()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-08 18:07:58 --> Undefined variable $users
+in APPPATH\Views\sys\user_management.php on line 37.
+ 1 APPPATH\Views\sys\user_management.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\user_management.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\user_management.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_management', [], true)
+ 5 APPPATH\Controllers\User.php(230): view('sys/user_management', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->adminSendResetLink()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-08 18:30:30 --> Invalid file: "user/reset_password_form.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/reset_password_form.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('user/reset_password_form', [], true)
+ 3 APPPATH\Controllers\User.php(159): view('user/reset_password_form', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->save_reset_password()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

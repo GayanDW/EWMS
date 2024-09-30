@@ -1,0 +1,1056 @@
+CRITICAL - 2024-05-09 03:04:06 --> Undefined array key "Received Bids"
+in APPPATH\Views\sys\ewg_bid_analysis.php on line 52.
+ 1 APPPATH\Views\sys\ewg_bid_analysis.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Received Bids"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php', 52)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewg_bid_analysis', [], true)
+ 5 APPPATH\Controllers\Sys.php(1013): view('sys/ewg_bid_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 03:04:13 --> Undefined array key "Received Bids"
+in APPPATH\Views\sys\ewg_bid_analysis.php on line 52.
+ 1 APPPATH\Views\sys\ewg_bid_analysis.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Received Bids"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php', 52)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewg_bid_analysis', [], true)
+ 5 APPPATH\Controllers\Sys.php(1013): view('sys/ewg_bid_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-09 03:11:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY b.bid_status_g' at line 7 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT b.bid_st...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT b.bid_st...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT b.bid_st...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT b.bid_st...')
+#4 C:\xampp\htdocs\emslk\app\Models\BiddingModel.php(91): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1007): App\Models\BiddingModel->getBidSummary('53', '2024', NULL)
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-09 03:11:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY b.bid_status_g' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            INNER JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+            GROUP BY b.bid_status_g', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            INNER JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+            GROUP BY b.bid_status_g')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            INNER JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+            GROUP BY b.bid_status_g')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            INNER JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+            GROUP BY b.bid_status_g')
+ 5 APPPATH\Models\BiddingModel.php(91): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(1007): App\Models\BiddingModel->getBidSummary('53', '2024', null)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-09 03:11:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY b.bid_status_g' at line 7 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT b.bid_st...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT b.bid_st...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT b.bid_st...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT b.bid_st...')
+#4 C:\xampp\htdocs\emslk\app\Models\BiddingModel.php(91): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1007): App\Models\BiddingModel->getBidSummary('53', '2024', NULL)
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-09 03:11:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY b.bid_status_g' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            INNER JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+            GROUP BY b.bid_status_g', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            INNER JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+            GROUP BY b.bid_status_g')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            INNER JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+            GROUP BY b.bid_status_g')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            INNER JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+            GROUP BY b.bid_status_g')
+ 5 APPPATH\Models\BiddingModel.php(91): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(1007): App\Models\BiddingModel->getBidSummary('53', '2024', null)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-09 03:12:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY b.bid_status_g' at line 7 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT b.bid_st...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT b.bid_st...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT b.bid_st...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT b.bid_st...')
+#4 C:\xampp\htdocs\emslk\app\Models\BiddingModel.php(91): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1007): App\Models\BiddingModel->getBidSummary('53', '2024', NULL)
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-09 03:12:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY b.bid_status_g' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            INNER JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+            GROUP BY b.bid_status_g', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            INNER JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+            GROUP BY b.bid_status_g')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            INNER JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+            GROUP BY b.bid_status_g')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            INNER JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+            GROUP BY b.bid_status_g')
+ 5 APPPATH\Models\BiddingModel.php(91): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(1007): App\Models\BiddingModel->getBidSummary('53', '2024', null)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-09 03:12:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY b.bid_status_g' at line 7 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT b.bid_st...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT b.bid_st...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT b.bid_st...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT b.bid_st...')
+#4 C:\xampp\htdocs\emslk\app\Models\BiddingModel.php(91): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1007): App\Models\BiddingModel->getBidSummary('53', '2024', NULL)
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-09 03:12:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY b.bid_status_g' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            INNER JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+            GROUP BY b.bid_status_g', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            INNER JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+            GROUP BY b.bid_status_g')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            INNER JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+            GROUP BY b.bid_status_g')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            INNER JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+            GROUP BY b.bid_status_g')
+ 5 APPPATH\Models\BiddingModel.php(91): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(1007): App\Models\BiddingModel->getBidSummary('53', '2024', null)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-09 03:14:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY b.bid_status_g' at line 7 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT b.bid_st...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT b.bid_st...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT b.bid_st...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT b.bid_st...')
+#4 C:\xampp\htdocs\emslk\app\Models\BiddingModel.php(91): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1007): App\Models\BiddingModel->getBidSummary('53', '2024', NULL)
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-09 03:14:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY b.bid_status_g' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            LEFT JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+            GROUP BY b.bid_status_g', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            LEFT JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+            GROUP BY b.bid_status_g')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            LEFT JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+            GROUP BY b.bid_status_g')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            LEFT JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+            GROUP BY b.bid_status_g')
+ 5 APPPATH\Models\BiddingModel.php(91): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(1007): App\Models\BiddingModel->getBidSummary('53', '2024', null)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-09 03:14:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY b.bid_status_g' at line 7 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT b.bid_st...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT b.bid_st...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT b.bid_st...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT b.bid_st...')
+#4 C:\xampp\htdocs\emslk\app\Models\BiddingModel.php(91): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1007): App\Models\BiddingModel->getBidSummary('53', '2024', NULL)
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-09 03:14:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY b.bid_status_g' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            LEFT JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+            GROUP BY b.bid_status_g', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            LEFT JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+            GROUP BY b.bid_status_g')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            LEFT JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+            GROUP BY b.bid_status_g')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            LEFT JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+            GROUP BY b.bid_status_g')
+ 5 APPPATH\Models\BiddingModel.php(91): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(1007): App\Models\BiddingModel->getBidSummary('53', '2024', null)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-09 03:21:53 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY b.bid_status_g' at line 7 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT b.bid_st...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT b.bid_st...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT b.bid_st...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT b.bid_st...')
+#4 C:\xampp\htdocs\emslk\app\Models\BiddingModel.php(91): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1007): App\Models\BiddingModel->getBidSummary('53', '2024', NULL)
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-09 03:21:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY b.bid_status_g' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            LEFT JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+            GROUP BY b.bid_status_g', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            LEFT JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+            GROUP BY b.bid_status_g')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            LEFT JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+            GROUP BY b.bid_status_g')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            LEFT JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+            GROUP BY b.bid_status_g')
+ 5 APPPATH\Models\BiddingModel.php(91): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(1007): App\Models\BiddingModel->getBidSummary('53', '2024', null)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-09 03:22:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 6 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT b.bid_st...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT b.bid_st...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT b.bid_st...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT b.bid_st...')
+#4 C:\xampp\htdocs\emslk\app\Models\BiddingModel.php(91): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1007): App\Models\BiddingModel->getBidSummary('53', '2024', NULL)
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-09 03:22:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            LEFT JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+           ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            LEFT JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+           ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            LEFT JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+           ')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+            FROM bids b
+            LEFT JOIN ewaste_listings e ON b.item_id = e.item_id
+            WHERE e.UserId = 53
+            AND YEAR(b.bid_date) = 2024
+            AND MONTH(b.bid_date) = 
+           ')
+ 5 APPPATH\Models\BiddingModel.php(91): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(1007): App\Models\BiddingModel->getBidSummary('53', '2024', null)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-09 03:41:11 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND b.bid_status_g = 'Rejected'
+                GROUP BY b.rejection_reason' at line 7 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT b.reject...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT b.reject...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT b.reject...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT b.reject...')
+#4 C:\xampp\htdocs\emslk\app\Models\BiddingModel.php(114): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1008): App\Models\BiddingModel->getRejReasons('53', '2024', NULL)
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-09 03:41:11 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND b.bid_status_g = 'Rejected'
+                GROUP BY b.rejection_reason' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT b.rejection_reason,COUNT(b.bid_id) as count
+                FROM bids b
+                LEFT JOIN ewaste_listings e ON b.item_id = e.item_id
+                WHERE e.UserId = 53
+                AND YEAR(b.bid_date) = 2024
+                AND MONTH(b.bid_date) = 
+                AND b.bid_status_g = \'Rejected\'
+                GROUP BY b.rejection_reason', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT b.rejection_reason,COUNT(b.bid_id) as count
+                FROM bids b
+                LEFT JOIN ewaste_listings e ON b.item_id = e.item_id
+                WHERE e.UserId = 53
+                AND YEAR(b.bid_date) = 2024
+                AND MONTH(b.bid_date) = 
+                AND b.bid_status_g = \'Rejected\'
+                GROUP BY b.rejection_reason')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT b.rejection_reason,COUNT(b.bid_id) as count
+                FROM bids b
+                LEFT JOIN ewaste_listings e ON b.item_id = e.item_id
+                WHERE e.UserId = 53
+                AND YEAR(b.bid_date) = 2024
+                AND MONTH(b.bid_date) = 
+                AND b.bid_status_g = \'Rejected\'
+                GROUP BY b.rejection_reason')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT b.rejection_reason,COUNT(b.bid_id) as count
+                FROM bids b
+                LEFT JOIN ewaste_listings e ON b.item_id = e.item_id
+                WHERE e.UserId = 53
+                AND YEAR(b.bid_date) = 2024
+                AND MONTH(b.bid_date) = 
+                AND b.bid_status_g = \'Rejected\'
+                GROUP BY b.rejection_reason')
+ 5 APPPATH\Models\BiddingModel.php(114): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(1008): App\Models\BiddingModel->getRejReasons('53', '2024', null)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-09 03:41:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND b.bid_status_g = 'Rejected'
+                GROUP BY b.rejection_reason' at line 7 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT b.reject...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT b.reject...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT b.reject...')
+#3 C:\xampp\htdocs\emslk\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT b.reject...')
+#4 C:\xampp\htdocs\emslk\app\Models\BiddingModel.php(114): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1008): App\Models\BiddingModel->getRejReasons('53', '2024', NULL)
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-09 03:41:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND b.bid_status_g = 'Rejected'
+                GROUP BY b.rejection_reason' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT b.rejection_reason,COUNT(b.bid_id) as count
+                FROM bids b
+                LEFT JOIN ewaste_listings e ON b.item_id = e.item_id
+                WHERE e.UserId = 53
+                AND YEAR(b.bid_date) = 2024
+                AND MONTH(b.bid_date) = 
+                AND b.bid_status_g = \'Rejected\'
+                GROUP BY b.rejection_reason', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT b.rejection_reason,COUNT(b.bid_id) as count
+                FROM bids b
+                LEFT JOIN ewaste_listings e ON b.item_id = e.item_id
+                WHERE e.UserId = 53
+                AND YEAR(b.bid_date) = 2024
+                AND MONTH(b.bid_date) = 
+                AND b.bid_status_g = \'Rejected\'
+                GROUP BY b.rejection_reason')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT b.rejection_reason,COUNT(b.bid_id) as count
+                FROM bids b
+                LEFT JOIN ewaste_listings e ON b.item_id = e.item_id
+                WHERE e.UserId = 53
+                AND YEAR(b.bid_date) = 2024
+                AND MONTH(b.bid_date) = 
+                AND b.bid_status_g = \'Rejected\'
+                GROUP BY b.rejection_reason')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT b.rejection_reason,COUNT(b.bid_id) as count
+                FROM bids b
+                LEFT JOIN ewaste_listings e ON b.item_id = e.item_id
+                WHERE e.UserId = 53
+                AND YEAR(b.bid_date) = 2024
+                AND MONTH(b.bid_date) = 
+                AND b.bid_status_g = \'Rejected\'
+                GROUP BY b.rejection_reason')
+ 5 APPPATH\Models\BiddingModel.php(114): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Controllers\Sys.php(1008): App\Models\BiddingModel->getRejReasons('53', '2024', null)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 03:45:01 --> Undefined array key "Received Bids"
+in APPPATH\Views\sys\ewg_bid_analysis.php on line 52.
+ 1 APPPATH\Views\sys\ewg_bid_analysis.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Received Bids"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php', 52)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewg_bid_analysis', [], true)
+ 5 APPPATH\Controllers\Sys.php(1013): view('sys/ewg_bid_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 03:47:29 --> Undefined array key "count"
+in APPPATH\Views\sys\ewg_bid_analysis.php on line 52.
+ 1 APPPATH\Views\sys\ewg_bid_analysis.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "count"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php', 52)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewg_bid_analysis', [], true)
+ 5 APPPATH\Controllers\Sys.php(1013): view('sys/ewg_bid_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 04:13:48 --> htmlspecialchars(): Argument #1 ($string) must be of type string, array given
+in APPPATH\Views\sys\ewg_bid_analysis.php on line 49.
+ 1 APPPATH\Views\sys\ewg_bid_analysis.php(49): htmlspecialchars([...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewg_bid_analysis', [], true)
+ 5 APPPATH\Controllers\Sys.php(1013): view('sys/ewg_bid_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 04:15:18 --> Undefined array key "count"
+in APPPATH\Views\sys\ewg_bid_analysis.php on line 52.
+ 1 APPPATH\Views\sys\ewg_bid_analysis.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "count"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php', 52)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewg_bid_analysis', [], true)
+ 5 APPPATH\Controllers\Sys.php(1013): view('sys/ewg_bid_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 05:59:48 --> Undefined array key "bid_status_g"
+in APPPATH\Views\sys\ewg_bid_analysis.php on line 54.
+ 1 APPPATH\Views\sys\ewg_bid_analysis.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "bid_status_g"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php', 54)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewg_bid_analysis', [], true)
+ 5 APPPATH\Controllers\Sys.php(1013): view('sys/ewg_bid_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 06:03:28 --> Undefined array key "bid_status_g"
+in APPPATH\Views\sys\ewg_bid_analysis.php on line 54.
+ 1 APPPATH\Views\sys\ewg_bid_analysis.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "bid_status_g"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php', 54)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewg_bid_analysis', [], true)
+ 5 APPPATH\Controllers\Sys.php(1013): view('sys/ewg_bid_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 06:16:29 --> Undefined array key "bid_status_g"
+in APPPATH\Views\sys\ewg_bid_analysis.php on line 54.
+ 1 APPPATH\Views\sys\ewg_bid_analysis.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "bid_status_g"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php', 54)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewg_bid_analysis', [], true)
+ 5 APPPATH\Controllers\Sys.php(1013): view('sys/ewg_bid_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 06:16:34 --> Undefined array key "bid_status_g"
+in APPPATH\Views\sys\ewg_bid_analysis.php on line 54.
+ 1 APPPATH\Views\sys\ewg_bid_analysis.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "bid_status_g"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php', 54)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewg_bid_analysis', [], true)
+ 5 APPPATH\Controllers\Sys.php(1013): view('sys/ewg_bid_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 06:25:57 --> Undefined array key "bid_status_g"
+in APPPATH\Views\sys\ewg_bid_analysis.php on line 54.
+ 1 APPPATH\Views\sys\ewg_bid_analysis.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "bid_status_g"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php', 54)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewg_bid_analysis', [], true)
+ 5 APPPATH\Controllers\Sys.php(1013): view('sys/ewg_bid_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 06:26:04 --> Undefined array key "bid_status_g"
+in APPPATH\Views\sys\ewg_bid_analysis.php on line 54.
+ 1 APPPATH\Views\sys\ewg_bid_analysis.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "bid_status_g"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php', 54)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewg_bid_analysis', [], true)
+ 5 APPPATH\Controllers\Sys.php(1013): view('sys/ewg_bid_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 06:26:59 --> Undefined array key "bid_status_g"
+in APPPATH\Views\sys\ewg_bid_analysis.php on line 54.
+ 1 APPPATH\Views\sys\ewg_bid_analysis.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "bid_status_g"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php', 54)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewg_bid_analysis', [], true)
+ 5 APPPATH\Controllers\Sys.php(1013): view('sys/ewg_bid_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 06:27:48 --> Cannot use [] for reading
+in APPPATH\Views\sys\ewg_bid_analysis.php on line 101.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-05-09 06:27:49 --> Cannot use [] for reading
+in APPPATH\Views\sys\ewg_bid_analysis.php on line 101.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-05-09 06:28:02 --> Undefined array key "bid_status_g"
+in APPPATH\Views\sys\ewg_bid_analysis.php on line 54.
+ 1 APPPATH\Views\sys\ewg_bid_analysis.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "bid_status_g"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php', 54)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewg_bid_analysis', [], true)
+ 5 APPPATH\Controllers\Sys.php(1013): view('sys/ewg_bid_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 06:28:23 --> Undefined array key "bid_status_g"
+in APPPATH\Views\sys\ewg_bid_analysis.php on line 54.
+ 1 APPPATH\Views\sys\ewg_bid_analysis.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "bid_status_g"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php', 54)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewg_bid_analysis', [], true)
+ 5 APPPATH\Controllers\Sys.php(1013): view('sys/ewg_bid_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 06:28:45 --> Undefined array key "bid_status_g"
+in APPPATH\Views\sys\ewg_bid_analysis.php on line 54.
+ 1 APPPATH\Views\sys\ewg_bid_analysis.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "bid_status_g"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php', 54)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewg_bid_analysis', [], true)
+ 5 APPPATH\Controllers\Sys.php(1013): view('sys/ewg_bid_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 06:30:23 --> Undefined array key "bid_status_g"
+in APPPATH\Views\sys\ewg_bid_analysis.php on line 52.
+ 1 APPPATH\Views\sys\ewg_bid_analysis.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "bid_status_g"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php', 52)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewg_bid_analysis', [], true)
+ 5 APPPATH\Controllers\Sys.php(1013): view('sys/ewg_bid_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 06:32:54 --> Undefined array key "bid_status_g"
+in APPPATH\Views\sys\ewg_bid_analysis.php on line 48.
+ 1 APPPATH\Views\sys\ewg_bid_analysis.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "bid_status_g"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php', 48)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_bid_analysis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewg_bid_analysis', [], true)
+ 5 APPPATH\Controllers\Sys.php(1013): view('sys/ewg_bid_analysis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 09:07:17 --> Undefined array key 0
+in APPPATH\Views\sys\ewg_income_report.php on line 18.
+ 1 APPPATH\Views\sys\ewg_income_report.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_income_report.php', 18)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_income_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewg_income_report', [], true)
+ 5 APPPATH\Controllers\Sys.php(1046): view('sys/ewg_income_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->generate_income_report()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-09 10:28:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY b.bid_status_g' at line 6 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT b.bid_st...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT b.bid_st...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT b.bid_st...')
+#3 C:\xampp\htdocs\emslk\app\Models\BiddingModel.php(100): CodeIgniter\Database\BaseConnection->query('SELECT b.bid_st...')
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1007): App\Models\BiddingModel->getBidSummary('53', NULL, NULL)
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-09 10:28:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY b.bid_status_g' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+                FROM bids b
+                LEFT JOIN ewaste_listings e ON b.item_id = e.item_id
+                WHERE e.UserId = 53
+                AND YEAR(b.bid_date) = 
+                GROUP BY b.bid_status_g', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+                FROM bids b
+                LEFT JOIN ewaste_listings e ON b.item_id = e.item_id
+                WHERE e.UserId = 53
+                AND YEAR(b.bid_date) = 
+                GROUP BY b.bid_status_g')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+                FROM bids b
+                LEFT JOIN ewaste_listings e ON b.item_id = e.item_id
+                WHERE e.UserId = 53
+                AND YEAR(b.bid_date) = 
+                GROUP BY b.bid_status_g')
+ 4 APPPATH\Models\BiddingModel.php(100): CodeIgniter\Database\BaseConnection->query('SELECT b.bid_status_g, COUNT(b.bid_id) as count
+                FROM bids b
+                LEFT JOIN ewaste_listings e ON b.item_id = e.item_id
+                WHERE e.UserId = 53
+                AND YEAR(b.bid_date) = 
+                GROUP BY b.bid_status_g')
+ 5 APPPATH\Controllers\Sys.php(1007): App\Models\BiddingModel->getBidSummary('53', null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->bid_analysis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 10:35:47 --> Undefined array key "year"
+in APPPATH\Views\sys\ewg_income_report.php on line 60.
+ 1 APPPATH\Views\sys\ewg_income_report.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "year"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_income_report.php', 60)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewg_income_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewg_income_report', [], true)
+ 5 APPPATH\Controllers\Sys.php(1042): view('sys/ewg_income_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->generate_income_report()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-09 10:45:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND
+                    b.bid_status_later = 'Collected'
+                GR...' at line 14 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT \r\n      ...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 C:\xampp\htdocs\emslk\app\Models\BiddingModel.php(148): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...')
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1036): App\Models\BiddingModel->getIncomeReport('53', '2024')
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->generate_income_report()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-09 10:45:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND
+                    b.bid_status_later = 'Collected'
+                GR...' at line 14
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 
+                    e.UserId,
+                    YEAR(b.bid_date) AS year, 
+                    MONTH(b.bid_date) AS month, 
+                    COUNT(*) AS totalListings, 
+                    SUM(b.bid_price_per_item) AS totalIncome
+                FROM 
+                    bids b
+                INNER JOIN 
+                    ewaste_listings e ON b.item_id = e.item_id
+                WHERE 
+                    e.UserId = 53 AND 
+                    YEAR(b.bid_date) = 2024 AND 
+                    MONTH(b.bid_date) =  AND
+                    b.bid_status_later = \'Collected\'
+                GROUP BY 
+                    e.UserId, YEAR(b.bid_date), MONTH(b.bid_date)
+                ORDER BY 
+                    YEAR(b.bid_date), MONTH(b.bid_date)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+                    e.UserId,
+                    YEAR(b.bid_date) AS year, 
+                    MONTH(b.bid_date) AS month, 
+                    COUNT(*) AS totalListings, 
+                    SUM(b.bid_price_per_item) AS totalIncome
+                FROM 
+                    bids b
+                INNER JOIN 
+                    ewaste_listings e ON b.item_id = e.item_id
+                WHERE 
+                    e.UserId = 53 AND 
+                    YEAR(b.bid_date) = 2024 AND 
+                    MONTH(b.bid_date) =  AND
+                    b.bid_status_later = \'Collected\'
+                GROUP BY 
+                    e.UserId, YEAR(b.bid_date), MONTH(b.bid_date)
+                ORDER BY 
+                    YEAR(b.bid_date), MONTH(b.bid_date)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+                    e.UserId,
+                    YEAR(b.bid_date) AS year, 
+                    MONTH(b.bid_date) AS month, 
+                    COUNT(*) AS totalListings, 
+                    SUM(b.bid_price_per_item) AS totalIncome
+                FROM 
+                    bids b
+                INNER JOIN 
+                    ewaste_listings e ON b.item_id = e.item_id
+                WHERE 
+                    e.UserId = 53 AND 
+                    YEAR(b.bid_date) = 2024 AND 
+                    MONTH(b.bid_date) =  AND
+                    b.bid_status_later = \'Collected\'
+                GROUP BY 
+                    e.UserId, YEAR(b.bid_date), MONTH(b.bid_date)
+                ORDER BY 
+                    YEAR(b.bid_date), MONTH(b.bid_date)')
+ 4 APPPATH\Models\BiddingModel.php(148): CodeIgniter\Database\BaseConnection->query('SELECT 
+                    e.UserId,
+                    YEAR(b.bid_date) AS year, 
+                    MONTH(b.bid_date) AS month, 
+                    COUNT(*) AS totalListings, 
+                    SUM(b.bid_price_per_item) AS totalIncome
+                FROM 
+                    bids b
+                INNER JOIN 
+                    ewaste_listings e ON b.item_id = e.item_id
+                WHERE 
+                    e.UserId = 53 AND 
+                    YEAR(b.bid_date) = 2024 AND 
+                    MONTH(b.bid_date) =  AND
+                    b.bid_status_later = \'Collected\'
+                GROUP BY 
+                    e.UserId, YEAR(b.bid_date), MONTH(b.bid_date)
+                ORDER BY 
+                    YEAR(b.bid_date), MONTH(b.bid_date)')
+ 5 APPPATH\Controllers\Sys.php(1036): App\Models\BiddingModel->getIncomeReport('53', '2024')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->generate_income_report()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-09 11:20:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND 
+                    b.bid_status_later = 'Collected'
+                G...' at line 13 in C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\emslk\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT \r\n      ...', 0)
+#1 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 C:\xampp\htdocs\emslk\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 C:\xampp\htdocs\emslk\app\Models\BiddingModel.php(167): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...')
+#4 C:\xampp\htdocs\emslk\app\Controllers\Sys.php(1029): App\Models\BiddingModel->getIncome('53', NULL, NULL)
+#5 C:\xampp\htdocs\emslk\system\CodeIgniter.php(932): App\Controllers\Sys->ewgIncome()
+#6 C:\xampp\htdocs\emslk\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#7 C:\xampp\htdocs\emslk\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\emslk\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-09 11:20:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND 
+                    b.bid_status_later = 'Collected'
+                G...' at line 13
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 
+                    e.UserId,
+                    YEAR(b.bid_date) AS year, 
+                    MONTH(b.bid_date) AS month, 
+                    COUNT(b.item_id) AS totalListings, 
+                    SUM(b.bid_price_per_item) AS totalIncome
+                FROM 
+                    bids b
+                INNER JOIN 
+                    ewaste_listings e ON b.item_id = e.item_id
+                WHERE 
+                    e.UserId = 53 AND 
+                    YEAR(b.bid_date) =  AND 
+                    b.bid_status_later = \'Collected\'
+                GROUP BY 
+                    e.UserId, YEAR(b.bid_date), MONTH(b.bid_date)
+                ORDER BY 
+         YEAR(b.bid_date), MONTH(b.bid_date)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+                    e.UserId,
+                    YEAR(b.bid_date) AS year, 
+                    MONTH(b.bid_date) AS month, 
+                    COUNT(b.item_id) AS totalListings, 
+                    SUM(b.bid_price_per_item) AS totalIncome
+                FROM 
+                    bids b
+                INNER JOIN 
+                    ewaste_listings e ON b.item_id = e.item_id
+                WHERE 
+                    e.UserId = 53 AND 
+                    YEAR(b.bid_date) =  AND 
+                    b.bid_status_later = \'Collected\'
+                GROUP BY 
+                    e.UserId, YEAR(b.bid_date), MONTH(b.bid_date)
+                ORDER BY 
+         YEAR(b.bid_date), MONTH(b.bid_date)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+                    e.UserId,
+                    YEAR(b.bid_date) AS year, 
+                    MONTH(b.bid_date) AS month, 
+                    COUNT(b.item_id) AS totalListings, 
+                    SUM(b.bid_price_per_item) AS totalIncome
+                FROM 
+                    bids b
+                INNER JOIN 
+                    ewaste_listings e ON b.item_id = e.item_id
+                WHERE 
+                    e.UserId = 53 AND 
+                    YEAR(b.bid_date) =  AND 
+                    b.bid_status_later = \'Collected\'
+                GROUP BY 
+                    e.UserId, YEAR(b.bid_date), MONTH(b.bid_date)
+                ORDER BY 
+         YEAR(b.bid_date), MONTH(b.bid_date)')
+ 4 APPPATH\Models\BiddingModel.php(167): CodeIgniter\Database\BaseConnection->query('SELECT 
+                    e.UserId,
+                    YEAR(b.bid_date) AS year, 
+                    MONTH(b.bid_date) AS month, 
+                    COUNT(b.item_id) AS totalListings, 
+                    SUM(b.bid_price_per_item) AS totalIncome
+                FROM 
+                    bids b
+                INNER JOIN 
+                    ewaste_listings e ON b.item_id = e.item_id
+                WHERE 
+                    e.UserId = 53 AND 
+                    YEAR(b.bid_date) =  AND 
+                    b.bid_status_later = \'Collected\'
+                GROUP BY 
+                    e.UserId, YEAR(b.bid_date), MONTH(b.bid_date)
+                ORDER BY 
+         YEAR(b.bid_date), MONTH(b.bid_date)')
+ 5 APPPATH\Controllers\Sys.php(1029): App\Models\BiddingModel->getIncome('53', null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewgIncome()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 11:58:00 --> Invalid file: "sys/ewc_collection_activity_analysis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/ewc_collection_activity_analysis.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_collection_activity_analysis', [], true)
+ 3 APPPATH\Controllers\Sys.php(1062): view('sys/ewc_collection_activity_analysis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->collectionActivityAnalysis()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 11:58:08 --> Invalid file: "sys/ewc_collection_activity_analysis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/ewc_collection_activity_analysis.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_collection_activity_analysis', [], true)
+ 3 APPPATH\Controllers\Sys.php(1062): view('sys/ewc_collection_activity_analysis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->collectionActivityAnalysis()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 12:47:06 --> syntax error, unexpected token ";"
+in APPPATH\Models\BiddingModel.php on line 294.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\emslk\\app\\Models\\BiddingModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\BiddingModel')
+ 3 APPPATH\Controllers\Sys.php(1044): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\BiddingModel')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcCollections()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 12:54:05 --> Undefined array key "totalquantity"
+in APPPATH\Views\sys\ewc_collections.php on line 67.
+ 1 APPPATH\Views\sys\ewc_collections.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "totalquantity"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_collections.php', 67)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_collections.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_collections', [], true)
+ 5 APPPATH\Controllers\Sys.php(1059): view('sys/ewc_collections', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcCollections()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 12:59:01 --> Undefined array key "totalquantity"
+in APPPATH\Views\sys\ewc_collections.php on line 67.
+ 1 APPPATH\Views\sys\ewc_collections.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "totalquantity"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_collections.php', 67)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_collections.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_collections', [], true)
+ 5 APPPATH\Controllers\Sys.php(1059): view('sys/ewc_collections', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcCollections()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 12:59:45 --> Undefined array key "totalquantity"
+in APPPATH\Views\sys\ewc_collections.php on line 67.
+ 1 APPPATH\Views\sys\ewc_collections.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "totalquantity"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_collections.php', 67)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_collections.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_collections', [], true)
+ 5 APPPATH\Controllers\Sys.php(1059): view('sys/ewc_collections', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcCollections()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 13:00:38 --> Undefined array key "totalquantity"
+in APPPATH\Views\sys\ewc_collections.php on line 67.
+ 1 APPPATH\Views\sys\ewc_collections.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "totalquantity"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_collections.php', 67)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_collections.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_collections', [], true)
+ 5 APPPATH\Controllers\Sys.php(1059): view('sys/ewc_collections', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcCollections()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 13:30:08 --> Undefined array key "totals"
+in APPPATH\Views\sys\ewc_collections.php on line 71.
+ 1 APPPATH\Views\sys\ewc_collections.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "totals"', 'C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_collections.php', 71)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\emslk\\app\\Views\\sys\\ewc_collections.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewc_collections', [], true)
+ 5 APPPATH\Controllers\Sys.php(1059): view('sys/ewc_collections', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcCollections()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 14:06:53 --> Invalid file: "sys/ewr_payments.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/ewr_payments.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/ewr_payments', [], true)
+ 3 APPPATH\Controllers\Sys.php(1158): view('sys/ewr_payments', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->ewcTransactions()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

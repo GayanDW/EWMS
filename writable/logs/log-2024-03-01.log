@@ -1,0 +1,157 @@
+CRITICAL - 2024-03-01 03:38:41 --> Undefined variable $users
+in APPPATH\Views\sys\content_admin.php on line 79.
+ 1 APPPATH\Views\sys\content_admin.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\content_admin.php', 79)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\content_admin.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_admin', [], true)
+ 5 APPPATH\Controllers\Sys.php(112): view('sys/content_admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-01 04:01:07 --> Invalid file: "user_management.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user_management.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('user_management', [], true)
+ 3 APPPATH\Controllers\Sys.php(1364): view('user_management')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewUserMgt()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-01 04:02:08 --> Undefined variable $userType
+in APPPATH\Controllers\Sys.php on line 1364.
+ 1 APPPATH\Controllers\Sys.php(1364): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userType', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 1364)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewUserMgt()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-01 04:02:23 --> Undefined variable $userType
+in APPPATH\Controllers\Sys.php on line 1364.
+ 1 APPPATH\Controllers\Sys.php(1364): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userType', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 1364)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewUserMgt()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-01 04:13:58 --> Undefined variable $userType
+in APPPATH\Controllers\Sys.php on line 1364.
+ 1 APPPATH\Controllers\Sys.php(1364): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userType', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 1364)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewUserMgt()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-01 04:14:45 --> Undefined variable $userType
+in APPPATH\Controllers\Sys.php on line 1360.
+ 1 APPPATH\Controllers\Sys.php(1360): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userType', 'C:\\xampp\\htdocs\\ewms\\app\\Controllers\\Sys.php', 1360)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewUserMgt()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-01 04:16:31 --> Undefined variable $users
+in APPPATH\Views\sys\user_management.php on line 25.
+ 1 APPPATH\Views\sys\user_management.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\user_management.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\user_management.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_management', [], true)
+ 5 APPPATH\Controllers\Sys.php(1364): view('sys/user_management')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewUserMgt()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-01 05:19:50 --> Undefined variable $users
+in APPPATH\Views\sys\user_management.php on line 25.
+ 1 APPPATH\Views\sys\user_management.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\user_management.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\user_management.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_management', [], true)
+ 5 APPPATH\Controllers\Sys.php(1364): view('sys/user_management')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewUserMgt()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-01 05:20:30 --> Undefined variable $users
+in APPPATH\Views\sys\user_management.php on line 25.
+ 1 APPPATH\Views\sys\user_management.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\user_management.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\user_management.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_management', [], true)
+ 5 APPPATH\Controllers\Sys.php(1364): view('sys/user_management')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewUserMgt()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-01 05:24:11 --> Invalid file: "sys/layout/template.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/layout/template.php')
+ 2 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('sys/layout/template', [], true)
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_management', [], true)
+ 4 APPPATH\Controllers\Sys.php(1368): view('sys/user_management', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewUserMgt()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-01 05:26:41 --> Invalid file: "layout/template.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/template.php')
+ 2 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/template', [], true)
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_management', [], true)
+ 4 APPPATH\Controllers\Sys.php(1368): view('sys/user_management', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewUserMgt()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-01 08:09:22 --> Undefined variable $message
+in APPPATH\Views\sys\not_authorised.php on line 33.
+ 1 APPPATH\Views\sys\not_authorised.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message', 'C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\not_authorised.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ewms\\app\\Views\\sys\\not_authorised.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/not_authorised', [], true)
+ 5 APPPATH\Controllers\Sys.php(138): view('sys/not_authorised')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->notAuthorised()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-01 09:00:27 --> Invalid file: "sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/menu_', [], true)
+ 3 APPPATH\Controllers\Sys.php(1373): view('sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewUserMgt()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-01 09:39:39 --> syntax error, unexpected token "<"
+in APPPATH\Views\sys\user_management.php on line 38.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_management', [], true)
+ 3 APPPATH\Controllers\Sys.php(1374): view('sys/user_management', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewUserMgt()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-01 10:14:28 --> Invalid file: "sys/thankYou.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/thankYou.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/thankYou', [], true)
+ 3 APPPATH\Controllers\Sys.php(1386): view('sys/thankYou', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->approveUser('13')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-01 15:13:00 --> syntax error, unexpected token "?", expecting "elseif" or "else" or "endif"
+in APPPATH\Views\sys\user_management.php on line 85.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_management', [], true)
+ 3 APPPATH\Controllers\Sys.php(1374): view('sys/user_management', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewUserMgt()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-01 15:30:56 --> syntax error, unexpected token "endforeach", expecting "elseif" or "else" or "endif"
+in APPPATH\Views\sys\user_management.php on line 85.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/user_management', [], true)
+ 3 APPPATH\Controllers\Sys.php(1374): view('sys/user_management', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->viewUserMgt()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

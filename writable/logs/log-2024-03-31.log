@@ -1,0 +1,221 @@
+ERROR - 2024-03-31 04:09:46 --> mysqli_sql_exception: Table 'practice_ewms.ewaste_listings' doesn't exist in C:\xampp\htdocs\practice_ewms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\practice_ewms\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\practice_ewms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\practice_ewms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\practice_ewms\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\practice_ewms\system\Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\practice_ewms\app\Controllers\Sys.php(45): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\practice_ewms\system\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+#7 C:\xampp\htdocs\practice_ewms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#8 C:\xampp\htdocs\practice_ewms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\practice_ewms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-31 04:09:46 --> Table 'practice_ewms.ewaste_listings' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `ewaste_listings`
+WHERE `UserId` = \'53\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `ewaste_listings`
+WHERE `UserId` = \'53\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `ewaste_listings`
+WHERE `UserId` = \'53\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ewaste_listings`
+WHERE `UserId` = :UserId:', [...], false)
+ 5 SYSTEMPATH\Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Sys.php(45): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-31 05:11:47 --> mysqli_sql_exception: Unknown column 'ewaste_listings.item_id' in 'on clause' in C:\xampp\htdocs\practice_ewms\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\practice_ewms\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT \r\n    ew...', 0)
+#1 C:\xampp\htdocs\practice_ewms\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n    ew...')
+#2 C:\xampp\htdocs\practice_ewms\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n    ew...')
+#3 C:\xampp\htdocs\practice_ewms\system\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT \r\n    ew...')
+#4 C:\xampp\htdocs\practice_ewms\app\Models\EwasteListModel.php(22): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\practice_ewms\app\Views\sys\content_e-Waste Generator.php(17): App\Models\EwasteListModel->getListings('53')
+#6 C:\xampp\htdocs\practice_ewms\system\View\View.php(224): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\practice_ewms\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\xampp\htdocs\practice_ewms\system\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-w...', Array, true)
+#9 C:\xampp\htdocs\practice_ewms\app\Controllers\Sys.php(50): view('sys/content_e-w...', Array)
+#10 C:\xampp\htdocs\practice_ewms\system\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+#11 C:\xampp\htdocs\practice_ewms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+#12 C:\xampp\htdocs\practice_ewms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\practice_ewms\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2024-03-31 05:11:47 --> Unknown column 'ewaste_listings.item_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 
+    ewaste_listings.*,
+    COUNT(bids.UserId) AS nobids,
+    SUM(CASE WHEN ab.bid_status_g = \'Bids Pending\' THEN 1 ELSE 0 END) AS pending_bids
+FROM 
+    ewaste_listings 
+LEFT JOIN 
+    bids ON bids.item_id = ewaste_listings.item_id 
+LEFT JOIN 
+    bids ab ON ab.item_id = ewaste_listings.item_id
+WHERE 
+    ewaste_listings.UserId = \'53\' 
+    AND ewaste_listings.item_status_c != \'Deleted\' 
+GROUP BY 
+    ewaste_listings.item_id;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+    ewaste_listings.*,
+    COUNT(bids.UserId) AS nobids,
+    SUM(CASE WHEN ab.bid_status_g = \'Bids Pending\' THEN 1 ELSE 0 END) AS pending_bids
+FROM 
+    ewaste_listings 
+LEFT JOIN 
+    bids ON bids.item_id = ewaste_listings.item_id 
+LEFT JOIN 
+    bids ab ON ab.item_id = ewaste_listings.item_id
+WHERE 
+    ewaste_listings.UserId = \'53\' 
+    AND ewaste_listings.item_status_c != \'Deleted\' 
+GROUP BY 
+    ewaste_listings.item_id;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+    ewaste_listings.*,
+    COUNT(bids.UserId) AS nobids,
+    SUM(CASE WHEN ab.bid_status_g = \'Bids Pending\' THEN 1 ELSE 0 END) AS pending_bids
+FROM 
+    ewaste_listings 
+LEFT JOIN 
+    bids ON bids.item_id = ewaste_listings.item_id 
+LEFT JOIN 
+    bids ab ON ab.item_id = ewaste_listings.item_id
+WHERE 
+    ewaste_listings.UserId = \'53\' 
+    AND ewaste_listings.item_status_c != \'Deleted\' 
+GROUP BY 
+    ewaste_listings.item_id;')
+ 4 SYSTEMPATH\Model.php(832): CodeIgniter\Database\BaseConnection->query('SELECT 
+    ewaste_listings.*,
+    COUNT(bids.UserId) AS nobids,
+    SUM(CASE WHEN ab.bid_status_g = \'Bids Pending\' THEN 1 ELSE 0 END) AS pending_bids
+FROM 
+    ewaste_listings 
+LEFT JOIN 
+    bids ON bids.item_id = ewaste_listings.item_id 
+LEFT JOIN 
+    bids ab ON ab.item_id = ewaste_listings.item_id
+WHERE 
+    ewaste_listings.UserId = \'53\' 
+    AND ewaste_listings.item_status_c != \'Deleted\' 
+GROUP BY 
+    ewaste_listings.item_id;')
+ 5 APPPATH\Models\EwasteListModel.php(22): CodeIgniter\Model->__call('query', [...])
+ 6 APPPATH\Views\sys\content_e-Waste Generator.php(17): App\Models\EwasteListModel->getListings('53')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\practice_ewms\\app\\Views\\sys\\content_e-Waste Generator.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/content_e-waste generator', [], true)
+10 APPPATH\Controllers\Sys.php(50): view('sys/content_e-waste generator', [...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-31 05:38:23 --> Invalid file: "sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/menu_', [], true)
+ 3 APPPATH\Controllers\Sys.php(49): view('sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-31 05:38:27 --> Invalid file: "sys/menu_.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sys/menu_.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('sys/menu_', [], true)
+ 3 APPPATH\Controllers\Sys.php(49): view('sys/menu_')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Sys->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sys))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-31 09:29:23 --> Undefined variable $district_list
+in APPPATH\Views\web\reg_ewg.php on line 233.
+ 1 APPPATH\Views\web\reg_ewg.php(233): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $district_list', 'C:\\xampp\\htdocs\\practice_ewms\\app\\Views\\web\\reg_ewg.php', 233)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\practice_ewms\\app\\Views\\web\\reg_ewg.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/reg_ewg', [], true)
+ 5 APPPATH\Controllers\Web.php(478): view('web/reg_ewg')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->reg_ewg()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-31 09:32:32 --> Undefined variable $district_list
+in APPPATH\Views\web\reg_ewg.php on line 233.
+ 1 APPPATH\Views\web\reg_ewg.php(233): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $district_list', 'C:\\xampp\\htdocs\\practice_ewms\\app\\Views\\web\\reg_ewg.php', 233)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\practice_ewms\\app\\Views\\web\\reg_ewg.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/reg_ewg', [], true)
+ 5 APPPATH\Controllers\Web.php(480): view('web/reg_ewg')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->reg_ewg()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-31 09:32:33 --> Undefined variable $district_list
+in APPPATH\Views\web\reg_ewg.php on line 233.
+ 1 APPPATH\Views\web\reg_ewg.php(233): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $district_list', 'C:\\xampp\\htdocs\\practice_ewms\\app\\Views\\web\\reg_ewg.php', 233)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\practice_ewms\\app\\Views\\web\\reg_ewg.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/reg_ewg', [], true)
+ 5 APPPATH\Controllers\Web.php(480): view('web/reg_ewg')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->reg_ewg()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-31 09:32:34 --> Undefined variable $district_list
+in APPPATH\Views\web\reg_ewg.php on line 233.
+ 1 APPPATH\Views\web\reg_ewg.php(233): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $district_list', 'C:\\xampp\\htdocs\\practice_ewms\\app\\Views\\web\\reg_ewg.php', 233)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\practice_ewms\\app\\Views\\web\\reg_ewg.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/reg_ewg', [], true)
+ 5 APPPATH\Controllers\Web.php(480): view('web/reg_ewg')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->reg_ewg()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-31 09:32:39 --> Undefined variable $district_list
+in APPPATH\Views\web\reg_ewg.php on line 233.
+ 1 APPPATH\Views\web\reg_ewg.php(233): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $district_list', 'C:\\xampp\\htdocs\\practice_ewms\\app\\Views\\web\\reg_ewg.php', 233)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\practice_ewms\\app\\Views\\web\\reg_ewg.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/reg_ewg', [], true)
+ 5 APPPATH\Controllers\Web.php(480): view('web/reg_ewg')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->reg_ewg()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-31 16:22:08 --> Undefined variable $district_list
+in APPPATH\Views\web\reg_ewg.php on line 233.
+ 1 APPPATH\Views\web\reg_ewg.php(233): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $district_list', 'C:\\xampp\\htdocs\\practice_ewms\\app\\Views\\web\\reg_ewg.php', 233)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\practice_ewms\\app\\Views\\web\\reg_ewg.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('web/reg_ewg', [], true)
+ 5 APPPATH\Controllers\Web.php(550): view('web/reg_ewg', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Web->save_reg_ewg()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-31 17:56:08 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.gmail.com failed: No such host is known.  in C:\xampp\htdocs\practice_ewms\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1863)
+#1 C:\xampp\htdocs\practice_ewms\system\Email\Email.php(1863): fsockopen('smtp.gmail.com', 587, NULL, NULL, 5)
+#2 C:\xampp\htdocs\practice_ewms\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\practice_ewms\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\practice_ewms\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\practice_ewms\app\Controllers\Web.php(546): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\practice_ewms\system\CodeIgniter.php(932): App\Controllers\Web->save_reg_ewg()
+#7 C:\xampp\htdocs\practice_ewms\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web))
+#8 C:\xampp\htdocs\practice_ewms\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\practice_ewms\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-03-31 17:56:08 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-03-31 17:56:08 --> 
